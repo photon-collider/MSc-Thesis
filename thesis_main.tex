@@ -1,0 +1,72 @@
+\documentclass[12pt]{ruthesis}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphics}
+\usepackage{epsfig,epsf,rotating}
+\usepackage{subfigure}
+%\usepackage{pictex}
+\usepackage{epsf}
+%\usepackage{cite}
+\usepackage{theorem}
+\newtheorem{proposition}{Proposition}
+
+\theoremheaderfont{\itshape} {\theoremstyle{break}
+\newtheorem{Fact}{Fact}[chapter]} \theoremstyle{break}
+\newtheorem{Lem}{Lemma}[chapter] \theoremstyle{break}
+\newtheorem{Thm}{Theorem}[chapter] {\theoremstyle{plain}
+  \theorembodyfont{\rmfamily}  \newtheorem{Prf}{Proof}[chapter]}
+{\theoremstyle{plain}
+  \theorembodyfont{\rmfamily}  \newtheorem{Def}{Definition}[chapter]}
+
+\title{Sphere detection and LDPC decoding algorithms and architectures for wireless systems}
+\ctitle{Sphere detection and LDPC decoding algorithms and architectures for wireless systems}
+\author{Bryan E. Anthonio}
+\department{Applied Physics}
+\school{Rice University}
+\degree{Master of Science}
+
+\committee {
+        Junichiro Kono, Chair \\
+        Professor of Electrical \& Computer Engineering, Physics \& Astronomy,
+        Materials Science \& NanoEngineering \and
+        Behnaam Aazhang \\
+        J.S. Abercrombie Professor of Electrical and Computer Engineering \and
+        Scott Rixner\\
+        Associate Professor of Electrical and Computer Engineering and Computer Science \and
+}
+
+\address{Houston, Texas}
+\donemonth{December} \doneyear{2019} \makeindex
+\begin{document}
+
+  \begin{frontmatter}
+   \pagenumbering{roman}
+   %\makecover
+   \maketitle
+   \include{abstract}
+   %\include{ack}
+   \tableofcontents
+   \listoffigures
+   \listoftables
+%   \include{ded}
+  \end{frontmatter}
+\pagenumbering{arabic}
+
+\linespacing{1.7}
+
+\include{chapter1}
+
+\appendix
+
+%\include{append-a}
+%\appendix
+%\addcontentsline{toc} {chapter}{\numberline {}Appendix A}
+%\include{append-a}
+%\include{append-b}
+%\addcontentsline{toc} {chapter}{\numberline {}Bibliography}{}
+%\include{biblio}
+
+%\bibliographystyle{ieeetr}
+%\bibliography{PhD_bibliography}
+\end{document}
