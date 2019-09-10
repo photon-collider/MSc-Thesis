@@ -3,17 +3,20 @@
 \section{(6,5) Carbon Nanotube Sample Properties}
 
 \subsection{Sample Preparation}
-The sample preparation procedure is well described by Ref \cite{ichinose2017extraction}. For preparing a high-purity (6,5) sample, the process starts with obtaining a CoMoCat solution (Sigma-Aldrich) containing several different chiralities. Gel chromatography is then performed on this mixture to isolate a solution containing a high concentration of (6,5) nanotubes. Adding sodium deoxycholate (DOC) as surfactant to prevent nanotubes from clumping together to form bundles. About 4 percent of solution is DOC. Sample is contained in a quartz cuvette with an optical path length of 1 mm.
+The sample preparation procedure is well described by Ref \cite{ichinose2017extraction}. For preparing a high-purity (6,5) sample, the process starts with obtaining a CoMoCat solution (Sigma-Aldrich) containing several different chiralities of carbon nanotubes. Gel chromatography is then performed on this mixture to isolate a solution containing a high concentration of (6,5) nanotubes. In this process, the presence of a small concentration (4\%) of sodium deoxycholate (DOC), a surfactant, in the solution prevents nanotubes from clumping together to form bundles. Finally, the sample is pipetted into a quartz cuvette with an optical path length of 1 mm. 
 
 %Include figure of absorption spectrum
 \subsection{Sample Absorbance Spectrum}
 
-Here, absorbance is defined as 
+Measuring the absorbance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, absorbance $A$ is defined as 
+
 \begin{equation}
-A = \log_{10}(-T),
+A = \log_{10}\left(\dfrac{I_{ref}}{I_{sample}}\right),
 \end{equation}
-where $T$ represents the transmission through the sample. 
-This is absorbance spectrum of sample. We can see E11, phonon sideband, and E22 within this spectral window. Other peaks in the sample emerge from exciton resonances of (9,1) and (6,4) nanotubes.
+
+where $I_{ref}$ and $I_{sample}$ represent the optical transmission through a reference sample and the nanotube sample respectively. The reference sample only contains water and a 4\% concentration of DOC and is also stored in a cuvette with an optical path length of 1 mm. 
+
+Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5) sample measured using the white-light supercontinuum source described in section \ref{section:white_light_probe}. The spectrum exhibits a number of optical transitions including the $E_{11}$, phonon sideband, $E_{12}$, and $E_{22}$ resonances at photon energies of 1.26, 1.45, 1.9, and 2.17 eV respectively. Furthrmore, other small peaks in the sample at 1.35 and 1.41 eV emerge from exciton resonances of (9,1) and (6,4) nanotubes respectively.
 
 \begin{figure}[H]
 	\centering
@@ -36,7 +39,7 @@ Pump and probe beams are focused onto surface of the sample. This is a non-colli
 	\centering
 	\includegraphics[scale=0.7]{example-image-a}
 	\caption{ Schematic Diagram of the Experimental Apparatus}
-	\label{fig:sample_absorbance}
+	\label{fig:setup_schematic}
 \end{figure}
 
 
@@ -46,24 +49,22 @@ Laser is Clark MXR-2010, 1 KHz repetition rate, 150 fs pulse duration, and centr
 All of the power is delivered to the OPA. OPA generates signal and idler beams. {\color{red} Briefly describe process of generating signal and idler beams}. BBO crystal added to generate SHG of signal which is used as the resonant E22 pump excitation. Signal of OPA is used to generate white light continuum in a sapphire crystal. 
 
 \subsection{Filters}
- Wavelength separator used to seperate SHG and fundamental signal. {\color{red} Describe what wavelength separator is and mechanism for wavelength separation}.
+
+The setup features a wavelength separator used to seperate the fundamental of the signal (FS) from the second harmonic of the signal (SHS) generated using a barium borate (BBO) crystal. This optical device contains a set of two dichroic mirrors that reflect the SHS and transmit the FS.  
+
+Polarization of SHS is perpendicular to that of FS. Half-wave plate put in the optical path of SHS to make polarizations of FS and SHS parallal to each other. 
  
 \subsection{White Light Continuum Probe}
-
+\label{section:white_light_probe}
 {\color{red} Briefly describe process by which probe is generated}
 
+A lens focuses FS into a sapphire crystal which generates white-light continuum that spans 1 - 2.4 eV. Iris 
+
 \subsection{Spectrometer}
-The probe is collected into an optical fibre which sends this beam to a spectrometer equipped with a charge-coupled device (CCD) camera. Camera allows to measure the intensity of several wavelengths of probe beam simultaneously. 
+The probe is collected into an optical fibre which sends this beam to a spectrometer equipped with a charge-coupled device (CCD) camera. Camera allows to measure the intensity of several wavelengths of probe beam simultaneously. CCD camera is cooled to -100 degrees C using liquid nitrogen for optimal signal-to-noise ratio. 
 
 \subsection{Pump and Probe Spot Sizes}
 Pump and probe spot sizes measured using a knife edge scan. For this, mounted a razor blade on a delay stage placed in the sample position as shown in Figure \ref{fig:beam_diameter_setup}. Measure transmitted power as a function of delay stage positioning. Average power drops as razor blade cuts into beam diameter. 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.7]{example-image-a}
-	\caption{Spot Size Measurement Setup}
-	\label{fig:beam_diameter_setup}
-\end{figure}
 
 Assuming that the beam diameter can be approximated as a gaussian distribution, we can compute the spot size by fitting this data with the equation 
 
