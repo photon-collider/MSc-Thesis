@@ -53,17 +53,21 @@ The setup features a wavelength separator that seperates the fundamental of the 
 
 
 \label{section:white_light_probe}
-\textbf{\color{red}UNFINISHED} Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. Facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, refractive index of supercontinuum generation medium depends on intensity of propagating light \cite{dubietis2017ultrafast}. Due to interplay between this self-focusing and other effects such as self-phase modulation, and multiphoton absorption, the spectrum spectrally broadens as pulse travels through material \cite{dubietis2017ultrafast}. 
+Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. This is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}. 
 
-In this setup, supercontinuum generation occurs by focusing the FS into a sapphire crystal which generates white-light continuum that spans 1 - 2.4 eV. Here, a center of a sapphire crystal placed at a distance of one focal length of this lens. Iris used to partially crop the input beam to improve stability of white light spectrum. 
+In this setup, supercontinuum generation occurs by focusing the fundamental of the signal beam (FS) into a sapphire crystal. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
+
+Finally, an iris is  placed in path of FS such that such that its aperture is positioned at the center of the FS beam. This iris is used to crop the FS, thereby reducing its the beam diameter. Doing this has been observed to have the effect of minimizing the temporal fluctuations of the generated white light spectrum. 
 
 \subsection{Motorized Delay Stage and Optical Shutter}
 
-\textbf{\color{red}UNFINISHED} Setup is equipped with motorized delay stage and an optical shutter which are used to change two key conditions in a pump-probe experiment: time-delay between pump and probe, as well as whether pump is photoexciting sample or not. 
+\textbf{\color{red}UNFINISHED} A motorized delay stage and an optical shutter which are used to change two key conditions in a pump-probe experiment. 
 
-Motorized delay stage changes optical path length traveled by pump. A pair retroreflecting mirrors mounted on a motorized stage is used to adjust optical path length of pump beam which effectively alters timed delay between pump and probe. 
+The delay stage consists of a pair retro-reflecting mirrors mounted on a motorized stage. The pump beam itself travels to both of these mirrors. Hence, adjusting the position of the motorized stage alters the time delay between the pump and probe pulses by either increasing or decreasing the optical path length traveled by the pump pulse. 
 
-Optical shutter placed in the optical path traveled by the pump beam. At each time delay, measure transmission of the probe beam with the pump beam blocked and with the pump beam unblocked by the shutter.  
+The optical shutter facilitates the measurements 
+
+to block the pump beam in order to measure probe transmission through the sample under equilibrium conditions. At each time delay, measure transmission of the probe beam with the pump beam blocked and with the pump beam unblocked by the shutter.  
 
 
 
@@ -73,7 +77,16 @@ The probe is collected into an optical fibre which sends this beam to a spectrom
 
 \subsection{Pump and Probe Spot Sizes}
 \textbf{\color{red}UNFINISHED}
-Pump and probe spot sizes measured using a knife edge scan. For this, mounted a razor blade on a delay stage placed in the sample position. Measure transmitted power as a function of delay stage positioning. Average power drops as razor blade cuts into beam diameter. This method effectively measures the cumulative distribution function of the incoming beam as a function of the razor blade position.
+The pump and probe spot sizes are measured using a knife edge scan technique. For this, a razor blade attached to a post is mounted on a motorized stage placed in the sample position. The sharp edge of the blade faces in a direction perpendicular to that of the direction of propagation of the incident beam. A power meter is placed behind the razor blade to measure the average power.
+
+As the motorized stage moves the razor blade's position laterally with respect to the beam's propagation direction, the razor blade starts to block Measure transmitted power as a function of delay stage positioning. Average power drops as razor blade cuts into beam diameter. This method effectively measures the cumulative distribution function of the incoming beam as a function of the razor blade position.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{example-image-a}
+	\caption{Example measurement of beam diameter for pump and probe. Solid lines are fits to the data using function defined in equation}
+	\label{fig:beam_diamter_measurement}
+\end{figure}
 
 Assuming that the beam diameter can be approximated as a Gaussian distribution, we can compute the spot size by fitting this data with the equation 
 
@@ -85,12 +98,7 @@ which represents the cumulative distribution function of a Gaussian distribution
 
 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.7]{example-image-a}
-	\caption{Example measurement of beam diameter for pump and probe. Solid lines are fits to the data using function defined in equation}
-		\label{fig:beam_diamter_measurement}
-\end{figure}
+
 
 
 
