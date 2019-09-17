@@ -9,7 +9,7 @@
 \usepackage{float}
 \usepackage{bm}
 \usepackage{siunitx}
-
+\usepackage{notoccite}
 
 %\usepackage{pictex}
 \usepackage{epsf}
@@ -55,7 +55,7 @@
    %\include{ack}
    \tableofcontents
    \listoffigures
-   \listoftables
+%   \listoftables
 %   \include{ded}
   \end{frontmatter}
 \pagenumbering{arabic}
@@ -65,12 +65,12 @@
 \include{chapters/chapter_intro}
 \include{chapters/chapter_optical_props}
 \include{chapters/chapter_prior_works}
-
 \include{chapters/chapter_methods}
 \include{chapters/chapter_coherent}
 \include{chapters/chapter_my_data}
+\include{chapters/chapter_conclusions}
 
-\appendix
+%\appendix
 
 %\include{append-a}
 %\appendix
@@ -81,5 +81,5 @@
 \include{biblio}
 
 \bibliographystyle{ieeetr}
-\bibliography{thesis_main}
+\bibliography{biblio}
 \end{document}

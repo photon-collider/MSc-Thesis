@@ -29,57 +29,56 @@ Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5)
 
 %include figure of setup
 \subsection{Overview}
-{\color{red} Add a brief summary describing pump-probe spectroscopy and how that is done in this apparatus}. Basic idea of pump probe spectroscopy: two pulses: pump and probe. Pump photoexcites sample. Probe interrogates sample properties. Adjusting the arrival time delay between pump and probe makes it possible to measure dynamics of sample properties with femtosecond resolution. Pump and probe beams are focused onto surface of the sample. Finally, setup is configured such that pump and probe do not travel in a collinear fashion. 
+The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, incorporates the use of an intense optical pump pulse followed by a broadband probe pulse to characterize the ultrafast carrier dynamics of carbon nanotubes. The pump and probe beams are focused onto surface of the sample in a non-collinear geometry. Finally, the transmission spectrum of the probe is resolved using a spectrometer to resolve the non-equilibrium optical properties of the sample.  
 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{example-image-a}
-	\caption{ Schematic Diagram of the Experimental Apparatus}
+	\caption{ Schematic Diagram of the Experimental Apparatus. }
 	\label{fig:setup_schematic}
 \end{figure}
 
 
 \subsection{Chirped Pulse Amplifier and Optical Parametric Amplifier}
-The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. This laser generates amplified pulses using chirped pulse amplification. It operates at a repetition rate of 1 KHz and outputs pulses with a 150 fs duration and a central wavelength of 775 nm. Finally, the CPA-2010 serves as a pump laser for the optical parametric amplifier (OPA). 
+The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. This laser generates amplified pulses using a chirped pulse amplification process. It operates at a repetition rate of 1 KHz and outputs pulses with a 150 fs duration and a central wavelength of 775 nm. Finally, the CPA-2010 serves as a pump laser for the optical parametric amplifier (OPA). 
 
-This OPA used in the setup is a TOPAS-800 produced by Light Conversion. It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal which is used as the optical pump beam.
+This OPA used in the setup is a TOPAS-800 produced by Light Conversion. It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal which can be used as the optical pump beam.
 
 \subsection{Filters}
 
 The setup features a wavelength separator that seperates the fundamental of the signal (FS) from the second harmonic of the signal (SHS). This optical device contains a set of two dichroic mirrors that reflect the SHS and transmit the FS. As a result of the second harmonic generation process, the polarization of SHS remains perpendicular to that of FS. Hence, a half-wave plate is placed in the optical path of the SHS and appropriately adjusted to make the polarizations of FS and SHS parallel to each other. 
- 
+
+In addition to this, two neutral density wheels are used to attenuate the intensity of the probe and the optical pump.
+
 \subsection{White Light Continuum Probe}
 
 
 \label{section:white_light_probe}
 Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. This is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}. 
 
-In this setup, supercontinuum generation occurs by focusing the fundamental of the signal beam (FS) into a sapphire crystal. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
+In this setup, supercontinuum generation occurs by focusing the fundamental of the signal beam (FS) into a sapphire crystal with a thickness of 5 mm. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
 
-Finally, an iris is  placed in path of FS such that such that its aperture is positioned at the center of the FS beam. This iris is used to crop the FS, thereby reducing its the beam diameter. Doing this has been observed to have the effect of minimizing the temporal fluctuations of the generated white light spectrum. 
+Finally, an iris is placed in path of FS such that its aperture is positioned at the center of the FS beam. This iris is used to crop the outer portion of the FS, thereby reducing its the beam diameter. Doing this has been observed to have the effect of minimizing the temporal fluctuations of the generated white light spectrum. 
 
 \subsection{Motorized Delay Stage and Optical Shutter}
 
-\textbf{\color{red}UNFINISHED} A motorized delay stage and an optical shutter which are used to change two key conditions in a pump-probe experiment. 
+The setup includes a motorized delay stage and an optical shutter that are used to control the pump conditions in each measurement.
 
-The delay stage consists of a pair retro-reflecting mirrors mounted on a motorized stage. The pump beam itself travels to both of these mirrors. Hence, adjusting the position of the motorized stage alters the time delay between the pump and probe pulses by either increasing or decreasing the optical path length traveled by the pump pulse. 
+The delay stage consists of a pair retro-reflecting mirrors mounted on a motorized stage. The pump beam travels to both of these mirrors. Hence, adjusting the position of the motorized stage alters the time delay between the pump and probe pulses by either increasing or decreasing the optical path length traveled by the pump pulse. 
 
-The optical shutter facilitates the measurements 
-
-to block the pump beam in order to measure probe transmission through the sample under equilibrium conditions. At each time delay, measure transmission of the probe beam with the pump beam blocked and with the pump beam unblocked by the shutter.  
-
-
+The optical shutter makes it possible block the pump beam in order to measure probe transmission through the sample under equilibrium conditions. At each time delay, the transmission of the probe beam is measured with the pump beam blocked and with the pump beam unblocked by the shutter. Conducting measurements in this manner mitigates the effect of long-term fluctuations in the laser output. 
 
 \subsection{Spectrometer}
-\textbf{\color{red}UNFINISHED}
-The probe is collected into an optical fibre which sends this beam to a spectrometer equipped with a charge-coupled device (CCD) camera. Camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. Camera allows to measure the intensity of several wavelengths of probe beam simultaneously. CCD camera is cooled to -100 degrees C using liquid nitrogen for optimal signal-to-noise ratio. 
+The probe is collected into an optical fibre which sends the probe beam to a (\textbf{\color{red} NAME OF SPECTROMETER}) spectrometer built by Princeton Instruments.  The spectrometer uses a grating with a diffraction grating with a blaze wavelength of 800 nm and a groove density of (\textbf{\color{red} ADD GROOVE DENSITY}) per mm. The diffracted light is then imaged onto a CCD camera to measure the probe spectrum. 
+
+The camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. Finally, the camera must be cryogenically cooled to \SI{-100}{\celsius} using liquid nitrogen for an optimal signal-to-noise ratio.
+
 
 \subsection{Pump and Probe Spot Sizes}
-\textbf{\color{red}UNFINISHED}
-The pump and probe spot sizes are measured using a knife edge scan technique. For this, a razor blade attached to a post is mounted on a motorized stage placed in the sample position. The sharp edge of the blade faces in a direction perpendicular to that of the direction of propagation of the incident beam. A power meter is placed behind the razor blade to measure the average power.
+The pump and probe spot sizes are measured using a knife edge scan technique \cite{firester1977knife}. For this, a razor blade attached to a post is mounted on a motorized stage placed in the sample position. The sharp edge of the blade faces in a direction perpendicular to that of the direction of propagation of the incident beam. A power meter is placed behind the razor blade to measure the average power of the transmitted beams.
 
-As the motorized stage moves the razor blade's position laterally with respect to the beam's propagation direction, the razor blade starts to block Measure transmitted power as a function of delay stage positioning. Average power drops as razor blade cuts into beam diameter. This method effectively measures the cumulative distribution function of the incoming beam as a function of the razor blade position.
+As the motorized stage moves the razor blade's position laterally with respect to the beam's propagation direction, the razor blade increasingly blocks portions of the incident beam.  Measuring the transmitted power of incident beam as a function of the razor blade position yields a cumulative distribution function of the incident light.
 
 \begin{figure}[h]
 	\centering
@@ -88,7 +87,7 @@ As the motorized stage moves the razor blade's position laterally with respect t
 	\label{fig:beam_diamter_measurement}
 \end{figure}
 
-Assuming that the beam diameter can be approximated as a Gaussian distribution, we can compute the spot size by fitting this data with the equation 
+Assuming that the beam diameter can be approximated as a Gaussian distribution, the spot size can be estimated by fitting this data with the equation 
 
 \begin{equation}
 	P = P_0 + P_{max}/2 \left( 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right),
