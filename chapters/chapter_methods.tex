@@ -43,7 +43,7 @@ The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, inc
 \subsection{Chirped Pulse Amplifier and Optical Parametric Amplifier}
 The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. This laser generates amplified pulses using a chirped pulse amplification process. It operates at a repetition rate of 1 KHz and outputs pulses with a 150 fs duration and a central wavelength of 775 nm. Finally, the CPA-2010 serves as a pump laser for the optical parametric amplifier (OPA). 
 
-This OPA used in the setup is a TOPAS-800 produced by Light Conversion. It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal which can be used as the optical pump beam.
+The OPA used in the setup is a TOPAS-800 produced by Light Conversion. It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used an optical pump.
 
 \subsection{Filters}
 
@@ -55,7 +55,7 @@ In addition to this, two neutral density wheels are used to attenuate the intens
 
 
 \label{section:white_light_probe}
-Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. This is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}. 
+Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. It has been observed to occur in many different media such as water, fused silica, sapphire and calcium fluoride \cite{dubietis2017ultrafast}. This process is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}. 
 
 In this setup, supercontinuum generation occurs by focusing the fundamental of the signal beam (FS) into a sapphire crystal with a thickness of 5 mm. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
 
@@ -93,7 +93,7 @@ Assuming that the beam diameter can be approximated as a Gaussian distribution, 
 	P = P_0 + P_{max}/2 \left( 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right),
 \end{equation}
 
-which represents the cumulative distribution function of a Gaussian distribution. This fitting function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf is the standard error function, $P_{max}$ is the maximum power of the beam, $x$ is coordinate describing lateral position of the razor blade and $x_0$ represents position of razor blade when the razor blade blocks 50\% of the total power.  
+which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.  
 
 
 
