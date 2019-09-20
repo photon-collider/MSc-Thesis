@@ -9,7 +9,7 @@ The properties of carbon nanotubes (CNT) strongly depend on their crystal struct
 	\label{fig:symmetries}
 \end{figure}
 
-These morphological properties dictate the allowed electronic states by asserting boundary conditions on the electron wavefunction along the circumferential direction \cite{charlier2007electronic}. Moreover, the effect of strong electron-electron interactions impose further modifications to the electronic structure and effectively suppress the presence of any free-electron continuum states \cite{ando1997excitons}. This unusual behavior alone distinguishes carbon nanotubes from conventional semiconductors as they typically exhibit relatively weak Coulomb interactions \cite{ando1997excitons}.
+These morphological properties dictate the allowed electronic states by asserting boundary conditions on the electron wavefunction along the circumferential direction \cite{charlier2007electronic}. These allowed states exhibit anisotropic features and obey a set of optical selection rules that govern allowed inter-band transitions. Moreover, the effect of strong electron-electron interactions impose further modifications to the electronic structure and effectively suppress the presence of any free-electron continuum states \cite{ando1997excitons}. This unusual behavior alone distinguishes carbon nanotubes from conventional semiconductors as they typically exhibit relatively weak Coulomb interactions \cite{ando1997excitons}.
 
 
 
@@ -43,18 +43,59 @@ The chiral vector $\vec{C_h}$ also provides the means of distinguishing between 
 
 \section{Electronic Properties}
 
-\subsection{Band Structure}
+\subsection{Electronic Band Structure}
+
+{\color{red} UNFINISHED}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/chapter_optical_props/graphene_band_charlier}
+	\caption{Electronic band structure of graphene determined using a tight-binding model (dotted line) and through ab-initio calculations. Reproduced and modified from Ref \cite{charlier2007electronic}.}
+	\label{fig:graphene_band}
+\end{figure}
+
+Given the similarities between CNTs and graphene, calculating the electoronic band structure of graphene is the first step towards determining the band structure for CNTs. First, a simple tight-binding model can be used to calculate the band structure of graphene. Nearest neighbors include two atomic sites located at positions and $\vec{a_1}$ as well as $\vec{a_1}$. include only a hopping term for nearest neighbors located at positions . Hamiltonian $\mathcal{H}$ becomes
 
 
-Start with band structure of graphene. Assert periodic boundary conditions to get new band structure. Metallic nanotubes possess Dirac cone as well as subbands. Semiconducting nanotubes only have subbands.
 
-{\color{red} Describe basics of tightbinding model of graphene.}
+\begin{equation}
+	\mathcal{H} = \begin{bmatrix} 
+	0 & \alpha(k) \\
+	\alpha^*(k) & 0
+	\end{bmatrix}
+\end{equation}
+
+where $\alpha(k) = (1 + e^{-i \vec{k}\cdot \vec{a_1}} + e^{-i \vec{k}\cdot \vec{a_2}})$ \cite{charlier2007electronic}. Here, $\vec{k}$ represents a vector in the first Brillouin zone in reciprocal space. Diagonalizing this matrix gives the following energy dispersion 
+
+\begin{equation}
+	E^{\pm} (k_x, k_y) = \pm \gamma_0 \sqrt{1 + 4 \cos\dfrac{\sqrt{3}k_x a}{2}\cos\dfrac{k_y a}{2} + 4 \cos^2 \dfrac{k_y a}{2}} 
+\end{equation} 
+
+plotted in Figure \ref{fig:graphene_band}. Region near the K point approximately linear and referred to as a Dirac cone. 
+
 
 {\color{red} Describe zone folding approximation and how that yields approximation for nanotube band structure}
+The electronic band structure of carbon nanotubes can be derived from that of graphene by using the so-called zone-folding approximation \cite{charlier2007electronic}. Assert periodic boundary conditions to get new band structure. Metallic nanotubes possess Dirac cone as well as subbands. Semiconducting nanotubes only have subbands.
+ 
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.36]{images/chapter_optical_props/nine_zero_band_charlier_2}
+		\caption{Metallic}
+	\end{subfigure}
+	\qquad
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.38]{images/chapter_optical_props/ten_zero_band_charlier_2}
+		\caption{Metallic}
+	\end{subfigure}
+	\caption{Reproduced and modified from Ref \cite{charlier2007electronic}.}
+\end{figure}
 
 {\color{red}UNFINISHED} In a simple tight-binding picture, density of states consists of Van-Hove singularities in both the valence and conduction bands. Here, each Van-Hove singularity associated with a sub-band. This model however ignores the effects of electron-electron interactions and thereby does not account for the effects of quantum confinement \cite{weismanKonoBook}. Indeed, the inclusion of electron-electron interactions into this picture yields a new electronic structure in which free electrons play a minimal role.
 
-\subsection{Suppression of the Free Electron Continuum}
+\subsection{The Effects of Electron-Electron Interactions}
 Strong electron-electron interactions largely influence the binding energies of quasi-particles known as excitons that form after the creation of an electron-hole pair \cite{koch2006semiconductor}. Excitons represent hydrogen-like particles composed of a negatively-charged electron bound to a positively-charged hole \cite{koch2006semiconductor}. Similar to hydrogen atoms, they also possess their own set of analagous optical transitions \cite{koch2006semiconductor}. In an ideal 1-D material, theory predicts that excitons have an infinite binding energy. This alone foreshadows the dominance of excitons in the optical properties of carbon nanotubes \cite{ando2005theory}. 
 
 Both theoretical and experimental studies demonstrate that the strong quantum confinment of nanotubes effectively suppresses the density of states of any free electron continuum.  
@@ -90,7 +131,7 @@ Binding energies on order of hundreds of meV. Means that excitons are quite stab
 {\color{red}UNFINISHED} Selection rules dictate the optical transitions that can occur. Such optical processes depend upon the conservation of both energy and angular momentum \cite{weismanKonoBook}. The notation E$_{ij}$ denotes an inter-band transition between the valence sub-band $i$ and the conduction sub-band $j$ \cite{weismanKonoBook}. Incident light polarized parallel to carbon nanotube axial direction excites transitions where $i=j$ \cite{weismanKonoBook}. Incident light polarized perpendicular to the nanotube axial direction can only excite optical transitions where $|i-j|=1$ \cite{weismanKonoBook}. 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\begin{subfigure}{\textwidth}
 		\centering
