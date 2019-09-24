@@ -1,22 +1,31 @@
 \chapter{Experimental Procedures}
 
-\section{(6,5) Carbon Nanotube Sample Properties}
+\section{(6,5) Carbon Nanotube Sample Studied}
 
 \subsection{Sample Preparation}
-The sample preparation procedure is well described by Ref \cite{ichinose2017extraction}. For preparing a high-purity (6,5) sample, the process starts with obtaining a CoMoCat solution (Sigma-Aldrich) containing several different chiralities of carbon nanotubes. Gel chromatography is then performed on this mixture to isolate a solution containing a high concentration of (6,5) nanotubes. In this process, the presence of a small concentration (4\%) of sodium deoxycholate (DOC), a surfactant, in the solution prevents nanotubes from clumping together to form bundles. Finally, the sample is pipetted into a quartz cuvette with an optical path length of 1 mm. 
+
+Catalytic chemical vapor deposition (CCVD) is a standard method for synthesizing carbon nanotubes (CNT) \cite{prasek2011methods, agboola2007conceptual}. This technique depends on the decomposition of carbon sources, such as methane and acetylene, via heat or plasma irradiation to form carbon nanotubes on a substrate \cite{agboola2007conceptual}. Such reactions are typically driven by transition-metal catalysts such as nickel, iron, and cobalt \cite{prasek2011methods}.
+
+One commonly used process involves catalytic reactions involving cobalt (Co) and molybdenum (Mo) as catalysts in the so-called CoMoCAT method \cite{resasco2002scalable}. Here, carbon monoxide gas (CO) is used as a carbon source and it decomposes in the reaction 
+\vspace{-2mm}
+\begin{equation}
+\ce{CO_(g) + CO_{(g)} $\rightarrow$ CO_{2(g)} + C_{(CNT)}},
+\end{equation}
+to form carbon nanotubes \cite{resasco2002scalable}. This process is typically conducted at temperatures 700 - \SI{900}{\celsius} and pressures ranging from 1 - 10 atm \cite{resasco2002scalable}. To date, all carbon nanotube growth methods only produce an ensemble of nanotubes with varying chiralities. As such, these ensembles are often used as precursor materials for filtration techniques capable of creating dispersions that are enriched by a single chirality \cite{ichinose2017extraction, liu2011large}.
+
+{\color{red} UNFINISHED}
+We obtained a (6,5)-enriched sample by performing gel chromatography on CoMoCat CNTs (0.8 nm diameter, Sigma-Aldrich) \cite{ichinose2017extraction}. Gel chromatography  works by separating CNTs according to their relative diameters \cite{ichinose2017extraction}. First, the CoMoCAT CNTs were dispersed in an aqueous solution containing surfactants, which include sodium dodecyl sulfate (SDS) and sodium cholate (SC) with concentrations of 0.5\% each, using sonication followed by ultracentrifugation. In this process, the presence of a small concentration (4\%) of sodium deoxycholate (DOC), a surfactant, in the dispersion prevents nanotubes from clumping together to form bundles. Finally, the sample is pipetted into a quartz cuvette with an optical path length of 1 mm. 
 
 %Include figure of absorption spectrum
 \subsection{Sample Absorbance Spectrum}
 
 Measuring the absorbance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, absorbance $A$ is defined as 
-
 \begin{equation}
-A = \log_{10}\left(\dfrac{I_{ref}}{I_{sample}}\right),
+A = \log_{10}\left(\dfrac{I_{\mathrm{ref}}}{I_{\mathrm{sample}}}\right),
 \end{equation}
+where $I_{\mathrm{ref}}$ and $I_{\mathrm{sample}}$ represent the optical transmission through a reference sample and the nanotube sample respectively. The reference sample only contains water and a 4\% concentration of DOC and is also stored in a cuvette with an optical path length of 1 mm. 
 
-where $I_{ref}$ and $I_{sample}$ represent the optical transmission through a reference sample and the nanotube sample respectively. The reference sample only contains water and a 4\% concentration of DOC and is also stored in a cuvette with an optical path length of 1 mm. 
-
-Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5) sample measured using the white-light supercontinuum source described in section \ref{section:white_light_probe}. The spectrum exhibits a number of optical transitions including the $E_{11}$, phonon sideband, $E_{12}$, and $E_{22}$ resonances at photon energies of 1.26, 1.45, 1.9, and 2.17 eV respectively. Furthrmore, other small peaks in the sample at 1.35 and 1.41 eV emerge from exciton resonances of (9,1) and (6,4) nanotubes respectively.
+%Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5) sample measured using the white-light supercontinuum source described in section \ref{section:white_light_probe}. The spectrum exhibits a number of optical transitions including the $E_{11}$, phonon sideband, $E_{12}$, and $E_{22}$ resonances at photon energies of 1.26, 1.45, 1.9, and 2.17 eV respectively. Furthermore, other small peaks in the sample at 1.35 and 1.41 eV emerge from exciton resonances of (9,1) and (6,4) nanotubes respectively.
 
 \begin{figure}[H]
 	\centering
@@ -41,9 +50,9 @@ The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, inc
 
 
 \subsection{Chirped Pulse Amplifier and Optical Parametric Amplifier}
-The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. This laser generates amplified pulses using a chirped pulse amplification process. It operates at a repetition rate of 1 KHz and outputs pulses with a 150 fs duration and a central wavelength of 775 nm. Finally, the CPA-2010 serves as a pump laser for the optical parametric amplifier (OPA). 
+The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. This laser generates amplified pulses using a chirped pulse amplification process. It operates at a repetition rate of 1 KHz and outputs pulses with a 150 fs duration, a central wavelength of 775 nm, and a pulse energy of 1 mJ. Finally, the CPA-2010 serves as a pump laser for the optical parametric amplifier (OPA). 
 
-The OPA used in the setup is a TOPAS-800 produced by Light Conversion. It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used an optical pump.
+The OPA used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used an optical pump.
 
 \subsection{Filters}
 
@@ -88,11 +97,9 @@ As the motorized stage moves the razor blade's position laterally with respect t
 \end{figure}
 
 Assuming that the beam diameter can be approximated as a Gaussian distribution, the spot size can be estimated by fitting this data with the equation 
-
 \begin{equation}
-	P = P_0 + P_{max}/2 \left( 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right),
+	P = P_0 + \dfrac{P_{\mathrm{max}}}{2} \left( 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right),
 \end{equation}
-
 which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.  
 
 

@@ -44,21 +44,17 @@ where $a_{C-C} \approx$ \SI{1.44}{\angstrom} defines the nearest-neighbor distan
 \subsection{Electronic Band Structure}
 
 Given the similarities between CNTs and graphene, calculating the electronic band structure of graphene is the first step towards determining that of CNTs. A simple tight-binding model can be used to calculate the band structure of graphene. Such a model includes first nearest-neighbor interactions involving the $\pi$-orbitals of two atomic sites located at positions and $\vec{a_1}$ as well as $\vec{a_2}$ \cite{charlier2007electronic}. Here, $\vec{a_1}$ and $\vec{a_2}$ represent the lattice vectors of graphene. Furthermore, a hopping term $\gamma_0 \approx 2.9$ eV  characterizes the interactions between neighboring $\pi$-orbitals \cite{charlier2007electronic}. The Hamiltonian $\mathcal{H}$ for this simple system is then written as 
-
 \begin{equation}
 	\mathcal{H} = \begin{bmatrix} 
 	0 & \alpha(k) \\
 	\alpha^*(k) & 0
 	\end{bmatrix}
 \end{equation}
-
 where $\alpha(\vec{k}) = (1 + e^{-i \vec{k}\cdot \vec{a_1}} + e^{-i \vec{k}\cdot \vec{a_2}})$ and $\alpha^*(\vec{k})$ refers to the complex conjugate of $\alpha(\vec{k})$\cite{charlier2007electronic}. In addition, $\vec{k}$ stands for a reciprocal space vector within the first Brillouin zone. Diagonalizing this matrix yields the energy dispersion 
-
 \begin{equation}
 	E^{\pm} (k_x, k_y) = \pm \gamma_0 \sqrt{1 + 4 \cos\dfrac{\sqrt{3}k_x a}{2}\cos\dfrac{k_y a}{2} + 4 \cos^2 \dfrac{k_y a}{2}}
 	\label{eq:graphene_band}
 \end{equation} 
-
  where $E^-$ and $E^+$ stand for the dispersion relations of the valence and conduction bands respectively. The variables $k_x$ and $k_y$ denote the x- and y-components of $\vec{k}$. Moreover, the constant $a = \sqrt{3}a_{C-C}$, where $a_{C-C} \approx$ \SI{1.44}{\angstrom} and refers to the nearest-neighbor distance between the lattice sites. 
 
 \begin{figure}[h]
@@ -80,12 +76,10 @@ The zone-folding method asserts that the periodic boundary conditions along the 
 \label{eq:boundary_cond}
 \end{equation}
 where $\vec{r}$ and $\vec{k}$ respectively define vectors in real and reciprocal space on the surface of the CNT \cite{charlier2007electronic}. Furthermore, $\vec{C_h}$ represents the chiral vector defined in Eq. \ref{eq:chiral_vec}. Equation \ref{eq:boundary_cond} reveals that the symmetry of the CNT given by the chirality $\vec{C_h} \equiv (n,m)$ determines the band structure. In addition, the variable $\nu$ defined as 
-
 \begin{equation}
 \nu \equiv (n-m) \mathrm{\hspace{1.5mm} mod \hspace{1.5mm}} 3,
 \label{eq:nu_cnt}
 \end{equation}
-
 is also used to classify the two different band structures can occur. 
 
 \begin{figure}[h]
