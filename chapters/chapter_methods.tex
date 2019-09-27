@@ -92,13 +92,13 @@ The CPA-2010 utilizes a laser oscillator to generate seed pulses. This oscillato
 
 The optical parametric amplifier (OPA) used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. It produces pulses of 150 fs duration at a repetition rate of 1 KHz, just like the CPA, but with a lower average power that can be as high as \SI{200}{\milli\watt} depending on the selected wavelength of the emission. In fact, this tunable light source can generate radiation in the range of \SI{530}{\nano\meter} - \SI{20}{\micro\meter}. The OPA relies on conducting parametric generation processes to achieve this feat. 
 
-In the first step, the OPA focuses a small part of the CPA input into a barium borate (BBO) crystal to generate a white light supercontinuum (see Section \ref{section:white_light_probe}). A small spectral region of the white light, also known as the signal beam of frequency $\omega_\text{signal}$, is selected using a reflective diffraction grating and amplified in the following step. In final stage, both the amplified signal beam along with remainder of CPA pump beam travel through the BBO crystal together. Here, parametric generation occurs where an idler beam of frequency $\omega_\text{idler}$ is produced such that
+In the first step, the OPA focuses a small part of the CPA pump beam into a barium borate (BBO) crystal to generate a white light supercontinuum (see Section \ref{section:white_light_probe}). A small spectral region of the white light, also known as the signal beam of frequency $\omega_\text{signal}$, is selected using a reflective diffraction grating and amplified in the following step. In the final stage, both the amplified signal beam along with remainder of CPA pump beam travel through the BBO crystal together. Here, parametric generation occurs where an idler beam of frequency $\omega_\text{idler}$ is produced such that
 \begin{equation}
 	\omega_\text{idler} = \omega_\text{CPA} - \omega_\text{signal}.
 \end{equation}
-in a type-II phase-matching process if both beams are sufficiently intense \cite{dunn1999parametric}. Here, Type-II phase matching implies that the polarizations of the signal and idler beams are orthogonal to each other.
+in a type-II phase-matching process \cite{dunn1999parametric}. Type-II phase-matching implies that the polarizations of the signal and idler beams are orthogonal to each other.
 
-The signal and idler wavelengths can take wavelengths of 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively, depending on the alignment of the grating. An additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used to access wavelengths \SI{530}{nm} - \SI{1}{\micro \meter} via type-II phase matching as well. Alternatively, a different nonlinear crystal such as zinc selenide (ZnSe) can be placed at the output for difference frequency generation that generates a beam of frequency $\omega_\text{DFG}$ where
+The signal and idler wavelengths can take wavelengths of 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively, depending on the alignment of the grating. An additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used to access wavelengths \SI{530}{nm} - \SI{1}{\micro \meter} via type-II phase matching as well. Alternatively, a different nonlinear crystal such as zinc selenide (ZnSe) can be placed at the output for difference-frequency generation that generates a beam of frequency $\omega_\text{DFG}$ where
 \begin{equation}
 	\omega_\text{DFG} = \omega_\text{signal} - \omega_\text{idler}
 \end{equation}
@@ -109,28 +109,26 @@ The setup features a wavelength separator that seperates the fundamental of the 
 
 \subsection{White Light Continuum Probe}
 
-
 \label{section:white_light_probe}
 Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. It has been observed to occur in many different media such as water, fused silica, sapphire and calcium fluoride \cite{dubietis2017ultrafast}. This process is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}. 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{images/chapter_methods/sc_gen_dubietis}
+	\includegraphics[scale=0.4]{images/chapter_methods/sc_gen_dubietis}
 	\caption{Numerical simulation of supercontinuum generation conducted by a 100 fs pulse of wavelength 800 nm. The plot shows how the spectral broadening of the incident pulse evolves as it propagates through a sapphire crystal. The colorbar corresponds to intensity. Reproduced and modified from Ref.\ \cite{dubietis2017ultrafast}.}
 \end{figure}
-In this setup, supercontinuum generation occurs by focusing the fundamental of the signal beam (FS) into a sapphire crystal with a thickness of 5 mm. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
+In this setup, supercontinuum generation occurs by focusing (focal length of 6 inches) the fundamental of the signal beam (FS) into a sapphire crystal with a thickness of 5 mm. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
 
-Finally, an iris is placed in path of FS such that its aperture is positioned at the center of the FS beam. This iris is used to crop the outer portion of the FS, thereby reducing its the beam diameter. Doing this has been observed to have the effect of minimizing the temporal fluctuations of the generated white light spectrum. 
+Finally, an iris is placed in path of FS such that its aperture is positioned at the center of the FS beam. This iris is used to crop the outer portion of the FS, thereby reducing its the beam diameter. Doing this has been observed to have the effect of minimizing the temporal fluctuations of the generated white light spectrum. The main strategy for optimizing the stability of the white-light generation is to monitor the white-light spectrum using a spectrometer (Section \ref{section:spectrometer}) whilst adjusting, through trial and error, the distance of the sapphire crystal to the focusing lens as well as the aperture of the iris used to crop the FS. 
 
 \subsection{Motorized Delay Stage and Optical Shutter}
 
-The setup includes a motorized delay stage and an optical shutter that are used to control the pump conditions in each measurement.
-
-The delay stage consists of a pair retro-reflecting mirrors mounted on a motorized stage. The pump beam travels to both of these mirrors. Hence, adjusting the position of the motorized stage alters the time delay between the pump and probe pulses by either increasing or decreasing the optical path length traveled by the pump pulse. 
+The setup includes a motorized delay stage and an optical shutter that are used to control the pump conditions in each measurement. The delay stage consists of a pair retro-reflecting mirrors mounted on a motorized stage. These mirrors are aligned such that the pump beam's direction of propagation is parallel to that of the motorized stage's direction of motion. The pump beam travels to both of these mirrors. Hence, adjusting the position of the motorized stage alters the time delay between the pump and probe pulses by either increasing or decreasing the optical path length traveled by the pump pulse. 
 
 The optical shutter makes it possible block the pump beam in order to measure probe transmission through the sample under equilibrium conditions. At each time delay, the transmission of the probe beam is measured with the pump beam blocked and with the pump beam unblocked by the shutter. Conducting measurements in this manner mitigates the effect of long-term fluctuations in the laser output. 
 
 \subsection{Spectrometer}
+\label{section:spectrometer}
 The probe is collected into an optical fibre which sends the probe beam to a (\textbf{\color{red} NAME OF SPECTROMETER}) spectrometer built by Princeton Instruments.  The spectrometer uses a grating with a diffraction grating with a blaze wavelength of 800 nm and a groove density of (\textbf{\color{red} ADD GROOVE DENSITY}) per mm. The diffracted light is then imaged onto a CCD camera to measure the probe spectrum. 
 
 The camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. Finally, the camera must be cryogenically cooled to \SI{-100}{\celsius} using liquid nitrogen for an optimal signal-to-noise ratio.
@@ -139,24 +137,28 @@ The camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. F
 \subsection{Pump and Probe Spot Sizes}
 The pump and probe spot sizes are measured using a knife edge scan technique \cite{firester1977knife}. For this, a razor blade attached to a post is mounted on a motorized stage placed in the sample position. The sharp edge of the blade faces in a direction perpendicular to that of the direction of propagation of the incident beam. A power meter is placed behind the razor blade to measure the average power of the transmitted beams.
 
-As the motorized stage moves the razor blade's position laterally with respect to the beam's propagation direction, the razor blade increasingly blocks portions of the incident beam.  Measuring the transmitted power of incident beam as a function of the razor blade position yields a cumulative distribution function of the incident light's intensity.
-
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{example-image-a}
-	\caption{Example measurement of beam diameter for pump and probe. Solid lines are fits to the data using function defined in equation}
-	\label{fig:beam_diamter_measurement}
+	\includegraphics[scale=0.65]{images/chapter_methods/probe_spot_size}
+	\caption{Spot size measurement of the white light probe at the sample position. The solid line is a fit to the data using Eq.\ \ref{eq:cdf_gauss}. The fitting yields a beam diameter of 180 $\pm$ \SI{10}{\micro\meter}. }
 \end{figure}
+
+
+As the motorized stage moves the razor blade's position laterally with respect to the beam's propagation direction, the razor blade increasingly blocks portions of the incident beam.  Measuring the transmitted power of incident beam as a function of the razor blade position yields a cumulative distribution function of the incident light's intensity.
+
 
 Assuming that the beam diameter can be approximated as a Gaussian distribution, the spot size can be estimated by fitting this data with the equation 
 \begin{equation}
+	\label{eq:cdf_gauss}
 	P = P_0 + \dfrac{P_{\mathrm{max}}}{2} \left( 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right),
 \end{equation}
-which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.  
 
+which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_\text{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.  
 
-
-
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.65]{images/chapter_methods/pump_spot_size}
+	\caption{Spot size measurement of the 570 nm optical pump at the sample position. The solid line is a fit to the data using Eq.\ \ref{eq:cdf_gauss}. The fitting yields a beam diameter of 550 $\pm$ \SI{9}{\micro\meter}.}
+\end{figure}
 
 
