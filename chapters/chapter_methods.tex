@@ -105,7 +105,7 @@ The signal and idler wavelengths can take wavelengths of 1.1 - 1.5 $\mu$m  and 1
 to generate wavelengths in the range 2.7 - \SI{20}{\micro\meter}.
 \subsection{Filters}
 
-The setup features a wavelength separator that seperates the fundamental of the signal (FS) from the second harmonic of the signal (SHS). This optical device contains a set of two dichroic mirrors that reflect the SHS and transmit the FS. As a result of the second harmonic generation process, the polarization of SHS remains perpendicular to that of FS. Hence, a half-wave plate is placed in the optical path of the SHS and appropriately adjusted to make the polarizations of FS and SHS parallel to each other. In addition to this, two neutral density wheels are used to attenuate the intensity of the probe and the optical pump.
+The setup features a wavelength separator that seperates the fundamental of the signal (FS) from the second harmonic of the signal (SHS). This optical device contains a set of two dichroic mirrors that reflect the SHS and transmit the FS. As a result of the type-II second harmonic generation process used to generate the SHS, the polarization of SHS remains perpendicular to that of FS. Hence, a half-wave plate is placed in the optical path of the SHS and appropriately adjusted to make the polarizations of FS and SHS parallel to each other. In addition to this, two neutral density wheels are used to attenuate the intensity of the probe and the optical pump.
 
 \subsection{White Light Continuum Probe}
 
@@ -129,12 +129,12 @@ The optical shutter makes it possible block the pump beam in order to measure pr
 
 \subsection{Spectrometer}
 \label{section:spectrometer}
-The probe is collected into an optical fibre which sends the probe beam to a (\textbf{\color{red} NAME OF SPECTROMETER}) spectrometer built by Princeton Instruments.  The spectrometer uses a grating with a diffraction grating with a blaze wavelength of 800 nm and a groove density of (\textbf{\color{red} ADD GROOVE DENSITY}) per mm. The diffracted light is then imaged onto a CCD camera to measure the probe spectrum. 
+The probe is collected into an optical fibre which sends the probe beam to a SpectraPro 300i$^{\tiny \textregistered}$ spectrometer built by Princeton Instruments.  The spectrometer uses a grating with a diffraction grating with a blaze wavelength of 800 nm and a groove density of 150 grooves per mm. The diffracted light is then imaged onto a charge-coupled device (CCD) camera to measure the probe spectrum. 
 
-The camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. Finally, the camera must be cryogenically cooled to \SI{-100}{\celsius} using liquid nitrogen for an optimal signal-to-noise ratio.
+The camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. It must be cryogenically cooled to a temperature \SI{-100}{\celsius} using liquid nitrogen for an optimal signal-to-noise ratio.
 
 
-\subsection{Pump and Probe Spot Sizes}
+\subsection{Measurement of Pump and Probe Spot Size}
 The pump and probe spot sizes are measured using a knife edge scan technique \cite{firester1977knife}. For this, a razor blade attached to a post is mounted on a motorized stage placed in the sample position. The sharp edge of the blade faces in a direction perpendicular to that of the direction of propagation of the incident beam. A power meter is placed behind the razor blade to measure the average power of the transmitted beams.
 
 \begin{figure}[h]
@@ -150,7 +150,7 @@ As the motorized stage moves the razor blade's position laterally with respect t
 Assuming that the beam diameter can be approximated as a Gaussian distribution, the spot size can be estimated by fitting this data with the equation 
 \begin{equation}
 	\label{eq:cdf_gauss}
-	P = P_0 + \dfrac{P_{\mathrm{max}}}{2} \left( 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right),
+	P = P_0 + \dfrac{P_{\mathrm{max}}}{2} \left\{ 1 - \mathrm{erf} \left( \dfrac{\sqrt{2}(x - x_0)}{w} \right) \right\},
 \end{equation}
 
 which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_\text{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.  
