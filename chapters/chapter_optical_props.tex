@@ -63,8 +63,6 @@ where $\alpha(\vec{k}) = (1 + e^{-i \vec{k}\cdot \vec{a_1}} + e^{-i \vec{k}\cdot
 %
 Figure \ref{fig:graphene_band} presents a plot of Eq. \ref{eq:graphene_band} as compared with a band structure calculation using ab-initio methods. Despite the disagreement between both approaches, they both predict a linear dispersion in the region near the $K$ position in momentum space \cite{charlier2007electronic}. This region of the band structure is commonly referred to as the Dirac cone	\cite{charlier2007electronic}. Moreover, both models identify graphene as a semimetal since the valence and conduction bands intersect at $K$ \cite{charlier2007electronic}. Without the presence of any dopants, the Fermi level remains exactly at the position where the two bands cross at K and the Fermi surface becomes an infinitesimal point. In conjunction with the band structure of graphene, the zone-folding approximation yields the band structure of CNTs. 
 
-
-
 \subsection{Chiralities of Semiconducting and Metallic Nanotubes}
 
 The zone-folding method asserts that the periodic boundary conditions along the circumferential direction of CNTs dictate the quantization of the allowed $\vec{k}$ vectors in the electronic band structure \cite{charlier2007electronic}. This condition applied to the electron wavefunction $\Psi(\vec{r})$ is expressed as 
@@ -72,7 +70,21 @@ The zone-folding method asserts that the periodic boundary conditions along the 
 \Psi_{\vec{k}}(\vec{r} + \vec{C_\text{h}}) = e^{i \vec{k} \cdot \vec{C_\text{h}}} \Psi_{\vec{k}}(\vec{r}) = \Psi_{\vec{k}}(\vec{r}),
 \label{eq:boundary_cond}
 \end{equation}
-where $\vec{r}$ and $\vec{k}$ respectively define vectors in real and reciprocal space on the surface of the CNT \cite{charlier2007electronic}. Furthermore, $\vec{C_\text{h}}$ represents the chiral vector defined in Eq. \ref{eq:chiral_vec}. Equation \ref{eq:boundary_cond} reveals that the symmetry of the CNT given by the chirality $\vec{C_\text{h}} \equiv (n,m)$ determines the band structure. In addition, the variable $\nu$ defined as
+where $\vec{r}$ and $\vec{k}$ respectively define vectors in real and reciprocal space on the surface of the CNT \cite{charlier2007electronic}. Furthermore, $\vec{C_\text{h}}$ represents the chiral vector defined in Eq. \ref{eq:chiral_vec}. This condition gives the quantization of $\vec{k}$ which can be written as 
+\begin{equation}
+	\vec{k} \cdot \vec{C}_h = 2\pi n
+	\label{eq:quantization_cond}
+\end{equation} 
+where n is an integer. Equation \ref{eq:quantization_cond} reveals that the symmetry of the CNT given by the chirality $\vec{C_\text{h}} \equiv (n,m)$ determines the band structure. Figure \ref{fig:k_quant} illustrates this. Depending on the chirality of the nanotube, the Dirac cone located at the K point may or may not be included the nanotube's bandstructure. This may determine whether or not the nanotube has a finite band gap energy. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{images/chapter_optical_props/metal_semi_amori}
+	\caption{The image shows the first Brillouin zone of graphene (white hexagon). The Dirac cone sites at the K point. Allowed values of $\vec{k}$ according to the quantization condition defined in Eq.\ \ref{eq:quantization_cond} are drawn over the Brillouin zone as thick, black, vertical lines. For metallic nanotubes, the electronic states located at the Dirac cone are allowed. Whereas, the band structures of semiconducting nanotubes do not include a Dirc cone. Reproduced from Ref.\ \cite{amori2018excitons}.}
+	\label{fig:k_quant}
+\end{figure}
+
+In addition, the variable $\nu$ defined as
 %
 \begin{equation}
 \label{eq:nu_cnt}
@@ -118,11 +130,11 @@ When $\nu= \pm 1$, the band structure corresponds to that of a medium-gap semico
 
 
 \subsection{Optical Selection Rules}
-
+\label{section:selection_rules}
 {\color{red} Explain where these come from}
 Selection rules dictate the optical transitions that can occur. Such optical processes depend upon the conservation of both energy and angular momentum \cite{weismanKonoBook}. The notation E$_{ij}$ denotes an inter-band transition between the valence sub-band $i$ and the conduction sub-band $j$ \cite{weismanKonoBook}. In addition, $\Delta n \equiv i - j$ defines the difference between the band indices $i$ and $j$.  Incident light polarized parallel to carbon nanotube axial direction excites transitions where $\Delta n = 0$ \cite{weismanKonoBook}. This includes transitions such as $E_{11}$, $E_{22}$ and $E_{33}$. Whereas, incident light polarized perpendicular to the nanotube axial direction can only excite optical transitions where $\Delta n = \pm 1$ such as $E_{12}$ \cite{weismanKonoBook}. 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\begin{subfigure}{\textwidth}
 		\centering

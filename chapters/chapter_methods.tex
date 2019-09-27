@@ -42,11 +42,11 @@ Unfortunately, not all nanotube bundles can be broken up by sonication. Therefor
 %Include figure of absorption spectrum
 \subsection{Optical Spectrum of (6,5)-enriched Sample}
 
-Measuring the absorbance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, absorbance $A$ is defined as 
+Measuring the absorbance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, attenuance $A$ is defined as 
 \begin{equation}
 A = \log_{10}\left(\dfrac{I_{\mathrm{ref}}}{I_{\mathrm{sample}}}\right),
 \end{equation}
-where $I_{\mathrm{ref}}$ and $I_{\mathrm{sample}}$ represent the optical transmission through a reference sample and the nanotube sample respectively. The reference sample only contains water and a 4\% concentration of DOC and is also stored in a cuvette with an optical path length of 1 mm. 
+where $I_{\mathrm{ref}}$ and $I_{\mathrm{sample}}$ represent the optical transmission through a reference sample and the nanotube sample respectively. In literature, this is also commonly referred to as absorbance. However, the key difference between the terms attenuance and absorbance is that attenuance accounts for losses due to both reflection and scattering whereas absorbance does not \cite{dixon1992absorbance}. The reference sample only contains water and a 4\% concentration of DOC and is also stored in a cuvette with an optical path length of 1 mm. 
 
 Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5) sample measured using the white-light supercontinuum source described in Section \ref{section:white_light_probe}. The spectrum exhibits a number of optical transitions including the $E_{11}$, phonon sideband, $E_{12}$, and $E_{22}$ resonances at photon energies of 1.26, 1.45, 1.9, and 2.17 eV respectively. Furthermore, other small peaks in the sample at 1.35 and 1.41 eV emerge from exciton resonances of (9,1) and (6,4) nanotubes respectively.
 
@@ -89,6 +89,7 @@ The CPA-2010 utilizes a laser oscillator to generate seed pulses. This oscillato
 {\color{red} UNFINISHED} The amplifier system uses a Ti:sapphire crystal as its gain medium that is optically pumped by the frequency-doubled output of a Nd:YAG laser cavity. A Pockels cell driver ensures that pump pulse from Nd:YAG cavity and seed pulse from fiber oscillator arrive at Ti:sapphire crystal at the same time and dictates when the amplified seed pulse exits the laser cavity. In total, the amplified seed pulse undergoes  After amplification, the amplified seed pulse passes through transmissive gratings of the pulse compressor and is compressed to a duration of 150 fs. 
 
 \subsection{Optical Parametric Amplifier}
+\label{section:opa}
 
 The optical parametric amplifier (OPA) used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. It produces pulses of 150 fs duration at a repetition rate of 1 KHz, just like the CPA, but with a lower average power that can be as high as \SI{200}{\milli\watt} depending on the selected wavelength of the emission. In fact, this tunable light source can generate radiation in the range of \SI{530}{\nano\meter} - \SI{20}{\micro\meter}. The OPA relies on conducting parametric generation processes to achieve this feat. 
 
