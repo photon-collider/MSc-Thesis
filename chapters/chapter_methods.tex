@@ -73,9 +73,9 @@ The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, inc
 
 
 \subsection{Chirped Pulse Amplifier}
-{\color{red} UNFINISHED} The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. It operates with a repetition rate of 1 KHz and outputs pulses with a 150 fs duration, a central wavelength of 775 nm, and a pulse energy of 1 mJ. This laser generates amplified pulses using a chirped pulse amplification process illustrated in Figure \ref{fig:cpa_process}. 
+The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. It operates with a repetition rate of 1 KHz and outputs pulses with a 150 fs duration, a central wavelength of 775 nm, and a pulse energy of 1 mJ. This laser generates amplified pulses using a chirped pulse amplification process illustrated in Figure \ref{fig:cpa_process}. 
 
-Chirped pulse amplification makes it possible to amplify ultrashort pulses without incurring the risk of damaging optical components due to self-focusing effects \cite{strickland1985compression}. This is done by first stretching a relatively weak, short pulse, also known as the seed pulse, using a pair of gratings. Next, the stretched pulse enters a gain medium that amplifies the intensity of the strecthed pulse. Afterward, the pulse is recompressed by another pair of gratings before exiting the laser cavity. 
+Chirped pulse amplification makes it possible to amplify ultrashort pulses without incurring the risk of damaging optical components due to self-focusing effects \cite{strickland1985compression}. This is done by first stretching a relatively weak, short pulse, also known as the seed pulse, by inducing dispersion with a pair of gratings. Next, the stretched pulse enters a gain medium that amplifies the intensity of the stretched pulse. Without the initial stretching step, the intensity of the amplified seed pulse may exceed the damage threshold of the optical components in the laser. Afterward, the pulse is compressed by another pair of gratings before exiting the laser cavity. 
 
 \begin{figure}
 	\centering
@@ -84,23 +84,28 @@ Chirped pulse amplification makes it possible to amplify ultrashort pulses witho
 	\label{fig:cpa_process}
 \end{figure}
 
-{\color{red} UNFINISHED} The CPA-2010 utilizes a laser oscillator to generate the initial seed pulse. This oscillator features a single-mode erbium-doped fiber (SErF) which serves as the gain medium that is pumped by a solid-state fiber-coupled laser operating at 980 nm. In addition, the oscillator generates pulses with a central wavelength of 775 nm at a repetition rate of 30 MHz. 
+The CPA-2010 utilizes a laser oscillator to generate seed pulses. This oscillator features a single-mode erbium-doped fiber (SErF) which serves as the gain medium that is pumped by a solid-state fiber-coupled laser operating at 980 nm. In addition, the oscillator generates pulses with a central wavelength of 775 nm at a repetition rate of 30 MHz. Finally, the seed pulse is stretched in time by a transmissive grating before entering the regenerative amplifier for the amplification step. 
 
-{\color{red} UNFINISHED} The CPA-2010 amplifier system uses a Ti:sapphire crystal as its gain medium. The crystal itself is also pumped by a frequency-doubled Nd:YAG pump laser. The Nd:YAG laser cavity has a Nd-doped YAG rod as gain medium, pumped by a lamp, that generates 1064 nm pulses at a reptition rate of 1 KHz.  It uses a potassium titanyl phosphate (KTP) crystal to frequency double the output to 532 nm. 
-
-A Pockels cell driver ensures that pump pulse from Nd:YAG rod and seed pulse from fiber oscillator arrive at Ti:sapphire crystal at the same time and dictates when the amplified seed pulse exits the laser cavity. After amplification, amplified seed pulse passes through transmission gratings and is compressed to a duration of 150 fs. 
+{\color{red} UNFINISHED} The amplifier system uses a Ti:sapphire crystal as its gain medium that is optically pumped by the frequency-doubled output of a Nd:YAG laser cavity. A Pockels cell driver ensures that pump pulse from Nd:YAG cavity and seed pulse from fiber oscillator arrive at Ti:sapphire crystal at the same time and dictates when the amplified seed pulse exits the laser cavity. In total, the amplified seed pulse undergoes  After amplification, the amplified seed pulse passes through transmissive gratings of the pulse compressor and is compressed to a duration of 150 fs. 
 
 \subsection{Optical Parametric Amplifier}
 
-The OPA used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. Input pump beam is split into three parts: first part generates signal and idler beams, second part preamplifies signal and idler, final part amplifies even further. Works in five stages. First three stages: generates white light using superfluorescence in a BBO crystal. Wavelength tuning done by adjusting angle of incidence between incident light and BBO crystal. White light is amplified, hits reflective grating, 
+The optical parametric amplifier (OPA) used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. It produces pulses of 150 fs duration at a repetition rate of 1 KHz, just like the CPA, but with a lower average power that can be as high as \SI{200}{\milli\watt} depending on the selected wavelength of the emission. In fact, this tunable light source can generate radiation in the range of \SI{530}{\nano\meter} - \SI{20}{\micro\meter}. The OPA relies on conducting parametric generation processes to achieve this feat. 
 
-It emits signal and idler beams via a superfluoresence in a barium borate (BBO) crystal which are then amplified in four subsequent stages. The signal and idler wavelengths span 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively. Furthermore, an additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used an optical pump.
+In the first step, the OPA focuses a small part of the CPA input into a barium borate (BBO) crystal to generate a white light supercontinuum (see Section \ref{section:white_light_probe}). A small spectral region of the white light, also known as the signal beam of frequency $\omega_\text{signal}$, is selected using a reflective diffraction grating and amplified in the following step. In final stage, both the amplified signal beam along with remainder of CPA pump beam travel through the BBO crystal together. Here, parametric generation occurs where an idler beam of frequency $\omega_\text{idler}$ is produced such that
+\begin{equation}
+	\omega_\text{idler} = \omega_\text{CPA} - \omega_\text{signal}.
+\end{equation}
+in a type-II phase-matching process if both beams are sufficiently intense \cite{dunn1999parametric}. Here, Type-II phase matching implies that the polarizations of the signal and idler beams are orthogonal to each other.
 
+The signal and idler wavelengths can take wavelengths of 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively, depending on the alignment of the grating. An additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used to access wavelengths \SI{530}{nm} - \SI{1}{\micro \meter} via type-II phase matching as well. Alternatively, a different nonlinear crystal such as zinc selenide (ZnSe) can be placed at the output for difference frequency generation that generates a beam of frequency $\omega_\text{DFG}$ where
+\begin{equation}
+	\omega_\text{DFG} = \omega_\text{signal} - \omega_\text{idler}
+\end{equation}
+to generate wavelengths in the range 2.7 - \SI{20}{\micro\meter}.
 \subsection{Filters}
 
-The setup features a wavelength separator that seperates the fundamental of the signal (FS) from the second harmonic of the signal (SHS). This optical device contains a set of two dichroic mirrors that reflect the SHS and transmit the FS. As a result of the second harmonic generation process, the polarization of SHS remains perpendicular to that of FS. Hence, a half-wave plate is placed in the optical path of the SHS and appropriately adjusted to make the polarizations of FS and SHS parallel to each other. 
-
-In addition to this, two neutral density wheels are used to attenuate the intensity of the probe and the optical pump.
+The setup features a wavelength separator that seperates the fundamental of the signal (FS) from the second harmonic of the signal (SHS). This optical device contains a set of two dichroic mirrors that reflect the SHS and transmit the FS. As a result of the second harmonic generation process, the polarization of SHS remains perpendicular to that of FS. Hence, a half-wave plate is placed in the optical path of the SHS and appropriately adjusted to make the polarizations of FS and SHS parallel to each other. In addition to this, two neutral density wheels are used to attenuate the intensity of the probe and the optical pump.
 
 \subsection{White Light Continuum Probe}
 
@@ -108,6 +113,11 @@ In addition to this, two neutral density wheels are used to attenuate the intens
 \label{section:white_light_probe}
 Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. It has been observed to occur in many different media such as water, fused silica, sapphire and calcium fluoride \cite{dubietis2017ultrafast}. This process is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}. 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/chapter_methods/sc_gen_dubietis}
+	\caption{Numerical simulation of supercontinuum generation conducted by a 100 fs pulse of wavelength 800 nm. The plot shows how the spectral broadening of the incident pulse evolves as it propagates through a sapphire crystal. The colorbar corresponds to intensity. Reproduced and modified from Ref.\ \cite{dubietis2017ultrafast}.}
+\end{figure}
 In this setup, supercontinuum generation occurs by focusing the fundamental of the signal beam (FS) into a sapphire crystal with a thickness of 5 mm. Here, the center of the sapphire crystal is placed at a distance of one focal length of the lens used to focus the FS. This process generates a white-light continuum that spans 1 - 2.4 eV. 
 
 Finally, an iris is placed in path of FS such that its aperture is positioned at the center of the FS beam. This iris is used to crop the outer portion of the FS, thereby reducing its the beam diameter. Doing this has been observed to have the effect of minimizing the temporal fluctuations of the generated white light spectrum. 
