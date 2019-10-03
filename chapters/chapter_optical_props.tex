@@ -61,7 +61,19 @@ where $\alpha(\vec{k}) = (1 + e^{-i \vec{k}\cdot \vec{a_1}} + e^{-i \vec{k}\cdot
 	\label{fig:graphene_band}
 \end{figure}
 %
-Figure \ref{fig:graphene_band} presents a plot of Eq. \ref{eq:graphene_band} as compared with a band structure calculation using ab-initio methods. Despite the disagreement between both approaches, they both predict a linear dispersion in the region near the $K$ position in momentum space \cite{charlier2007electronic}. This region of the band structure is commonly referred to as the Dirac cone	\cite{charlier2007electronic}. Moreover, both models identify graphene as a semimetal since the valence and conduction bands intersect at $K$ \cite{charlier2007electronic}. Without the presence of any dopants, the Fermi level remains exactly at the position where the two bands cross at K and the Fermi surface becomes an infinitesimal point. In conjunction with the band structure of graphene, the zone-folding approximation yields the band structure of CNTs.
+Figure \ref{fig:graphene_band} presents a plot of Eq. \ref{eq:graphene_band} as compared with a band structure calculation using ab-initio methods. Despite the disagreement between both approaches, they both predict a linear dispersion in the region near the $K$ position in momentum space \cite{charlier2007electronic}. This region of the band structure is commonly referred to as the Dirac cone	as shown in Figure \ref{fig:dirac_cone} \cite{charlier2007electronic}. In this region , the energy dispersion approximately becomes
+\begin{equation}
+	\displaystyle E^{\pm}(\vec{q}) \approx \pm v_\text{F}|\vec{q}|
+\end{equation}
+where $\vec{q}$ is the momentum vector measured with respect to the K point. Furthermore the variable $v_\text{F}$ is the Fermi velocity defined as $v_\text{F} = 3 \gamma_0 a_\text{C-C}/2 \approx 10^6$ m/s. Moreover, both models identify graphene as a semi-metal since the valence and conduction bands intersect at the $K$ point \cite{charlier2007electronic}. Without the presence of any dopants, the Fermi level remains exactly at the position where the two bands cross at the $K$ point and the Fermi surface becomes an infinitesimal point. In conjunction with the band structure of graphene, the zone-folding approximation yields the band structure of CNTs.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{images/chapter_optical_props/dirac_cone}
+	\caption{Electronic band structure of graphene with energy in units of $\gamma_0$. Close to the $K$ point, the dispersion becomes approximately linear in a region known as the Dirac cone. Reproduced from Ref.\ \cite{neto2009electronic}.}
+	\label{fig:dirac_cone}
+\end{figure}
+
 
 \subsection{Chiralities of Semiconducting and Metallic Nanotubes}
 
@@ -161,7 +173,7 @@ The notation E$_{ij}$ denotes an inter-band transition between the valence sub-b
 
 \section{Excitons in SWCNTs}
 
-\subsection{The Supression of Optical Transitions Involving the Free-Electron Continuum}
+\subsection{Supression of Optical Transitions Involving the Free-Electron Continuum}
 The simple tight-binding picture presented earlier ignores the effects of electron-electron interactions and thereby does not fully account for the effects of quantum confinement \cite{weismanKonoBook}. Indeed, the inclusion of electron-electron interactions into this picture yields a new electronic structure in which free electrons play a minimal role.
 
 Strong electron-electron interactions influence the binding energies of quasi-particles known as excitons that form after the creation of an electron-hole pair \cite{koch2006semiconductor}. Excitons represent hydrogen-like quasi-particles composed of a negatively-charged electron bound to a positively-charged hole \cite{koch2006semiconductor}. In an ideal 1-D material, theory predicts that excitons will have an infinite binding energy \cite{ando2005theory}. This alone foreshadows the dominance of excitons in the optical properties of carbon nanotubes \cite{ando2005theory}.
@@ -195,16 +207,31 @@ Figure \ref{fig:ando_suppression} shows the calculated optical absorption spectr
 
 In essence, the exciton binding energy characterizes the strength of the Coulomb interaction between an electron as well as its corresponding hole \cite{valkunas2006exciton}. On one hand, if the exciton binding energy is smaller than the thermal energy $k_b T$, then this Coulomb interaction becomes negligible \cite{valkunas2006exciton}. This causes electrons and holes to behave independently of each other. On the other hand, if the binding energy is much higher than the thermal energy, then electrons and holes tend to form stable, charge-neutral excitons \cite{valkunas2006exciton}.
 
-The binding energies of excitons in CNTs tend to be on the order of hundreds of meV \cite{wang2005optical}. For instance, the excitons of (6,5) nanotubes have a binding energy of roughly 400 meV \cite{wang2005optical}. At room temperature $k_b T \approx$ 26 meV, meaning that the energy scale associated with thermal fluctuations falls short of the exciton binding energies in CNTs. Thus, excitons of CNTs are quite stable at room temperature. Figure \ref{fig:cnt_abs_yota} illustrates this effect as the room-temperature absorbance spectrum of a (6,5) sample exhibits well-defined, excitonic resonances {\color{red} How can we tell that these are excitonic resonances? Cite Feng Wang Paper}.
+The binding energies of excitons in CNTs tend to be on the order of hundreds of meV \cite{wang2005optical}. For instance, the excitons of (6,5) nanotubes have a binding energy of roughly 400 meV \cite{wang2005optical}. At room temperature $k_b T \approx$ 26 meV, meaning that the energy scale associated with thermal fluctuations falls short of the exciton binding energies in CNTs. Thus, excitons of CNTs are quite stable at room temperature. Figure \ref{fig:cnt_abs_yota} illustrates this effect as the room-temperature absorbance spectrum of a (6,5) sample exhibits well-defined, excitonic resonances.
+
+Two-photon absorption measurements convincingly demonstrated that the optical transitions found in carbon nanotubes directly create excitons \cite{wang2005optical, maultzsch2005exciton}. Excitons possess a set of Rydberg states, analogous to the hydrogen atom, that can include even parity states such as 1s, 2s, and 3s as well as odd parity states such as 2p, 3p, and so on \cite{wang2005optical}. Here, the optical selection rules depend on the parity of the states involved.
+
+For light polarized parallel to the nanotube axial direction, one-photon absorption processes require parities of the initial and final state to be opposite of each other. In contrast, two-photon absorption processes require both the initial and final state to have the same parity. The consequence of these selection rules is that one-photon excitations access excitons whose wavefunctions have even parity ($s$-symmtery) \cite{wang2005optical}. Two-photon excitation creates excitons whose wavefunctions exhibit odd parity ($p$-symmetry) \cite{wang2005optical}.
+
+In practice, this means that one-photon absorption can access the 1$s$ exciton resonance and that two-photon absorption can access excited states above the 1$s$ exciton state as shown in Figure \ref{fig:cnt_two_photon}. Although other excited states can be accessed, these tend to have almost negligible oscillator strengths \cite{wang2005optical}. Hence, two-photon excitation can create $2p$ excitons or even free-electrons which then relax to the $1s$ exciton state before optical recombination occurs at the $1s$ exciton energy.
+
+If the tight-binding picture were correct, the optical emission would be most efficient if the two-photon excitation energy (2$\hbar \omega$) were exactly equal to the band gap energy due to the density of states associated with the van Hove singularity. The photon energy of the emission would also be equal to 2$\hbar \omega$. Figure \ref{fig:cnt_two_photon_emission} shows that optical emission instead occurs when the two-photon excitation energy is higher than photon energy of emission which supports the exciton picture in which Coulomb interactions produce strongly-correlated electron states.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{images/chapter_optical_props/cnt_two_photon}
-	\caption{Reproduced from Ref.\ \cite{wang2005optical}. }
+	\caption{ Two-photon absorption in the presence of electron continuum states (A) with and (B) without low lying exciton states within the band gap. When excitonic states are present, two-photon absorption can excite free electron-hole pairs or 2$p$ excitons which then decay to $1s$ excitons before optical recombination occurs. Without exciton states, photoluminescence occurs at the band gap energy from optical recombination of free electrons. Reproduced from Ref.\ \cite{wang2005optical}. }
 	\label{fig:cnt_two_photon}
 \end{figure}
 
-In contrast, conventional semiconductors such as GaAs only exhibit excitons with binding energies typically less than 20 meV \cite{liang1970excitons}.  As a result, these materials have to be cooled down to low temperatures in order to easily observe exciton resonances as shown in Figure \ref{fig:gaas_vs_cnt_absorbance}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_optical_props/two_photon_wang}
+	\caption{Contour plot showing emission of various SWCNTs after two-photon excitation. With increasing emission photon energy, fluorescence peaks associated with (7,5), (6,5), (8,3), and (9,1) respectively (black circles). Light emission only occurs when the two-photon exciation energy exceeds that of the emission energy. The solid line on the left-hand side shows the position where emission would occur if the tight-binding were correct. Here, the emission energy would be equal to that of the two-photon excitation energy. Reproduced from Ref.\ \cite{wang2005optical}.}
+	\label{fig:cnt_two_photon_emission}
+\end{figure}
+
+Unlike carbon nanotubes, conventional semiconductors such as GaAs only exhibit excitons with binding energies typically less than 20 meV \cite{liang1970excitons}.  As a result, these materials have to be cooled down to low temperatures in order to easily observe exciton resonances as shown in Figure \ref{fig:gaas_vs_cnt_absorbance}.
 
 \begin{figure}[h]
 	\centering
