@@ -7,25 +7,30 @@
 
 Catalytic chemical vapor deposition (CCVD) is a standard method for synthesizing carbon nanotubes (CNTs) \cite{prasek2011methods, agboola2007conceptual}. This technique depends on the decomposition of carbon sources, such as methane and acetylene, via heat or plasma irradiation to form carbon nanotubes on a substrate \cite{agboola2007conceptual}. Such reactions are typically driven by transition-metal catalysts such as nickel, iron, and cobalt \cite{prasek2011methods}.
 
-One commonly used process known as the CoMoCAT method involves catalytic reactions that include cobalt (Co) and molybdenum (Mo) as catalysts \cite{resasco2002scalable}. Here, carbon monoxide gas (CO) is used as a carbon source that decomposes in the reaction
+One commonly used process known as the CoMoCAT method involves catalytic reactions that include cobalt (Co) and molybdenum (Mo) as catalysts \cite{resasco2002scalable}. Here, carbon monoxide gas (CO$_\text{(g)}$) is used as a carbon source that decomposes in the reaction
 \vspace{-2mm}
 \begin{equation}
-\ce{CO_(g) + CO_{(g)} $\rightarrow$ CO_{2(g)} + C_{(CNT)}},
+\label{eq:cnt_synth}
+\ce{CO_{(g)} + CO_{(g)} $\rightarrow$ CO_2_{\text{(g)}} + C_{(CNT)}},
 \end{equation}
-to form carbon nanotubes \cite{resasco2002scalable}. This process is typically conducted at temperatures between 700 - \SI{900}{\celsius} and pressures ranging from 1 - 10 atm \cite{resasco2002scalable}. To date, all carbon nanotube growth methods only produce an ensemble of nanotubes with varying chiralities. As such, these ensembles are often used as precursor materials for filtration techniques capable of creating dispersions that are enriched by a single chirality \cite{ichinose2017extraction, liu2011large}.
+to form carbon nanotubes \cite{resasco2002scalable}. This process is typically conducted at temperatures between 700 - \SI{900}{\celsius} and pressures ranging from 1 - 10 atm \cite{resasco2002scalable}.
+
+Another well-known technique, commonly referred to as the HiPco method, involves the use of high-pressure carbon monoxide \cite{bronikowski2001gas, nikolaev1999gas}. This process occurs inside a furnace at temperatures as high as 900 - \SI{1100}{\celsius} and at high pressures between 30 - 50 atm. Synthesis occurs by flowing carbon monoxide gas along with iron pentacarbonyl (Fe(CO)$_5$) into the furnace \cite{nikolaev1999gas}. The Fe(CO$_5$) molecules decompose to form gas-phase iron clusters upon which the chemical reaction defined in Eq.\ \eqref{eq:cnt_synth} occurs. To date, all carbon nanotube growth methods only produce an ensemble of nanotubes with varying chiralities \cite{agboola2007conceptual}. As such, these ensembles are often used as precursor materials for filtration techniques capable of creating dispersions that are enriched by a single chirality \cite{ichinose2017extraction, liu2011large}.
 
 \subsection{Dispersion of SWCNTs}
-We created a (6,5)-enriched dispersion sample by starting with CoMoCAT SWCNTs obtained from Sigma-Aldrich (Manufacturer Number: Signis$^{\tiny{\textregistered}}$ SG65i). This initial product consists of a powder of SWCNTs with an average diameter of 0.78 nm and a median length of \SI{1}{\micro \meter}. Approximately 95\% of the SWCNTs are semiconducting with 41\% of them being (6,5) SWCNTs . In this powdered form, SWCNTs have a tendency to form ropes and bundles due to strong van der Waals interactions as high as \SI{500}{\electronvolt / \micro \meter} between nanotubes \cite{vaisman2006role}.
+\label{section:dispersion_swcnt}
+We created a (6,5)-enriched dispersion sample by starting with CoMoCAT SWCNTs obtained from Sigma-Aldrich (Manufacturer Number: Signis$^{\tiny{\textregistered}}$ SG65i). This initial product consists of a powder of SWCNTs with an average diameter of 0.78 nm and a median length of \SI{1}{\micro \meter}. Approximately 95\% of the SWCNTs are semiconducting with 41\% of them being (6,5) SWCNTs . In this powdered form shown in Figure \ref{fig:cnt_powder}, SWCNTs have a tendency to form ropes and bundles due to strong van der Waals interactions as high as \SI{500}{\electronvolt / \micro \meter} between nanotubes \cite{vaisman2006role}. Such interactions between nanotubes can have the effect of broadening optical resonances, making it harder to distinguish between chirality-dependent features \cite{ostojic2004interband}.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{images/chapter_methods/sem_cnt_powder_bandy}
 	\caption{(a) Scanning electron microscope image of nanotube powder. The scale bar corresponds to 200 nm. The arrow indicates a single rope emerging out of the nanotube bundle. Reproduced from Ref.\ \cite{bandyopadhyaya2002stabilization}.}
+	\label{fig:cnt_powder}
 \end{figure}
 
-%Objective is to create a (6,5)-enriched sample. Variety of chiralities leads to several peaks in optical spectrum. We want to be able to create enriched sample by %removing chiralities that are not of interest. Hard to do this when carbon nanotubes of various chiralties bundle together. Cannot do any filtration methods to %selectively remove certain chiralities. Hence, we disperse the CoMoCAT SWCNTS in an aqueous solution to as a first step towards creating a (6,5)-enriched sample.
+First, we disperse CoMoCAT SWCNTs in an aqueous solution containing surfactants by using sonication followed by ultracentrifugation \cite{ichinose2017extraction}. Sonication uses mechanical vibrations to break up the van der Waals interactions that hold nanotube bundles together \cite{tkalya2012use}. Furthermore, the presence of surfactant molecules has the effect of mitigating inter-tube interactions to stabilize the suspension by preventing the formation of nanotube bundles \cite{vaisman2006role}.
 
-First, we disperse CoMoCAT SWCNTs in an aqueous solution containing surfactants by using sonication followed by ultracentrifugation \cite{ichinose2017extraction}. Sonication uses mechanical vibrations to break up the van der Waals interactions occuring in nanotube bundles \cite{tkalya2012use}. Furthermore, the presence of surfactants, such as sodium dodecyl sulfate (SDS), has the effect of mitigating inter-tube interactions to stabilize the suspension by preventing the formation of nanotube bundles \cite{vaisman2006role}. In the aqeuous dispersion, SDS molecules become adsorbed on the outer surface of the nanotubes as shown in Figure \ref{fig:sds_molecule}. Here, the hydrophobic part of SDS becomes adsorbed onto the nanotube surface while the hydrophilic part points towards the aqueous phase and aids with the dissolution of the nanotube \cite{richard2003supramolecular}. This forms a distribution of negative charge on nanotube surfaces due to the negatively-charged hydrophilic region that, via Coulomb interactions, prevents nanotubes from sustaining physical contact \cite{richard2003supramolecular}.
+Sodium dodecyl sulfate (SDS) represents an exemplary surfactant commonly used to prepare dispersions of carbon nanotubes. In the aqeuous dispersion, SDS molecules become adsorbed on the outer surface of the nanotubes as shown in Figure \ref{fig:sds_molecule}. Here, the hydrophobic part of SDS becomes adsorbed onto the nanotube surface while the hydrophilic part points towards the aqueous phase and aids with the dissolution of the nanotube \cite{richard2003supramolecular}. This forms a distribution of negative charge on nanotube surfaces due to the negatively-charged hydrophilic region that, via Coulomb interactions, prevents nanotubes from sustaining physical contact \cite{richard2003supramolecular}.
 
 \begin{figure}[h]
 \centering
@@ -36,25 +41,35 @@ First, we disperse CoMoCAT SWCNTs in an aqueous solution containing surfactants 
 
 Unfortunately, not all nanotube bundles can be broken up by sonication. Therefore, ultracentrifugation is used to separate dispersed nanotubes from the remaining bundles. This yields a mixture composed of nanotubes floating in the aqeuous solution above a sediment of nanotube bundles. We then extract the aqeuous solution containing the dispersed nanotubes, also known as the supernatant, and perform gel chromatography on this product to obtain a (6,5)-enriched sample.
 
-{\color{red} UNFINISHED} Gel chromatography works by separating CNTs according to their relative diameters \cite{ichinose2017extraction}. which include sodium dodecyl sulfate (SDS) and sodium cholate (SC) with concentrations of 0.5\% each, using sonication followed by ultracentrifugation. CNTs dispersed in aqueous solutin placed in a column containing hydrogel beads at the bottom. Adjusting pH of aqueous solution affects adsorption of nanotubes onto the beads. At starting pH, metallic nanotubes come out first. Then as pH is lowered, can now elute semiconducting SWCNTs followed by smaller diamter SWCNTs. Exploit this effect to filter out unwanted chiralities.
+\section{SWCNT Chirality Separation}
+Gel chromatography works by separating nanotubes according to their relative diameters \cite{ichinose2017extraction}. First, the CoMoCAT SWCNTs are dispersed in an aqeuous solution containing the surfactants sodium dodecyl sulfate (SDS) and sodium cholate (SC) with concentrations of 0.5\% each. This dispersion is then placed in a column containing hydrogel beads at the bottom.
 
-{\color{red} UNFINISHED} In the end, remove SDS and SC in solution and redisperse CNTs using sodium deoxycholate (DOC). As an aside, these samples are often used to make nanotube films and it has been observed that DOC can yield nanotube films with better alignment. Final sample consists of (6,5)-enriched SWCNTs dispersed in aqueous soltuion containing 4\% concentration of DOC. Finally, the sample is pipetted into a quartz cuvette with an optical path length of 1 mm.
+Depending on the pH of the aqueous solution, some SWCNTs become more readily adsorbed onto the hydrogels, making it easy to filter out those that are not adsorbed \cite{ichinose2017extraction}. Here, the pH of the solution is controlled via carbon dioxide bubbling \cite{ichinose2017extraction}. As shown in Figure \ref{fig:elute_ph}, nanotubes such as (8,6) and (11,1) can be removed (eluted) when the pH is set to 8.1 \cite{ichinose2017extraction}. By progressively reducing the pH in increments of 0.1, other unwanted chiralities such as (7,6) can now be eluted until only (6,5) nanotubes remain \cite{ichinose2017extraction}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics{images/chapter_methods/elute_ph}
+	\caption{The plot shows the relationship between the diameters of carbon nanotubes present in the aqeuous solution and the pH required to elute them from the aqueous solution. At a pH set to $8.0$, nanotubes such as (7,5) and (11,1) can be eluted from the mixture whilst (6,5) nanotubes will remain in the solution.  Reproduced from Ref.\ \cite{ichinose2017extraction}.}
+	\label{fig:elute_ph}
+\end{figure}
+
+In the final steps, the (6,5)-enriched dispersion is dispersed using sodium deoxycholate (DOC) after removing the SDS and SC from solution. \footnote{As an aside, these samples are often used to make nanotube films. It has been observed that using DOC instead of SC and SDS can yield nanotube films with better alignment. However, at the time of writing, the alignment mechanism has still not been very well understood.} This is accomplished by filtering out SDS and SC using a filter membrane (Amicon$^{\tiny\textregistered}$ Ultra-15 Centrifugal Filter Unit). Afterward, the remaining nanotubes are redispersed using DOC via sonication followed by ultracentrifugation as described in Section \ref{section:dispersion_swcnt}. Now, the sample consists of (6,5)-enriched SWCNTs dispersed in aqueous soltuion containing 4\% concentration of DOC. This mixture is finally pipetted into a quartz cuvette with an optical path length of 1 mm.
 
 %Include figure of absorption spectrum
 \subsection{Optical Spectrum of (6,5)-enriched Sample}
 
-Measuring the absorbance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, attenuance $A$ is defined as
+Measuring the attenuance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, attenuance $A$ is defined as
 \begin{equation}
 A = \log_{10}\left(\dfrac{I_{\mathrm{ref}}}{I_{\mathrm{sample}}}\right),
 \end{equation}
 where $I_{\mathrm{ref}}$ and $I_{\mathrm{sample}}$ represent the optical transmission through a reference sample and the nanotube sample respectively. In literature, this is also commonly referred to as absorbance. However, the key difference between the terms attenuance and absorbance is that attenuance accounts for losses due to both reflection and scattering whereas absorbance does not \cite{dixon1992absorbance}. The reference sample only contains water and a 4\% concentration of DOC and is also stored in a cuvette with an optical path length of 1 mm.
 
-Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5) sample measured using the white-light supercontinuum source described in Section \ref{section:white_light_probe}. The spectrum exhibits a number of optical transitions including the $E_{11}$, phonon sideband, $E_{12}$, and $E_{22}$ resonances at photon energies of 1.26, 1.45, 1.9, and 2.17 eV respectively. Furthermore, other small peaks in the sample at 1.35 and 1.41 eV emerge from exciton resonances of (9,1) and (6,4) nanotubes respectively.
+Figure \ref{fig:sample_absorbance} presents the attenuance spectrum of the (6,5) sample measured using the white-light supercontinuum source described in Section \ref{section:white_light_probe}. The spectrum exhibits a number of optical transitions including the $E_{11}$, phonon sideband, $E_{12}$, and $E_{22}$ resonances at photon energies of 1.26, 1.45, 1.9, and 2.17 eV respectively. Furthermore, other small peaks in the sample at 1.35 and 1.41 eV emerge from exciton resonances of (9,1) and (6,4) nanotubes respectively.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{images/chapter_methods/sample_absorbance}
-	\caption{ Absorbance spectrum of (6,5) sample.}
+	\includegraphics[scale=0.7]{example-image-a}
+	\caption{ Attenuance spectrum of (6,5) sample measured using the white light source described in Section \ref{section:white_light_probe}. Optical transitions including the $E_{11}$, $E_{11} $ phonon sideband, $E_{12}$, and $E_{22}$ occur at 1.26, 1.45, 1.9 and 2.17 eV respectively. Other peaks at 1.35 and 1.41 eV appear due to a small presence of (9,1) and (6,4) nanotubes in the dispersion.}
 	\label{fig:sample_absorbance}
 \end{figure}
 
@@ -62,13 +77,13 @@ Figure \ref{fig:sample_absorbance} presents the absorbance spectrum of the (6,5)
 
 %include figure of setup
 \subsection{Overview}
-The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, incorporates the use of an intense optical pump pulse followed by a broadband probe pulse to characterize the ultrafast carrier dynamics of carbon nanotubes. The pump and probe beams are focused onto surface of the sample in a non-collinear geometry. Finally, the transmission spectrum of the probe is resolved using a spectrometer to resolve the non-equilibrium optical properties of the sample.
+The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, incorporates the use of an intense optical pump pulse followed by a broadband probe pulse to characterize the ultrafast carrier dynamics of carbon nanotubes. The pump and probe beams are focused onto surface of the sample in a non-collinear geometry. Here, the probe beam transmits through the sample at normal incidence. Whereas, the pump beam propagates through the sample at an offset angle of \SI{40}{\degree}. Finally, the transmission spectrum of the probe is resolved using a spectrometer to resolve the non-equilibrium optical properties of the sample.
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.7]{example-image-a}
-	\caption{{ \color{red} UNFINISHED} Schematic Diagram of the Experimental Apparatus. Ti:sapphire femtosecond laser acts as pump laser for the optical parametric amplifier (OPA). OPA generates signal and idler beams.  }
+	\caption{Schematic Diagram of the Experimental Apparatus. The setup is powered by a Ti:sapphire femtosecond laser (Clark-MXR CPA-2010) that generates 150 fs, 775 nm pulses at a repetition rate of 1 KHz and an average power of 1 W. The total laser output is delivered to an optical parametric amplifier (TOPAS-800). The OPA generates a signal (1.1 - \SI{1.5}{\micro\meter}) and idler beams (1.5 - \SI{2.7}{\micro\meter}) using a type-II parametric generation process.  A BBO crystal is mounted at the output of the OPA to generate the second-harmonic of the signal in a type-II process. A wavelength separator containing a set of dichroic mirrors separates the second-harmonic of the signal, used as the optical pump, from the fundamental of the signal used to generate the white light supercontinuum probe.}
 	\label{fig:setup_schematic}
 \end{figure}
 
@@ -76,18 +91,20 @@ The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, inc
 \subsection{Chirped Pulse Amplifier}
 The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of this optical setup. It operates with a repetition rate of 1 KHz and outputs pulses with a 150 fs duration, a central wavelength of 775 nm, and a pulse energy of 1 mJ. This laser generates amplified pulses using a chirped pulse amplification process illustrated in Figure \ref{fig:cpa_process}.
 
-Chirped pulse amplification makes it possible to amplify ultrashort pulses without incurring the risk of damaging optical components due to self-focusing effects \cite{strickland1985compression}. This is done by first stretching a relatively weak, short pulse, also known as the seed pulse, by inducing dispersion with a pair of gratings. Next, the stretched pulse enters a gain medium that amplifies the intensity of the stretched pulse. Without the initial stretching step, the intensity of the amplified seed pulse may exceed the damage threshold of the optical components in the laser. Afterward, the pulse is compressed by another pair of gratings before exiting the laser cavity.
+Chirped pulse amplification makes it possible to amplify ultrashort pulses without incurring the risk of damaging optical components due to self-focusing effects \cite{strickland1985compression}. This is done by first stretching a relatively weak, short pulse, also known as the seed pulse, by inducing dispersion with a pair of gratings. Next, the stretched pulse enters a gain medium that amplifies the intensity of the stretched pulse. Without the initial stretching step, the intensity of the amplified seed pulse may exceed the damage threshold of the optical components in the laser such as the gain medium. Afterward, the pulse is compressed by another pair of gratings before exiting the laser cavity.
 
-\begin{figure}
+\begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.35]{images/chapter_methods/cpa_process_service}
+	\includegraphics[scale=0.31]{images/chapter_methods/cpa_process_service}
 	\caption{Schematic diagram of the chirped pulse amplification process. A short pulse is initially stretched by a pair of gratings, amplified by the system, and then recompressed to yield an amplified short pulse. Reproduced from Ref.\ \cite{service154}.}
 	\label{fig:cpa_process}
 \end{figure}
 
 The CPA-2010 utilizes a laser oscillator to generate seed pulses. This oscillator features a single-mode erbium-doped fiber (SErF) which serves as the gain medium that is pumped by a solid-state fiber-coupled laser operating at 980 nm. In addition, the oscillator generates pulses with a central wavelength of 775 nm at a repetition rate of 30 MHz. Finally, the seed pulse is stretched in time by a transmissive grating before entering the regenerative amplifier for the amplification step.
 
-{\color{red} UNFINISHED} The amplifier system uses a Ti:sapphire crystal as its gain medium that is optically pumped by the frequency-doubled output of a Nd:YAG laser cavity. A Pockels cell driver ensures that pump pulse from Nd:YAG cavity and seed pulse from fiber oscillator arrive at Ti:sapphire crystal at the same time and dictates when the amplified seed pulse exits the laser cavity. In total, the amplified seed pulse undergoes  After amplification, the amplified seed pulse passes through transmissive gratings of the pulse compressor and is compressed to a duration of 150 fs.
+The regenerative amplifier system uses a Ti:sapphire crystal as its gain medium that is optically pumped by the frequency-doubled output of a Nd:YAG (neodymium-doped yttrium aluminum garnet; Nd:Y$_3$Al$_5$O$_{12}$) laser cavity. The Nd:YAG laser cavity uses a Nd-doped YAG crystal as its gain medium and a KTP (potassium titanyl phosphate; KTiOPO$_4$) crystal to frequency-double its output. Furthermore, it outputs nanosecond-duration pulses, centered at 532 nm, at a repetition rate of 1 KHz.
+
+A Pockels cell driver dictates when a seed pulse from the oscillator can enter the regenerative amplfier cavity as well as when the amplified seed pulse can exit the cavity. Correspondingly, it also synchronizes the timing of the pump pulse from Nd:YAG cavity and the seed pulse to ensure that they arrive at Ti:sapphire crystal at the same time. In total, the amplified seed pulse undergoes 5 roundtrips through the regenerative amplifier. Afterwards, the amplified seed pulse passes through the transmissive gratings of the pulse compressor and is compressed to down to a pulse duration of 150 fs before being ejected as laser output.
 
 \subsection{Optical Parametric Amplifier}
 \label{section:opa}
@@ -100,7 +117,7 @@ In the first step, the OPA focuses a small part of the CPA pump beam into a bari
 \end{equation}
 in a type-II phase-matching process \cite{dunn1999parametric}. Type-II phase-matching implies that the polarizations of the signal and idler beams are orthogonal to each other.
 
-The signal and idler wavelengths can take wavelengths of 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively, depending on the alignment of the grating. An additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used to access wavelengths \SI{530}{nm} - \SI{1}{\micro \meter} via type-II phase matching as well. Alternatively, a different nonlinear crystal such as zinc selenide (ZnSe) can be placed at the output for difference-frequency generation that generates a beam of frequency $\omega_\text{DFG}$ where
+The signal and idler wavelengths can take wavelengths of 1.1 - 1.5 $\mu$m  and 1.5 - 2.7 $\mu$m respectively, depending on the alignment of the grating. An additional BBO crystal placed at the output of the OPA provides a means of generating the second harmonic of the signal or idler which can be used to access wavelengths \SI{530}{nm} - \SI{1}{\micro \meter} via type-II phase matching as well. Alternatively, a different nonlinear crystal such as zinc selenide (ZnSe) can be placed at the output for difference-frequency generation (DFG) that generates a beam of frequency $\omega_\text{DFG}$ where
 \begin{equation}
 	\omega_\text{DFG} = \omega_\text{signal} - \omega_\text{idler}
 \end{equation}
@@ -114,7 +131,7 @@ The setup features a wavelength separator that seperates the fundamental of the 
 \label{section:white_light_probe}
 Supercontinuum generation represents a nonlinear optical process by which the spectrum of an incident laser pulse becomes significantly broadened \cite{dubietis2017ultrafast}. It has been observed to occur in many different media such as water, fused silica, sapphire and calcium fluoride \cite{dubietis2017ultrafast}. This process is facilitated by the formation of a filament which starts as a result of self-focusing \cite{dubietis2017ultrafast}. In other words, the refractive index of the supercontinuum generation medium depends on the intensity of propagating light \cite{dubietis2017ultrafast}. Due to the interplay between this self-focusing and other competing effects such as self-phase modulation, and multiphoton absorption, the spectrum  broadens as the pulse travels through the medium \cite{dubietis2017ultrafast}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.4]{images/chapter_methods/sc_gen_dubietis}
 	\caption{Numerical simulation of supercontinuum generation conducted by a 100 fs pulse of wavelength 800 nm. The plot shows how the spectral broadening of the incident pulse evolves as it propagates through a sapphire crystal. The colorbar corresponds to intensity. Reproduced and modified from Ref.\ \cite{dubietis2017ultrafast}.}
@@ -139,7 +156,7 @@ The camera is silicon-based and contains an array of 1340 $\times$ 100 pixels. I
 \subsection{Measurement of Pump and Probe Spot Size}
 The pump and probe spot sizes are measured using a knife edge scan technique \cite{firester1977knife}. For this, a razor blade attached to a post is mounted on a motorized stage placed in the sample position. The sharp edge of the blade faces in a direction perpendicular to that of the direction of propagation of the incident beam. A power meter is placed behind the razor blade to measure the average power of the transmitted beams.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.65]{images/chapter_methods/probe_spot_size}
 	\caption{Spot size measurement of the white light probe at the sample position. The solid line is a fit to the data using Eq.\ \ref{eq:cdf_gauss}. The fitting yields a beam diameter of 180 $\pm$ \SI{10}{\micro\meter}. }
@@ -148,6 +165,11 @@ The pump and probe spot sizes are measured using a knife edge scan technique \ci
 
 As the motorized stage moves the razor blade's position laterally with respect to the beam's propagation direction, the razor blade increasingly blocks portions of the incident beam.  Measuring the transmitted power of incident beam as a function of the razor blade position yields a cumulative distribution function of the incident light's intensity.
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.65]{images/chapter_methods/pump_spot_size}
+	\caption{Spot size measurement of the 570 nm optical pump at the sample position. The solid line is a fit to the data using Eq.\ \ref{eq:cdf_gauss}. The fitting yields a beam diameter of 550 $\pm$ \SI{9}{\micro\meter}.}
+\end{figure}
 
 Assuming that the beam diameter can be approximated as a Gaussian distribution, the spot size can be estimated by fitting this data with the equation
 \begin{equation}
@@ -156,9 +178,3 @@ Assuming that the beam diameter can be approximated as a Gaussian distribution, 
 \end{equation}
 
 which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_\text{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.65]{images/chapter_methods/pump_spot_size}
-	\caption{Spot size measurement of the 570 nm optical pump at the sample position. The solid line is a fit to the data using Eq.\ \ref{eq:cdf_gauss}. The fitting yields a beam diameter of 550 $\pm$ \SI{9}{\micro\meter}.}
-\end{figure}
