@@ -77,6 +77,13 @@ where $\vec{q}$ is the momentum vector measured with respect to the K point. Fur
 
 \subsection{Chiralities of Semiconducting and Metallic Nanotubes}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.35]{images/chapter_optical_props/metal_semi_amori}
+	\caption{The image shows the first Brillouin zone of graphene (white hexagon) superimposed on a countour map of the electronic band structure of graphene. The Dirac cone sites at the K point. Allowed values of $\vec{k}$ according to the quantization condition defined in Eq.\ \ref{eq:quantization_cond} are drawn over the Brillouin zone as thick, black, vertical lines. For metallic nanotubes, the electronic states located at the Dirac cone are allowed. Whereas, the band structures of semiconducting nanotubes do not include a Dirc cone. Reproduced from Ref.\ \cite{amori2018excitons}.}
+	\label{fig:k_quant}
+\end{figure}
+
 The zone-folding method asserts that the periodic boundary conditions along the circumferential direction of CNTs dictate the quantization of the allowed $\vec{k}$ vectors in the electronic band structure \cite{charlier2007electronic}. This condition applied to the electron wavefunction $\Psi(\vec{r})$ is expressed as
 \begin{equation}
 \Psi_{\vec{k}}(\vec{r} + \vec{C_\text{h}}) = e^{i \vec{k} \cdot \vec{C_\text{h}}} \Psi_{\vec{k}}(\vec{r}) = \Psi_{\vec{k}}(\vec{r}),
@@ -89,12 +96,7 @@ where $\vec{r}$ and $\vec{k}$ respectively define vectors in real and reciprocal
 \end{equation}
 where n is an integer. Equation \ref{eq:quantization_cond} reveals that the symmetry of the CNT given by the chirality $\vec{C_\text{h}} \equiv (n,m)$ determines the band structure. Figure \ref{fig:k_quant} illustrates this. Depending on the chirality of the nanotube, the Dirac cone located at the K point may or may not be included the nanotube's bandstructure. This may determine whether or not the nanotube has a finite band gap energy.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{images/chapter_optical_props/metal_semi_amori}
-	\caption{The image shows the first Brillouin zone of graphene (white hexagon) superimposed on a countour map of the electronic band structure of graphene. The Dirac cone sites at the K point. Allowed values of $\vec{k}$ according to the quantization condition defined in Eq.\ \ref{eq:quantization_cond} are drawn over the Brillouin zone as thick, black, vertical lines. For metallic nanotubes, the electronic states located at the Dirac cone are allowed. Whereas, the band structures of semiconducting nanotubes do not include a Dirc cone. Reproduced from Ref.\ \cite{amori2018excitons}.}
-	\label{fig:k_quant}
-\end{figure}
+
 
 In addition, the variable $\nu$ defined as
 %
@@ -112,7 +114,18 @@ is also used to classify the two different band structures can occur.
 	\label{fig:nine_zero_cnt}
 \end{figure}
 %
-In the case where $\nu = 0 $, the band structure contains a Dirac cone along with additional sub-bands within the valence and conduction bands as presented in Figure \ref{fig:nine_zero_cnt} . CNTs that satisfy this condition include $(n,n)$ carbon nanotubes, also commonly referred to as ``armchair'' nanotubes, that constitute the set of all metallic (gapless) nanotubes \cite{nanot2012optoelectronic}. Furthermore, $(n,m)$ nanotubes where $n-m = 3j$ ($j > 0$) also satisfy this $\nu = 0$ condition. However, these non-armchair nanotubes ($n\neq m$) exhibit curvature-induced band gaps and behave as narrow-gap semiconductors ($\sim1 - 100$ meV band gap energy) \cite{nanot2012optoelectronic}. {\color{red} What are curvature-induced band gaps?}
+In the case where $\nu = 0 $, the band structure contains a Dirac cone along with additional sub-bands within the valence and conduction bands as presented in Figure \ref{fig:nine_zero_cnt} . CNTs that satisfy this condition include $(n,n)$ carbon nanotubes, also commonly referred to as ``armchair'' nanotubes, that constitute the set of all metallic (gapless) nanotubes \cite{nanot2012optoelectronic}. Furthermore, $(n,m)$ nanotubes where $n-m = 3j$ ($j > 0$) also satisfy this $\nu = 0$ condition. However, these non-armchair nanotubes ($n\neq m$) exhibit curvature-induced band gaps and can behave as narrow-gap semiconductors ($\sim1 - 100$ meV band gap energy) \cite{nanot2012optoelectronic}.
+
+Curvature most directly refers to the diameter of the carbon nanotube \cite{blase1994hybridization}. It can influence the tendency of anti-bonding $\sigma^*$ and $\pi^*$ orbitals to hybridize, which can add further modifications to the band structure \cite{blase1994hybridization}. These effects are not fully accounted for in the zone-folding scheme.
+
+Figure \ref{fig:cnt_curvature} demonstrates this effect on the band structure of a (6,0) nanotube. The tight-binding model presented in the plots includes the effects of $\sigma^*$ and $\pi^*$ hybridization that manifest the presence of two new states whose difference in energy is determined by the nanotube diameter. At lower diameters, the lower energy band gradually gets closer to the valence band. In a full ab-initio calculation, this band would instead intersect with the conduction band to make the (6,0) nanotube have no band gap \cite{blase1994hybridization}. In contrast, a (9,0) nanotube that has a larger diameter would instead be predicted to have a narrow bandgap of 170 meV \cite{blase1994hybridization}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_optical_props/curvature_cnt_blase}
+	\caption{Tight-binding band structure of a (6,0) nanotube as a function of nanotube diameter $R$. The Fermi level remains at 0 eV. Moreover, the presence of $\sigma^*$ and $\pi^*$ hybridization, creates two new energy bands (dashed lines) that repel each other more strongly as the nanotube radius decreases. At the lowest radius, the low energy band gets very close to the valence band. However, ab-initio calculations reveal that this low energy branch actually intersects with the valence band. Reproduced from Ref.\ \cite{blase1994hybridization}.}
+	\label{fig:cnt_curvature}
+\end{figure}
 
 When $\nu= \pm 1$, the band structure corresponds to that of a medium-gap semiconductor ($\sim0.5 - 1$ eV band gap energy) \cite{nanot2012optoelectronic}. This band structure excludes the presence of a Dirac cone as shown in Figure \ref{fig:ten_zero_cnt}  \cite{charlier2007electronic}.
 
@@ -153,8 +166,6 @@ For light polarized parallel to z-direction, parity with respect to $\sigma_\tex
 
 In the case of light polarized perpendicular to the z-direction, parity with respect to $\sigma_\text{v}$ is reversed whereas parity with respect to $\sigma_\text{h}$ is preserved.
 
-The notation E$_{ij}$ denotes an inter-band transition between the valence sub-band $i$ and the conduction sub-band $j$ \cite{weismanKonoBook}. In addition, $\Delta n \equiv i - j$ defines the difference between the band indices $i$ and $j$.  Incident light polarized parallel to carbon nanotube axial direction excites transitions where $\Delta n = 0$ \cite{weismanKonoBook}. This includes transitions such as $E_{11}$, $E_{22}$ and $E_{33}$. Whereas, incident light polarized perpendicular to the nanotube axial direction can only excite optical transitions where $\Delta n = \pm 1$ such as $E_{12}$ \cite{weismanKonoBook}.
-
 \begin{figure}[H]
 	\centering
 	\begin{subfigure}{\textwidth}
@@ -170,6 +181,10 @@ The notation E$_{ij}$ denotes an inter-band transition between the valence sub-b
 	\caption{Optical selection rules for metallic and narrow-gap semiconducting nanotubes ($\nu = 0 $) as well as medium-gap semiconducting nanotubes ($\nu = \pm 1$) . Reproduced from Ref.\ \cite{ando2005theory}.}
 	\label{fig:selection_rules}
 \end{figure}
+
+The notation E$_{ij}$ denotes an inter-band transition between the valence sub-band $i$ and the conduction sub-band $j$ \cite{weismanKonoBook}. In addition, $\Delta n \equiv i - j$ defines the difference between the band indices $i$ and $j$.  Incident light polarized parallel to carbon nanotube axial direction excites transitions where $\Delta n = 0$ \cite{weismanKonoBook}. This includes transitions such as $E_{11}$, $E_{22}$ and $E_{33}$. Whereas, incident light polarized perpendicular to the nanotube axial direction can only excite optical transitions where $\Delta n = \pm 1$ such as $E_{12}$ \cite{weismanKonoBook}.
+
+
 
 \section{Excitons in SWCNTs}
 
@@ -215,14 +230,16 @@ For light polarized parallel to the nanotube axial direction, one-photon absorpt
 
 In practice, this means that one-photon absorption can access the 1$s$ exciton resonance and that two-photon absorption can access excited states above the 1$s$ exciton state as shown in Figure \ref{fig:cnt_two_photon}. Although other excited states can be accessed, these tend to have almost negligible oscillator strengths \cite{wang2005optical}. Hence, two-photon excitation can create $2p$ excitons or even free-electrons which then relax to the $1s$ exciton state before optical recombination occurs at the $1s$ exciton energy.
 
-If the tight-binding picture were correct, the optical emission would be most efficient if the two-photon excitation energy (2$\hbar \omega$) were exactly equal to the band gap energy due to the density of states associated with the van Hove singularity. The photon energy of the emission would also be equal to 2$\hbar \omega$. Figure \ref{fig:cnt_two_photon_emission} shows that optical emission instead occurs when the two-photon excitation energy is higher than photon energy of emission which supports the exciton picture in which Coulomb interactions produce strongly-correlated electron states.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{images/chapter_optical_props/cnt_two_photon}
 	\caption{ Two-photon absorption in the presence of electron continuum states (A) with and (B) without low lying exciton states within the band gap. When excitonic states are present, two-photon absorption can excite free electron-hole pairs or 2$p$ excitons which then decay to $1s$ excitons before optical recombination occurs. Without exciton states, photoluminescence occurs at the band gap energy from optical recombination of free electrons. Reproduced from Ref.\ \cite{wang2005optical}. }
 	\label{fig:cnt_two_photon}
 \end{figure}
+
+If the tight-binding picture were correct, the optical emission would be most efficient if the two-photon excitation energy (2$\hbar \omega$) were exactly equal to the band gap energy due to the density of states associated with the van Hove singularity. The photon energy of the emission would also be equal to 2$\hbar \omega$. Figure \ref{fig:cnt_two_photon_emission} shows that optical emission instead occurs when the two-photon excitation energy is higher than photon energy of emission which supports the exciton picture in which Coulomb interactions produce strongly-correlated electron states.
+
+
 
 \begin{figure}[H]
 	\centering
@@ -242,21 +259,34 @@ Unlike carbon nanotubes, conventional semiconductors such as GaAs only exhibit e
 
 \subsection{Dark and Bright Excitons}
 
-{\color{red} UNFINISHED} Theory suggests each sub-band in the band structure of carbon nanotubes possesses 16 excitonic states. This takes into account the degeneracy of the $K$ and $K'$ points in the first Brillouin zone in graphene as well as the spins of charge carriers. The 16 possible excitonic states include 4 singlet states and 12 triplet states. Of the four singlet states, only one of these can be accessed via an optical transition and is therefore associated with every possible $E_\text{ij}$ resonance. Whereas, the remaining 3 singlet states are optically inactive meaning that they do not couple directly with light and are therefore said to be  ``dark'' states. Furthermore, due to weak spin-orbit coupling, it is quite rare for a singlet exciton to convert to a triplet state in an event known as ``intersystem crossing'' \cite{amori2018excitons}. 
+Theory suggests that each sub-band in the band structure of carbon nanotubes possesses up to 16 excitonic states \cite{amori2018excitons}. This determination takes into account the degeneracy of the $K$ and $K'$ points in the first Brillouin zone in graphene as well as the spins of charge carriers. In addition, these 16 possible excitonic states include 4 singlet states and 12 triplet states as shown in Figure \ref{fig:dark_bright_excitons_dispersion}. Due to weak spin-orbit coupling, it's generally rare to convert a singlet state into a triplet state via phonon scattering processes \cite{amori2018excitons}.
+
+Of the four singlet states, only one of these can be accessed via an optical transition and is therefore associated with every possible $E_\text{ij}$ resonance. This is commonly referred to as a ``bright" exciton state. Whereas, the remaining 3 singlet states are optically inactive meaning that they do not couple directly with light and are therefore said to be  ``dark'' states.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.3]{images/chapter_optical_props/dark_and_bright_excitons}
-	\caption{4 Singlet states. Highest energy singlet state is doubly degenerate. Reproduced from Ref.\ \cite{amori2018excitons}.}
+	\includegraphics[scale=0.25]{images/chapter_optical_props/dark_and_bright_excitons}
+	\caption{Energy dispersion of singlet and triplet states for a (19,0) nanotube. The black solid curves currespond to doubly-degenerate states with a non-zero angular moment. The red dashed curves (second highest band for singlets, and lowest band for triplets) indicate odd-parity, bright states with zero angular momentum. Finally, the blue dashed curves (lowest band for singlets and second highest band for triplets) refer to even-parity, dark states. Reproduced from Ref.\ \cite{amori2018excitons}.}
+	\label{fig:dark_bright_excitons_dispersion}
 \end{figure}
 
-{\color{red} UNFINISHED} Dark state observed in magneto-optical measurements \cite{srivastava2008direct}. Apply a magnetic field along the nanotube axis tos break time-reversal symmetry, lifting degeneracy between $K$ and $K'$ states via the Aharanov-Bohm effect. This brightens the dark singlet state closest in energy to the bright singlet state. 
+Additionally, Figure \ref{fig:exciton_transitions} shows a schematic diagram describing the possible electron-hole configurations for singlet states. The highest energy singlet states include charge carriers in the $K$ point bound to carriers in the $K'$ point, otherwise known as indirect excitons \cite{srivastava2008direct}. These states cannot be accessed by an optical transition as these require the change in momentum between the initial and final states to be zero.  Whereas, the lowest energy singlet states, which include a bright and a dark state, refer to electrons and holes with the same momentum that are bound together \cite{srivastava2008direct}. The lowest energy singlet state is dipole-forbidden as a result of its even-parity. Despite this, it has been observed experimentally in magneto-optical measurements.
+
+{\color{red} UNFINISHED} The application of a magnetic field down the nanotube axis breaks time-reversal symmetry \cite{srivastava2008direct}. In a process known as the Aharanov-Bohm effect, the magnetic field lifts the degeneracy between $K$ and $K'$ states. This also brightens the dark singlet state closest in energy to the bright singlet state.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{images/chapter_optical_props/exciton_schematic_srivastava}
+	\caption{Reproduced from Ref.\ \cite{srivastava2008direct}.}
+	\label{fig:exciton_transitions}
+\end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.6]{images/chapter_optical_props/dark_brightening_srivastava}
-	\caption{Reproduced from Ref.\ \cite{srivastava2008direct}.}
+	\caption{dd}
 \end{figure}
+
 
 \subsection{Phonon Side-Bands}
 
