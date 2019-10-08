@@ -93,7 +93,7 @@ The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, inc
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.7]{example-image-a}
-	\caption{Schematic Diagram of the Experimental Apparatus. The setup is powered by a Ti:sapphire femtosecond laser (Clark-MXR CPA-2010) that generates 150 fs, 775 nm pulses at a repetition rate of 1 KHz and an average power of 1 W. The total laser output is delivered to an optical parametric amplifier (TOPAS-800). The OPA generates a signal (1.1 - \SI{1.5}{\micro\meter}) and idler beams (1.5 - \SI{2.7}{\micro\meter}) using a type-II parametric generation process.  A BBO crystal is mounted at the output of the OPA to generate the second-harmonic of the signal in a type-II process. A wavelength separator containing a set of dichroic mirrors separates the second-harmonic of the signal, used as the optical pump, from the fundamental of the signal used to generate the white light supercontinuum probe.}
+	\caption{Schematic Diagram of the Experimental Apparatus. The setup is powered by a Ti:sapphire femtosecond laser (Clark-MXR CPA-2010) that generates $\sim$200 fs, 775 nm pulses at a repetition rate of 1 KHz and an average power of 1 W. The total laser output is delivered to an optical parametric amplifier (TOPAS-800). The OPA generates a signal (1.1 - \SI{1.5}{\micro\meter}) and idler beams (1.5 - \SI{2.7}{\micro\meter}) using a type-II parametric generation process.  A BBO crystal is mounted at the output of the OPA to generate the second-harmonic of the signal in a type-II process. A wavelength separator containing a set of dichroic mirrors separates the second-harmonic of the signal, used as the optical pump, from the fundamental of the signal used to generate the white light supercontinuum probe.}
 	\label{fig:setup_schematic}
 \end{figure}
 
@@ -119,7 +119,7 @@ A Pockels cell driver dictates when a seed pulse from the oscillator can enter t
 \subsection{Optical Parametric Amplifier}
 \label{section:opa}
 
-The optical parametric amplifier (OPA) used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. It produces pulses of 150 fs duration at a repetition rate of 1 KHz, just like the CPA, but with a lower average power that can be as high as \SI{200}{\milli\watt} depending on the selected wavelength of the emission. In fact, this tunable light source can generate radiation in the range of \SI{530}{\nano\meter} - \SI{20}{\micro\meter}. The OPA relies on conducting parametric generation processes to achieve this feat.
+The optical parametric amplifier (OPA) used in the setup is a TOPAS-800 produced by Light Conversion. \cite{topas}. It produces pulses of $\sim$200 fs duration at a repetition rate of 1 KHz, just like the CPA, but with a lower average power that can be as high as \SI{200}{\milli\watt} depending on the selected wavelength of the emission. In fact, this tunable light source can generate radiation in the range of \SI{530}{\nano\meter} - \SI{20}{\micro\meter}. The OPA relies on conducting parametric generation processes to achieve this feat.
 
 In the first step, the OPA focuses a small part of the CPA pump beam into a barium borate (BBO) crystal to generate a white light supercontinuum (see Section \ref{section:white_light_probe}). A small spectral region of the white light, also known as the signal beam of frequency $\omega_\text{signal}$, is selected using a reflective diffraction grating and amplified in the following step. In the final stage, both the amplified signal beam along with remainder of CPA pump beam travel through the BBO crystal together. Here, parametric generation occurs where an idler beam of frequency $\omega_\text{idler}$ is produced such that
 \begin{equation}
@@ -188,3 +188,19 @@ Assuming that the beam diameter can be approximated as a Gaussian distribution, 
 \end{equation}
 
 which represents the cumulative distribution function of a Gaussian distribution. This function yields the beam diameter $w$. Furthermore, $P_0$ represents the baseline of the power meter observed when the beam is fully blocked, erf stands for the standard error function, $P_\text{max}$ denotes the maximum power of the beam, $x$ parametrizes the position of the blade and $x_0$ indicates the position at which the blade blocks 50\% of the incident beam's average power.
+
+\subsection{Pulse Duration Characterization}
+
+Used intensity autocorrelation technique to characterize laser pulse duration.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{images/chapter_methods/cpa_autocorr}
+	\caption{Autocorrelation of the CPA}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{images/chapter_methods/opa_pump_autocorr}
+	\caption{adf}
+\end{figure}
