@@ -1,9 +1,13 @@
 % !TEX root = ../thesis_main.tex
 \chapter{Prior Ultrafast Spectroscopy Studies of SWCNTs}
 
-\section{Inter-band and Intra-band Recombination Dynamics}
+\section{Overview}
 
+{\color{red} UNFINISHED} Want to make lasers. Need population inversion. Not possible to achieve if nonlinear processes such as exciton-exciton annihilation or Auger scattering occur. Conflicting reports regarding whether exciton-exciton annihilation in CNTs actually occurs.
 
+\section{Inter-band and Inter-subband Recombination Dynamics}
+
+\subsection{Ostojic et al. (2004)}
 Ostojic et al.\ (2004) presented an early work regarding the carrier recombination dynamics of carbon nanotubes \cite{ostojic2004interband}. They conducted wavelength-dependent, degenerate pump-probe measurements using an optical parametric amplifier with a time resolution of $\sim$150 fs (See Section \ref{section:opa} for details regarding the function of optical parametric amplifiers) whereby the pump and probe have the same photon energy. The sample they studied consisted of a dispersion of HiPCo SWCNTs (See Sections \ref{section:cnt_synthesis} and \ref{section:dispersion_swcnt} for details).
 
 \begin{figure}[ht]
@@ -46,16 +50,31 @@ Decreasing the pH of the sample was observed to suppress optical absorption peak
 	\label{fig:ph_abs_gordana}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.55]{images/chapter_prior_works/dtt_ph_gordana}
 	\caption{The effect of pH on the carrier dynamics of nanotubes. Each plot corresponds to a degenerate pump-probe experiment conducted at a specified photon energy. As pH decreases, nanotubes become increasingly doped with positively-charge carriers. This has a larger effect on larger-diameter nanotubes due to their lower acceptor binding energies and lower the Fermi level into the valence band. At lower photon energies, the inter-band recombination process does not appear as the optical resonances associated with this process become supressed. Reproduced and modified from Ref.\ \cite{ostojic2004interband}}
 	\label{fig:dtt_ph_gordana}
 \end{figure}
 
+\subsection{Ostojic et al.\ (2005)}
 
-\section{Inter-subband Relaxation Dynamics}
-Manzoni et al.\ investigated the inter-subband dynamics of SWCNTs using non-degenerate pump-probe measurements with a time resolution of 40 fs. They used two OPAs to generate pump and probe pulses respectively. Furthermore, the sample they studied was a nanotube film made using HiPCo SWCNTs. Figure \ref{fig:abs_manzoni} shows the optical absorption spectrum of this sample along with the specta of the pump pulses used in this study. The sample contains a variety of optical resonances that belong to semiconducting and metallic nanotubes. The spectral regions labeled as EX1, EX2, and EX3 indicate $E_{11}$, $E_{22}$, and $E_{33}$ resonances of semiconducting nanotubes respectively. The region marked as Metallic shows the $E_{11}$ resonances for metallic nanotubes.
+In a follow-up work, Ostojic et al.\ (2005) reported stablity of excitonic states. Even at Mott density, still see presence of exciton peaks.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.22]{images/chapter_prior_works/abs_dtt_gordana_2005}
+	\caption{{\color{red} UNFINISHED} Reproduced from Ref.\ \cite{ostojic2005stability}. }
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1.2]{images/chapter_prior_works/total_abs_gordana_2005}
+	\caption{{\color{red} UNFINISHED} Reproduced from Ref.\ \cite{ostojic2005stability}.}
+\end{figure}
+
+\subsection{Manzoni et al.\ (2005)}
+Manzoni et al.\ (2005) investigated the inter-subband dynamics of SWCNTs using non-degenerate pump-probe measurements with a time resolution of 40 fs. They used two OPAs to generate pump and probe pulses respectively. Furthermore, the sample they studied was a nanotube film made using HiPCo SWCNTs. Figure \ref{fig:abs_manzoni} shows the optical absorption spectrum of this sample along with the specta of the pump pulses used in this study. The sample contains a variety of optical resonances that belong to semiconducting and metallic nanotubes. The spectral regions labeled as EX1, EX2, and EX3 indicate $E_{11}$, $E_{22}$, and $E_{33}$ resonances of semiconducting nanotubes respectively. The region marked as Metallic shows the $E_{11}$ resonances for metallic nanotubes.
 
 \begin{figure}[ht]
 	\centering
@@ -97,9 +116,19 @@ Figure \ref{fig:e33_pump_manzoni} illustrates the effect of photo-exciting at 2.
 
 Finally, Manzoni et al.\ mentioned that they observed a weak relationship between optical pump intensity and observed recombination dynamics as shown in the inset plot of Figure \ref{fig:e22_pump_manzoni}. At higher pump intensities, the time constant for the exponential decay did not change in a significant fashion. Thus, they did not observe exciton-exciton annihilation in their studies.
 
-\section{The Limits of Exciton-Exciton Annihilation}
+\section{Reports of Non-Linear Recombination Dynamics}
 
-Efficient exciton-exciton annihilation \cite{murakami2009existence}.
+\subsection{Wang et al.\ (2004)}
+Wang et al.\ (2004) \cite{wang2004observation}
+
+\begin{equation}
+\label{eq:exc_annih}
+\ce{X + X $\rightarrow$ X},
+\end{equation}
+
+
+\subsection{Valkunas et a.\ (2006)}
+Valkunas et al.\ (2006) \cite{valkunas2006exciton}.
 
 \begin{figure}[h]
 	\centering
@@ -107,10 +136,11 @@ Efficient exciton-exciton annihilation \cite{murakami2009existence}.
 	\caption{Reproduced from Ref.\ \cite{valkunas2006exciton}}
 \end{figure}
 
-\begin{equation}
-\label{eq:exc_annih}
-\ce{X + X $\rightarrow$ X},
-\end{equation}
+
+
+\subsection{Murakami et al.\ (2009)}
+Efficient exciton-exciton annihilation \cite{murakami2009existence}.
+
 
 
 %\section{Possible Presence of Bi-excitons and Trions}
@@ -141,6 +171,26 @@ Efficient exciton-exciton annihilation \cite{murakami2009existence}.
 %Apparently, excitons dissociate into free electron-hole pairs before recombination occurs \cite{kumamoto2014spontaneous}.
 
 
+\section{Optical Stark Effect}
+{\color{red} UNFINISHED}
 
+\subsection{Song et al.\ (2006)}
+Ref.\ \cite{song2006optical}.
+
+\subsection{Maeda et al.\ (2006)}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.4]{images/chapter_prior_works/stark_shift_maeda}
+	\caption{{\color{red} UNFINISHED} Reproduced from Ref.\ \cite{maeda2006gigantic}.}
+\end{figure}
+
+\subsection{Matsumoto et al.\ (2006)}
+
+Ref.\ \cite{matsumoto2006optical}.
+
+\subsection{Tao et al.\ (2009)}
+
+Ref. \cite{tao2009subpicosecond}.
 
 \section{Summary}
