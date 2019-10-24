@@ -1,6 +1,7 @@
 % !TEX root = ../thesis_main.tex
 \chapter{Properties of Single-Wall Carbon Nanotubes}
 
+\section{Introduction}
 The properties of carbon nanotubes (CNTs) strongly depend on their crystal structure. CNTs consist of carbon atoms bound together via $sp^2$ orbitals ($\sigma$ bonds) and arranged in a honeycomb lattice \cite{soavi2016ultrafast}. They can exist as single-wall carbon nanotubes (SWCNTs), double-wall carbon nanotubes (DWCNTs), and multi-wall carbon nanotubes (MWCNTs) as depicted in Figure \ref{fig:swcnt_mwcnt}. DWCNTs are comprised of two concentric nanotubes. Whereas, MWCNTs contain more than two concentric nanotubes. Nevertheless, this thesis focuses on the properties of SWCNTs.
 
 \begin{figure}[ht]
@@ -125,16 +126,9 @@ is also used to classify the two different band structures can occur.
 %
 In the case where $\nu = 0 $, the band structure contains a Dirac cone along with additional sub-bands within the valence and conduction bands as presented in Figure \ref{fig:nine_zero_cnt} . CNTs that satisfy this condition include $(n,n)$ carbon nanotubes, also commonly referred to as ``armchair'' nanotubes, that constitute the set of all metallic (gapless) nanotubes \cite{nanot2012optoelectronic}. Furthermore, $(n,m)$ nanotubes where $n-m = 3j$ ($j > 0$) also satisfy this $\nu = 0$ condition. However, these non-armchair nanotubes ($n\neq m$) exhibit curvature-induced band gaps and can behave as narrow-gap semiconductors ($\sim1 - 100$ meV band gap energy) \cite{nanot2012optoelectronic}.
 
-Curvature most directly refers to the diameter of the carbon nanotube \cite{blase1994hybridization}. It can influence the tendency of anti-bonding $\sigma^*$ and $\pi^*$ orbitals to hybridize, which can add further modifications to the band structure \cite{blase1994hybridization}. These effects are not fully accounted for in the zone-folding scheme.
+{\color{red} UNFINISHED DESCRIBE curvature-induced band gaps}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.35]{images/chapter_optical_props/curvature_cnt_blase}
-	\caption{Tight-binding band structure of a (6,0) nanotube as a function of nanotube diameter $R$. The Fermi level remains at 0 eV. Moreover, the presence of $\sigma^*$ and $\pi^*$ hybridization, creates two new energy bands (dashed lines) that repel each other more strongly as the nanotube radius decreases. At the lowest radius, the low energy band gets very close to the valence band. However, ab-initio calculations reveal that this low energy branch actually intersects with the valence band. Reproduced from Ref.\ \cite{blase1994hybridization}.}
-	\label{fig:cnt_curvature}
-\end{figure}
 
-Figure \ref{fig:cnt_curvature} demonstrates this effect on the band structure of a (6,0) nanotube. The tight-binding model presented in the plots includes the effects of $\sigma^*$ and $\pi^*$ hybridization that manifest the presence of two new states whose difference in energy is determined by the nanotube diameter. At lower diameters, the lower energy band gradually gets closer to the valence band. In a full ab-initio calculation, this band would instead intersect with the conduction band to make the (6,0) nanotube have no band gap \cite{blase1994hybridization}. In contrast, a (9,0) nanotube that has a larger diameter would instead be predicted to have a narrow bandgap of 170 meV \cite{blase1994hybridization}.
 
 When $\nu= \pm 1$, the band structure corresponds to that of a medium-gap semiconductor ($\sim0.5 - 1$ eV band gap energy) \cite{nanot2012optoelectronic}. This band structure excludes the presence of a Dirac cone as shown in Figure \ref{fig:ten_zero_cnt}  \cite{charlier2007electronic}.
 
@@ -299,6 +293,43 @@ Unlike carbon nanotubes, conventional semiconductors such as GaAs only exhibit e
 	\caption{GaAs/AlGaAs quantum well absorbance spectra at different temperatures. At higher temperatures, the presence of excitonic resonances is diminished. As the temperature decreases, two exciton peaks associated with light-hole and heavy-hole bands become more prominent. Reproduced from Ref.\ \cite{filipowicz1990temperature}.}
 	\label{fig:gaas_vs_cnt_absorbance}
 \end{figure}
+
+\subsection{The Effect of SWCNT Diameter}
+
+{\color{red} UNFINISHED}Curvature most directly refers to the diameter of the carbon nanotube \cite{blase1994hybridization}. It can influence the tendency of anti-bonding $\sigma^*$ and $\pi^*$ orbitals to hybridize, which can add further modifications to the band structure \cite{blase1994hybridization}. These effects are not fully accounted for in the zone-folding scheme.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.35]{images/chapter_optical_props/curvature_cnt_blase}
+	\caption{Tight-binding band structure of a (6,0) nanotube as a function of nanotube diameter $R$. The Fermi level remains at 0 eV. Moreover, the presence of $\sigma^*$ and $\pi^*$ hybridization, creates two new energy bands (dashed lines) that repel each other more strongly as the nanotube radius decreases. At the lowest radius, the low energy band gets very close to the valence band. However, ab-initio calculations reveal that this low energy branch actually intersects with the valence band. Reproduced from Ref.\ \cite{blase1994hybridization}.}
+	\label{fig:cnt_curvature}
+\end{figure}
+
+Figure \ref{fig:cnt_curvature} demonstrates this effect on the band structure of a (6,0) nanotube. The tight-binding model presented in the plots includes the effects of $\sigma^*$ and $\pi^*$ hybridization that manifest the presence of two new states whose difference in energy is determined by the nanotube diameter. At lower diameters, the lower energy band gradually gets closer to the valence band. In a full ab-initio calculation, this band would instead intersect with the conduction band to make the (6,0) nanotube have no band gap \cite{blase1994hybridization}. In contrast, a (9,0) nanotube that has a larger diameter would instead be predicted to have a narrow bandgap of 170 meV \cite{blase1994hybridization}.
+
+\subsection{The Effect of External Dielectric Screening}
+
+It has been established that exciton binding energy varies as $E_\text{b} \propto \epsilon^{-\alpha}$ for some constant $\alpha$ \cite{perebeinos2004scaling}. Walsh et al.\ (2007) determined that $\alpha \approx 1.2$ \cite{walsh2008scaling}.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.23]{images/chapter_optical_props/dielectric_screening_walsh_2007}
+	\caption{{\color{red} UNFINISHED} Reproduced from \cite{walsh2008scaling}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.23]{images/chapter_optical_props/coulomb_potl_walsh}
+	\caption{ {\color{red} UNFINISHED} Reproduced from \cite{walsh2008scaling}.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.25]{images/chapter_optical_props/dielectric_binding_walsh_2007}
+	\caption{ {\color{red} UNFINISHED} Reproduced from \cite{walsh2008scaling}.}
+\end{figure}
+
+Experimentally measured peak shifts by changing dielectric environment \cite{ohno2007excitonic}.
 
 \subsection{Dark and Bright Excitons}
 

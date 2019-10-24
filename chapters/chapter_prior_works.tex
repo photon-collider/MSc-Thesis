@@ -3,7 +3,8 @@
 
 \section{Overview}
 
-{\color{red} UNFINISHED} Want to make lasers. Need population inversion. Not possible to achieve if nonlinear processes such as exciton-exciton annihilation or Auger scattering occur. Conflicting reports regarding whether exciton-exciton annihilation in CNTs actually occurs.
+{\color{red} UNFINISHED} Want to make lasers. Need population inversion. Understood that excitons can decay in a number of processes including electron-hole recombination which results in photon emission, or through other non-radiative processes such as phonon scattering or entrapment in defects or impurities \cite{simpson1957electronic}. Not possible to achieve if nonlinear processes such as exciton-exciton annihilation or Auger scattering occur. Conflicting reports regarding whether exciton-exciton annihilation in CNTs actually occurs.
+
 
 \section{Inter-band and Inter-subband Recombination Dynamics}
 
@@ -36,7 +37,7 @@ Ostojic et al.\  also note that for any chosen wavelength in their degenerate pu
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.3]{images/chapter_prior_works/wavelength_dependence_gordana}
-	\caption{(a) Optical absorption spectrum of the HiPCo SWCNT dispersion. The labeled positions indicate photon energies at which pump-probe measurements were taken. (b) Maximum differential transmission recorde at each measured photon energy. Differential transmission appears to reach a local maximum when the photon energy matches an optical resonance. (c) Ratio between the slow and fast decay times at each measured photon energy. The slow decay time reaches a local maximum when pumping at an optical resonance. Reproduced and modified from Ref.\ \cite{ostojic2004interband}}
+	\caption{(a) Optical absorption spectrum of the HiPCo SWCNT dispersion. The labeled positions indicate photon energies at which pump-probe measurements were taken. (b) Maximum differential transmission recorded at each measured photon energy. Differential transmission appears to reach a local maximum when the photon energy matches an optical resonance. (c) Ratio between the slow and fast decay times at each measured photon energy. The slow decay time reaches a local maximum when pumping at an optical resonance. Reproduced and modified from Ref.\ \cite{ostojic2004interband}}
 	\label{fig:wl_dep_gordana}
 \end{figure}
 
@@ -101,7 +102,11 @@ Finally, Manzoni et al.\ mentioned that they observed a weak relationship betwee
 \end{figure}
 
 
-In general, excitons are expected to be stable in a scenario where their Bohr radius $r_\text{Bohr}$ is much smaller than the typical inter-exciton distance $d_\text{exc}$ \cite{mott1961transition}. Increasing the density of excitons can establish a condition where $r_\text{Bohr} \approx d_\text{exc}$ once the density is greater than or equal to a critical value known as the Mott density \cite{mott1961transition}. This causes a Mott transition process to occur where screening effects suppress the Coulomb interaction between electrons and holes, causing them to dissociate to create a free electron plasma \cite{mott1961transition}. Ostojic et al.\ (2005) investigated this phenomenon in SWCNTs using non-degenerate, pump-probe spectroscopy \cite{ostojic2005stability} featuring a broadband probe. They claim that even at the Mott density, excitons still remain stable.
+In general, excitons are expected to be stable in a scenario where their Bohr radius $r_\text{Bohr}$ is much smaller than the typical inter-exciton distance $d_\text{exc}$ \cite{mott1961transition}. Increasing the density of excitons can establish a condition where
+\begin{equation}
+r_\text{Bohr} \approx d_\text{exc},
+\end{equation}
+once the density is greater than or equal to a critical value known as the Mott density \cite{mott1961transition}. This causes a Mott transition process to occur where screening effects suppress the Coulomb interaction between electrons and holes, causing them to dissociate to create a free electron plasma \cite{mott1961transition}. Ostojic et al.\ (2005) investigated this phenomenon in SWCNTs using non-degenerate, pump-probe spectroscopy \cite{ostojic2005stability} featuring a broadband probe. They claim that even at the Mott density, excitons still remain stable.
 
 \begin{figure}[ht]
 	\centering
@@ -130,14 +135,26 @@ Estimates such as these imply that that shortly after photoexcitation, the optic
 
 \section{Exciton-Exciton Annihilation}
 
+
+
 {\color{red} ADD INTRO PARAGRAPH FOR THIS SECTION}
+
+First explored by Northrop et al.\ as a means of explaining transport properties of molecular crystals \cite{northrop1958electronic}.
 
 \begin{equation}
 \label{eq:exc_annih}
 \ce{X + X $\rightarrow$ X},
 \end{equation}
 
-\subsection{Wang et al.\ (2004)}
+Typically expressed in terms of the rate equation
+
+\begin{equation}
+	\frac{\partial n(\vec{r}, t)}{\partial t} = - \gamma n(\vec{r}, t)^2
+\end{equation}
+
+Without exciton-exciton annihilation, dynamics of carrier relaxation should linearly depend on fluence of optical pump.
+
+\subsection{Early Evidence in Support of Exciton-Exciton Annihilation}
 {\color{red} UNFINISHED}
 Wang et al.\ (2004) observed non-linear recombination dynamics in time-resolve fluorescence experiments \cite{wang2004observation}. Measured a dispersion of HiPco SWCNTs. Figure \ref{fig:fluorescence_wang_2004} shows results. At higher pump fluences, the onset of a fast exponential decay process becomes more prominent. This behavior exemplifies a well-known signature of Auger recombination processes. In addition, the fluorescence observed at longer time delays appears to saturate as shown in the inset plot of Figure \ref{fig:fluorescence_wang_2004}.
 
@@ -145,6 +162,12 @@ Wang et al.\ (2004) observed non-linear recombination dynamics in time-resolve f
 
 Furthermore, Figure \ref{fig:fast_slow_wang_2004} shows the time-integrated fluoresence contributions associated with the fast and slow decays. The fluorescence from the slow decay begins saturating at fluences greater than \SI{0.3}{\joule / \meter\squared}. In contrast, the time-integrated fluoresence linked with the fast decay only begins to saturate at a fluence of \SI{1.5}{\joule / \meter\squared}. These data suggest that exciton-exciton annihilation associated with the fast decay process establishes an upper limit of bright excitons that can exist at longer time delays.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{images/chapter_prior_works/fluorescence_wang_2004}
+	\caption{Time-resolved fluorescence captured at indicated fluences. The optical pump pulse was centered 810 nm. Gray curves are fits to the experimental data using a model based on exciton-exciton annihilation. At higher fluences, the dynamics exhibit a bi-exponential decay containing a fast and a slow process. The fast exponential decay has been attributed to the presence of a non-radiative decay mechanism associated with exciton-exciton annihilation whereas, the slow component emerges due to radiative inter-band recombination. The inset figure shows the same experimental data on a log-linear plot to emphasize the saturation of the fluoresence at higher pump fluences occuring due to non-radiative decay phenomena. Reproduced from Ref.\ \cite{wang2004observation}.}
+	\label{fig:fluorescence_wang_2004}
+\end{figure}
 
 
 
@@ -158,15 +181,11 @@ captures the relationship between these quantities. In the case of excitons,
 \end{equation}
 where $C_\text{A}$ is the Auger rate coefficient. Initial population of excitons $N_\text{initial} = \phi \sigma$, where $\phi$ and $\sigma$ denote, respectively, the fluence of the optical pump and the absorption cross-section of carbon nanotubes. Indeed the qualitative results from this model agree with the experimental data presented in Figures \ref{fig:fluorescence_wang_2004} and \ref{fig:fast_slow_wang_2004}.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.25]{images/chapter_prior_works/fluorescence_wang_2004}
-	\caption{Time-resolved fluorescence captured at indicated fluences. The optical pump pulse was centered 810 nm. Gray curves are fits to the experimental data using a model based on exciton-exciton annihilation. At higher fluences, the dynamics exhibit a bi-exponential decay containing a fast and a slow process. The fast exponential decay has been attributed to the presence of a non-radiative decay mechanism associated with exciton-exciton annihilation whereas, the slow component emerges due to radiative inter-band recombination. The inset figure shows the same experimental data on a log-linear plot to emphasize the saturation of the fluoresence at higher pump fluences occuring due to non-radiative decay phenomena. Reproduced from Ref.\ \cite{wang2004observation}.}
-	\label{fig:fluorescence_wang_2004}
-\end{figure}
 
 
 Numerical fits to the data yield an estimate of $C_\text{A}$ which was found to be $\SI{0.8}{\per\pico\second}$. Correspondingly, this also provides an estimate of the typical lifetime of excitons that participate in exciton-exciton annihilation given as $1/\gamma^\text{N}_\text{A}$ which was determined to be on the order of picoseconds with lifetimes being as short as \SI{1.2}{\pico \second}.
+
+
 
 
 \begin{figure}[ht]
@@ -176,22 +195,10 @@ Numerical fits to the data yield an estimate of $C_\text{A}$ which was found to 
 	\label{fig:fast_slow_wang_2004}
 \end{figure}
 
-
-
-
-
-\subsection{Ma et al.\ (2004)}
-
 Ma et al.\ (2004) also obtained some experimental results that qualtitatively agree with those observed by Wang et al (2004). In this work, they performed both time-resolved fluorescence as well as time-resolved transient absorption measurements on a HiPCo SWCNT dispersion. Figure \ref{fig:fluorescence_ma_2004} shows the fluorescence of (9,5) nanotubes that occurred after resonantly photo-exciting at the $E_{22}$ energy. As the intensity of the optical pump increases, the presence of an early fast decay processes becomes more prominent close to time zero.
 %
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.35]{images/chapter_prior_works/fluorescence_2_ma_2004}
-	\caption{(a) Normalized time-resolved fluorescence measurements obtained from (9,5) nanotubes after exciting the $E_{22}$ resonance at different excitation fluences (photons\si{/\cm \squared}). At higher fluences, a fast decay component becomes more prominent. Solid lines represent fits to the data. (b) The maximum fluoresence intensity $I_0$ measured at each excitation fluence, along with the fitted parameter N(0). (c) The reciprocal of the fluorescence intensity taken at the labeled fluences and plotted as a function of time. The dashed lines represent fits to the data. Reproduced and modified from Ref.\ \cite{ma2004ultrafast}.}
-	\label{fig:fluorescence_ma_2004}
-\end{figure}
-%
 
+%
 Here, Ma et al.\ used the rate equation
 \begin{equation}
 	\dfrac{\mathrm{d}N(t)}{\mathrm{d}t} = - k N(t) - \gamma N(t)^2,
@@ -207,6 +214,13 @@ where $N(0)$, a fitting parameter, yields the initial population of excitons. Fu
 %The results obtained from transient absorption measurements appear to exhibit some key differences from those obtained in the fluorescence measurements.
 This suggests that the reciprocal of $I(t)$ has a linear dependence on time $t$. Indeed, this shows good agreement with the data as shown in Figure \ref{fig:fluorescence_abs_ma_2004}(c) except at longer time delays for higher pump fluences.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{images/chapter_prior_works/fluorescence_2_ma_2004}
+	\caption{(a) Normalized time-resolved fluorescence measurements obtained from (9,5) nanotubes after exciting the $E_{22}$ resonance at different excitation fluences (photons\si{/\cm \squared}). At higher fluences, a fast decay component becomes more prominent. Solid lines represent fits to the data. (b) The maximum fluoresence intensity $I_0$ measured at each excitation fluence, along with the fitted parameter N(0). (c) The reciprocal of the fluorescence intensity taken at the labeled fluences and plotted as a function of time. The dashed lines represent fits to the data. Reproduced and modified from Ref.\ \cite{ma2004ultrafast}.}
+	\label{fig:fluorescence_ma_2004}
+\end{figure}
+
 Figure \ref{fig:fluorescence_abs_ma_2004} shows more fluorescence and transient absorption measurements obtained from (6,5) and (7,5) nanotubes. More specifically, Figure \ref{fig:fluorescence_abs_ma_2004}(a) shows the fluorescence obtained from (6,5) nanotubes after resonantly exciting at $E_{22}$ photon energy. The results qualitatively match those of Figure \ref{fig:fluorescence_ma_2004}(a). However, the transient absorption data taken from (6,5) and (7,5) nanotubes after resonantly exciting their $E_{22}$ resonances and probing the dynamics at their respective $E_{11}$ energies appears to show some different carrier dynamics.
 
 For the case of (6,5) nanotubes, Ma et al.\ observe that the transient absorption curves show a weaker dependence on the pump intensity at fluences less than $2 \times 10^{15}$ photons/cm$^2$. This of course contrasts with the fluorescence data which shows a substantial pump intensity dependence at all reported fluences. Moreover, they also observe some key differences between the transient aborption data taken for (6,5) and (7,5) nanotubes. In particular, when probing the $E_{11}$ resonance of (6,5) nanotubes, the transient absorption exhibits an early decay that becomes faster at higher fluences. However, for (7,5) nanotubes this early decay instead becomes slower at higher excitation intensities.
@@ -219,9 +233,6 @@ These key differences lead Ma et al.\ to conclude that a different set of carrie
 	\caption{(a) Time-resolved fluorescence measurements  obtained from (6,5) nanotubes after resonantly exciting the $E_{22}$ state at the reported fluences (photons\si{/\cm \squared}). The dynamics show a clear dependence on intensity at all fluences. (b) Transient absorption data probed at the $E_{11}$ energy (6,5) carbon nanotubes after photo-exciting the $E_{22}$ resonance at the reported fluences. These show a weak pump intensity dependence at fluences below $2 \times 10^{15}$ photons/cm$^2$. The early decay also becomes faster at higher fluences. (c) Transient absorption data probed at the $E_{11}$ energy (7,5) carbon nanotubes after photo-exciting the $E_{22}$ resonance at the reported fluences. The early decay becomes much slower at higher pump fluences. Reproduced from Ref.\ \cite{ma2004ultrafast}.}
 	\label{fig:fluorescence_abs_ma_2004}
 \end{figure}
-
-
-\subsection{Ma et al.\ (2005)}
 
 In a follow-up work, Ma et al.\ (2005) measured transient absorption dynamics of (8,5) carbon nanotubes contained within a dispersion of HiPCo SWCNTs \cite{ma2005femtosecond}. In this case, they attempted to account for the carrier dynamics occuring at both the $E_{11}$ and the $E_{22}$ energy levels. Figure \ref{fig:exciton_schematic_ma} presents a schematic diagram of this approach. In this notation, each sub-band denoted as $E_i(\mathbf{k})$ contains $n_\text{i}$ excitons. Excitons at the lowest sub-band conduct exciton-exciton annihilation at rate $\gamma n_1^2/2$ which subsequently populates higher energy sub-bands. Finally, $k_\text{ij}$ represents linear relaxation rates from the $i$-th sub-band to the $j$-th sub-band and $k_\text{1g}$ measures the relaxation rate from $E_i(\mathbf{k})$ to the ground state.
 
@@ -266,8 +277,22 @@ However, a second exponental decay must be added to describe dynamics occuring a
 
  Figure \ref{fig:abs_ma_2005}(c)
 
-\subsection{Valkunas et al.\ (2006)}
-{\color{red} UNFINISHED} Valkunas et al.\ (2006) use exciton manifold to derive a set of rate equations used to model carrier dynamics, including exciton-exciton annihilation \cite{valkunas2006exciton}.
+\subsection{Diffusion-Limited, Exciton-Exciton Annihilation}
+{\color{red} UNFINISHED} The previous works presenting evidence of exciton-exciton annihilation relied on models that did not explicitly account for a key detail: the ratio between the Bohr radius of excitons and the size of the system, that is, the length scales of SWCNTs. In fact, exciton-exciton annihilation can exist in two regimes \cite{valkunas2006exciton}. On one hand, if exciton sizes are comparable to that of the system then the exciton-exciton annihilation rate should only depend on the rate at which two neighboring excitons interact with each other \cite{valkunas2006exciton}. On the other hand, if excitons are much smaller than the system they inhabit, then excitons must migrate until they reach another exciton before exciton-exciton annihilation occurs \cite{valkunas2006exciton}. In this case, the rate of exciton-exciton annihilation depends on both the diffusion rate of excitons as well as the annihilation rate of excitons in close proximity with each other \cite{valkunas2006exciton}. Hence, this regime is often referred to as diffusion-limited, exciton-exciton annihilation.
+
+The rate of diffusion processes certainly depends on the dimensionality $d$ of the system. In fact, the decay constant associated with exciton-exciton annihilation is time-independent only in cases where $d \geq 2$ \cite{valkunas2006exciton}. For one-dimensional systems, the annihilation rate assumes the form $\gamma = \gamma_0 / t^{-1/2}$ and yields the rate equation
+\begin{equation}
+		\frac{\mathrm{d} n_\text{ex}^2(t)}{\mathrm{d}t} = -\frac{1}{2 \sqrt{t}}  \gamma_0 \cdot n_\text{ex}^2(t).
+		\label{eq:exc_1d_annih}
+\end{equation}
+ This is rooted in the fact that a particle executing a random walk in three dimensions will return to its origin position with a probabilty of 0.35, whereas in dimensions less than or equal to 2 this probability is approximately unity \cite{suna1970kinematics}. As a result, the decay constant reduces with time.
+
+The solution to this revised rate equation is then given as
+\begin{equation}
+	\frac{n_\text{ex}(0)}{n_\text{ex}(t)} = 1 + n_\text{ex}(0) \gamma_0 \sqrt{t},
+\end{equation}
+which does not fit experimental data very well. For this reason Valkunas et al.\ argued that diffusion-limited, exciton-exciton annihilation is not the correct interpretation of the results. They claimed that it must be the case that exciton sizes are on the order of typical nanotube lengths so the effects of diffusion ought to be negligible. As a result, they modeled carrier dynamics using a scheme depicted in Figure \ref{fig:exciton_manif_valkunas}. Two sets of electronic states: those that couple directly to light and those that do not. From this, they derive a set of rate equations. Solving this gives dynamics that they claim fit the data well.
+
 
 \begin{figure}[ht]
 	\centering
@@ -276,11 +301,23 @@ However, a second exponental decay must be added to describe dynamics occuring a
 	\label{fig:exciton_manif_valkunas}
 \end{figure}
 
+\subsection{Luer et al (2009)}
+Reference \cite{luer2009size}
+
+In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=1.2]{images/chapter_prior_works/dtt_2_luer_2009}
+	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
+	\label{fig:dtt_luer_2009}
+\end{figure}
+
+
 \subsection{Murakami et al.\ (2009)}
 {\color{red} UNFINISHED} Efficient exciton-exciton annihilation \cite{murakami2009existence}.
 
-\subsection{Luer et al (2009)}
-Reference \cite{luer2009size}
+
 
 
 %\section{Possible Presence of Bi-excitons and Trions}
@@ -338,7 +375,11 @@ Ref. \cite{tao2009subpicosecond}.
 
 Conflicting reports of exciton-exciton annihilation. Consensus regarding efficiency of exciton exciton isn't so clear. There could be a number of reasons for disagreements in each work. These can include, type of sample studied, power density of the optical pump as well as pump wavelength. Samples in early studies used HiPCo or CoMoCAT dispersions which contained several different chiralities. As noted by Ostojic et al.\ (2004), optical excitations can cause both resonant and non-resonant excitations in the ensemble. Moreover, multi-photon processes occuring in metallic nanotubes, which have resonances at higher photon energies, could also play a role.
 
+Exciton sizes can vary depending on dielectric environment \cite{mann201613}.
+
 One question: Do carrier relaxation processes differ when exciting resonantly or nonresonantly? If so, how?
 
-Does phonon side-band play a role here? It has been ignored in early studies as $E_{11}$ and $E_{22}$ resonance are dominant in optical absorption spectrum. 
+Does phonon side-band play a role here? It has been ignored in early studies as $E_{11}$ and $E_{22}$ resonance are dominant in optical absorption spectrum.
 Wang et al (2004) pumped at 810 nm which is right between $E_{11}$ and $E_{22}$ of many of the semiconducting in their sample.
+
+Dielectric environment can have an effect on
