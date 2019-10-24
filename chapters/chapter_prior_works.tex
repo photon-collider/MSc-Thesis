@@ -304,15 +304,39 @@ which does not fit experimental data very well. For this reason Valkunas et al.\
 \subsection{Luer et al (2009)}
 Reference \cite{luer2009size}
 
-In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}.
+In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}. Figure \ref{fig:dtt_luer_2009} presents transient absorption data as well as a schematic of their model.
 
-\begin{figure}
+\begin{equation}
+	\begin{split}
+			\frac{\mathrm{d} N_1}{\mathrm{d} t} &= -k_{10} t^{\alpha} N_1 - k_\text{a}N_1^2 + k_{21} N_1,
+			\\
+			\frac{\mathrm{d} N_2}{\mathrm{d} t} &= \frac{1}{2} k_\text{a} N_1^2 - k_{21} N_1
+	\end{split}
+\end{equation}
+
+
+\begin{figure}[ht]
 	\centering
 	\includegraphics[scale=1.2]{images/chapter_prior_works/dtt_2_luer_2009}
 	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
 	\label{fig:dtt_luer_2009}
 \end{figure}
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1.2]{images/chapter_prior_works/dtt_3_luer_2009}
+	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
+	\label{fig:dtt_2_luer_2009}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{images/chapter_prior_works/exciton_size_fit_luer_2009}
+	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
+	\label{fig:dtt_2_luer_2009}
+\end{figure}
 
 \subsection{Murakami et al.\ (2009)}
 {\color{red} UNFINISHED} Efficient exciton-exciton annihilation \cite{murakami2009existence}.
@@ -347,6 +371,7 @@ In contrast with this, Luer et al.\ (2009) provided experimental evidence showin
 %They also show that exciton-exciton annihilation occurs over a time scale such that it is hard to reach Mott densitty of excitons where excitons immediately dissociate to form plasma of free carriers. These a
 %Apparently, excitons dissociate into free electron-hole pairs before recombination occurs \cite{kumamoto2014spontaneous}.
 
+\pagebreak
 
 \section{The Optical Stark Effect}
 {\color{red} UNFINISHED}
