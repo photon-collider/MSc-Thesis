@@ -302,9 +302,8 @@ which does not fit experimental data very well. For this reason Valkunas et al.\
 \end{figure}
 
 \subsection{Luer et al (2009)}
-Reference \cite{luer2009size}
 
-In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}. Figure \ref{fig:dtt_luer_2009} presents transient absorption data as well as a schematic of their model.
+{\color{red} UNFINISHED} In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}. Figure \ref{fig:dtt_luer_2009} presents transient absorption data as well as a schematic of their model.
 
 \begin{equation}
 	\begin{split}
@@ -314,18 +313,35 @@ In contrast with this, Luer et al.\ (2009) provided experimental evidence showin
 	\end{split}
 \end{equation}
 
+$N_1$ and $N_2$ are exciton densities within the first ($E_{\text{x}_1}$) and second ($E_{\text{x}_2}$) sub-bands respectively. Exciton-exciton annihilation rate given as $k_\text{a} = k_\text{a}^* t^{-1/2}$, occurs immediately when two excitons make sufficient contact with each other. Based on the results of Manzoni et al.\ (2005), $k_{21} = 2.3 \times 10^{13}$ \si{\per\second} is relaxation rate from $E_{\text{x}_2}$ to $E_{\text{x}_1}$. $k_{1} = k_{10}t^\alpha$ is relaxation rate from $E_{\text{x}_1}$ to ground state with exponent $\alpha$. Obtained time-depdendent annihilation constant of $k_\text{a}(t) = 1.0 \times 10^7 \text{nm } \text{s}^{-1/2} \cdot \text{t}^{-1/2}$
 
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.2]{images/chapter_prior_works/dtt_2_luer_2009}
-	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
+	\caption{Differential absorption probed at the $E_{11}$ transition of (6,5) nanotubes presented with labeled pump fluences (\si{\micro \joule} \si{\cm^{-2}}). The pump and probe pulses were centered at wavelengths 960 and 992 nm respectively and were polarized parallel to each other. The dashed lines correspond to fits produced from the kinetic model shown in the inset. Here, excitons in first sub-band $E_{\text{x}_1}$ created by an optical pump of photon energy $h \nu_\text{pump}$ and undergo exciton-exciton annihilation at a time-dependent rate $k_\text{a}^* t^{-1/2}$ which creates a population of excitons in the second sub-band $E_{\text{x}_2}$. The variables $k_{21}$ and $k_{10}t^{\alpha}$ represent, respectively, decay rates from $E_{\text{x}_2}$ to $E_{\text{x}_1}$ and $E_{\text{x}_1}$ to the ground state. Reproduced from Ref.\ \cite{luer2009size}.}
 	\label{fig:dtt_luer_2009}
 \end{figure}
+
+\begin{equation}
+	\frac{\delta f}{f} = - \sum_{k} \left\{ \frac{ [ f_\text{e}(k) + f_\text{h}(k)] \tilde{\Psi}_\text{exc}(k)}{\Psi_\text{exc}(x=0)} \right\}
+\end{equation}
+
+\begin{equation}
+	\Psi_\text{exc}(x) = \left( \sqrt{a \sqrt{\pi}} \right)^{-1} \exp[-x^2 / (2 \xi^2_\text{e})]
+\end{equation}
+
+\begin{equation}
+	\frac{\delta f}{f} = - N \gamma \xi_\text{e}, \gamma \approx 2.05
+\end{equation}
+
+\begin{equation}
+	\Delta A = -r_\text{a} \gamma \sigma_\text{C} \frac{\xi_\text{e}}{\xi_\text{C}} I_\text{abs}
+\end{equation}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=1.2]{images/chapter_prior_works/dtt_3_luer_2009}
-	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
+	\caption{Normalized transient aborption data taken from Figure \ref{fig:dtt_luer_2009}. The relaxation dynamics do not appear to show a strong depdence on pump fluence. Hence, exciton-exciton annihilation is said to be an inefficient process in this scenario. Reproduced from Ref.\ \cite{luer2009size}.}
 	\label{fig:dtt_2_luer_2009}
 \end{figure}
 
@@ -371,7 +387,7 @@ In contrast with this, Luer et al.\ (2009) provided experimental evidence showin
 %They also show that exciton-exciton annihilation occurs over a time scale such that it is hard to reach Mott densitty of excitons where excitons immediately dissociate to form plasma of free carriers. These a
 %Apparently, excitons dissociate into free electron-hole pairs before recombination occurs \cite{kumamoto2014spontaneous}.
 
-\pagebreak
+\newpage
 
 \section{The Optical Stark Effect}
 {\color{red} UNFINISHED}
