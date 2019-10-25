@@ -143,11 +143,10 @@ First explored by Northrop et al.\ as a means of explaining transport properties
 
 \begin{equation}
 \label{eq:exc_annih}
-\ce{X + X $\rightarrow$ X},
+\ce{2 $E_{x_1}$ $\rightarrow$  $E_{x_2}$ + $GS$ \rightarrow $E_{x_1}$ + $GS$},
 \end{equation}
 
-Typically expressed in terms of the rate equation
-
+where $E_{x_1}$, $E_{x_2}$, reprsent first and second sub-bands of the conduction band respectively and $GS$ is the ground state.
 \begin{equation}
 	\frac{\partial n(\vec{r}, t)}{\partial t} = - \gamma n(\vec{r}, t)^2
 \end{equation}
@@ -223,9 +222,9 @@ This suggests that the reciprocal of $I(t)$ has a linear dependence on time $t$.
 
 Figure \ref{fig:fluorescence_abs_ma_2004} shows more fluorescence and transient absorption measurements obtained from (6,5) and (7,5) nanotubes. More specifically, Figure \ref{fig:fluorescence_abs_ma_2004}(a) shows the fluorescence obtained from (6,5) nanotubes after resonantly exciting at $E_{22}$ photon energy. The results qualitatively match those of Figure \ref{fig:fluorescence_ma_2004}(a). However, the transient absorption data taken from (6,5) and (7,5) nanotubes after resonantly exciting their $E_{22}$ resonances and probing the dynamics at their respective $E_{11}$ energies appears to show some different carrier dynamics.
 
-For the case of (6,5) nanotubes, Ma et al.\ observe that the transient absorption curves show a weaker dependence on the pump intensity at fluences less than $2 \times 10^{15}$ photons/cm$^2$. This of course contrasts with the fluorescence data which shows a substantial pump intensity dependence at all reported fluences. Moreover, they also observe some key differences between the transient aborption data taken for (6,5) and (7,5) nanotubes. In particular, when probing the $E_{11}$ resonance of (6,5) nanotubes, the transient absorption exhibits an early decay that becomes faster at higher fluences. However, for (7,5) nanotubes this early decay instead becomes slower at higher excitation intensities.
+For the case of (6,5) nanotubes, Ma et al.\ observed that the transient absorption curves show a weaker dependence on the pump intensity at fluences less than $2 \times 10^{15}$ photons/cm$^2$. This of course contrasts with the fluorescence data which shows a substantial pump intensity dependence at all reported fluences. Moreover, they also observe some key differences between the transient aborption data taken for (6,5) and (7,5) nanotubes. In particular, when probing the $E_{11}$ resonance of (6,5) nanotubes, the transient absorption exhibits an early decay that becomes faster at higher fluences. However, for (7,5) nanotubes this early decay instead becomes slower at higher excitation intensities.
 
-These key differences lead Ma et al.\ to conclude that a different set of carrier relaxation processes may be contributing the transient absorption dynamics. In the case of (7,5) nanotubes, they interpret that excitons may become trapped or even convert to triplet states. For (6,5) nanotubes, they suggest that the fluence threshold of $2 \times 10^{15}$ photons/cm$^2$ needed to observe clear nonlinear dynamics indicates that other than bright excitons, the probe may also be detecting the presence of unbound electron-hole pairs.
+These key differences lead Ma et al.\ to conclude that a different set of carrier relaxation processes may be contributing the transient absorption dynamics. In the case of (7,5) nanotubes, they interpreted that excitons may become trapped or even convert to triplet states. For (6,5) nanotubes, they suggested that the fluence threshold of $2 \times 10^{15}$ photons/cm$^2$ needed to observe clear nonlinear dynamics indicates that other than bright excitons, the probe may also be detecting the presence of unbound electron-hole pairs.
 
 \begin{figure}[H]
 	\centering
@@ -301,10 +300,8 @@ which does not fit experimental data very well. For this reason Valkunas et al.\
 	\label{fig:exciton_manif_valkunas}
 \end{figure}
 
-\subsection{Luer et al (2009)}
-
-{\color{red} UNFINISHED} In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}. Figure \ref{fig:dtt_luer_2009} presents transient absorption data as well as a schematic of their model.
-
+{\color{red} UNFINISHED} In contrast with this, Luer et al.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}. Figure \ref{fig:dtt_luer_2009} presents transient absorption data as well as a schematic of their model which can be expressed as the set of rate equations
+%
 \begin{equation}
 	\begin{split}
 			\frac{\mathrm{d} N_1}{\mathrm{d} t} &= -k_{10} t^{\alpha} N_1 - k_\text{a}N_1^2 + k_{21} N_1,
@@ -312,8 +309,13 @@ which does not fit experimental data very well. For this reason Valkunas et al.\
 			\frac{\mathrm{d} N_2}{\mathrm{d} t} &= \frac{1}{2} k_\text{a} N_1^2 - k_{21} N_1
 	\end{split}
 \end{equation}
-
-$N_1$ and $N_2$ are exciton densities within the first ($E_{\text{x}_1}$) and second ($E_{\text{x}_2}$) sub-bands respectively. Exciton-exciton annihilation rate given as $k_\text{a} = k_\text{a}^* t^{-1/2}$, occurs immediately when two excitons make sufficient contact with each other. Based on the results of Manzoni et al.\ (2005), $k_{21} = 2.3 \times 10^{13}$ \si{\per\second} is relaxation rate from $E_{\text{x}_2}$ to $E_{\text{x}_1}$. $k_{1} = k_{10}t^\alpha$ is relaxation rate from $E_{\text{x}_1}$ to ground state with exponent $\alpha$. Obtained time-depdendent annihilation constant of $k_\text{a}(t) = 1.0 \times 10^7 \text{nm } \text{s}^{-1/2} \cdot \text{t}^{-1/2}$
+%
+where $N_1$ and $N_2$ denote exciton densities within the first ($E_{\text{x}_1}$) and second ($E_{\text{x}_2}$) sub-bands respectively. The exciton-exciton annihilation rate is given as $k_\text{a} = k_\text{a}^* t^{-1/2}$. Here, it is assumed that annihilation occurs immediately when two excitons make sufficient contact with each other. The variable $k_\text{a}^*$ also gives the exciton diffusion rate $D_\text{exc}$ via the expression
+\begin{equation}
+	k_\text{a}^* = \sqrt{32 D_\text{exc}/ \pi},
+	\label{eq:exc_anih_diffuse_luer_2009}
+\end{equation}
+a result which was verified using Monte Carlo simulation of diffusion-limited, exciton-exciton annihilation on a one-dimensional chain. Based on the findings of Manzoni et al.\ (2005), $k_{21} = 2.3 \times 10^{13}$ \si{\per\second} represents the relaxation rate from $ E_{\text{x}_2} $ to $E_{\text{x}_1}$. Finally, $k_{1} = k_{10}t^\alpha $ indicates the relaxation rate from $E_{\text{x}_1}$ to ground state with exponent $\alpha$.
 
 \begin{figure}[H]
 	\centering
@@ -322,21 +324,16 @@ $N_1$ and $N_2$ are exciton densities within the first ($E_{\text{x}_1}$) and se
 	\label{fig:dtt_luer_2009}
 \end{figure}
 
-\begin{equation}
-	\frac{\delta f}{f} = - \sum_{k} \left\{ \frac{ [ f_\text{e}(k) + f_\text{h}(k)] \tilde{\Psi}_\text{exc}(k)}{\Psi_\text{exc}(x=0)} \right\}
-\end{equation}
 
-\begin{equation}
-	\Psi_\text{exc}(x) = \left( \sqrt{a \sqrt{\pi}} \right)^{-1} \exp[-x^2 / (2 \xi^2_\text{e})]
-\end{equation}
+Fits of the model to the experimental data gave a time-dependent annihilation constant of $k_\text{a}(t) = 1.0 \times 10^7 \text{nm } \text{s}^{-1/2} \cdot \text{t}^{-1/2}$. However, Figure \ref{fig:dtt_2_luer_2009} demonstrates that Luer et al.\ did not observe strong evidence for efficient exciton-exciton annihilation. The normalized transient absorption curves do not appear to show a dominant early decay process that becomes drastically faster as the pump fluence increases.
 
-\begin{equation}
-	\frac{\delta f}{f} = - N \gamma \xi_\text{e}, \gamma \approx 2.05
-\end{equation}
 
+Luer et al.\ also estimated size of excitons occuring in (6,5) SWCNTs using the well-known phase-space filling model \cite{schmitt1985theory, greene1990all}. According to this model, the relative change in oscillator strengths of excitonic resonances occurs as a result of the Pauli exclusion principle. Indeed, this change in the oscillator strength $\delta f_\text{}/ f_\text{}$ depends on the momentum-space, distribution functions $f_\text{e}(k)$ and $f_\text{h}(k)$ of electrons and holes respectively and is therefore written as
 \begin{equation}
-	\Delta A = -r_\text{a} \gamma \sigma_\text{C} \frac{\xi_\text{e}}{\xi_\text{C}} I_\text{abs}
+	\frac{\delta f_\text{}}{f_\text{}} = - \sum_{k} \left\{ \frac{ [ f_\text{e}(k) + f_\text{h}(k)] \tilde{\Psi}_\text{exc}(k)}{\Psi_\text{exc}(x=0)} \right\},
+	\label{eq:osc_strength}
 \end{equation}
+which also includes the exciton wavefunction $\Psi_\text{exc}$ as well as its corresponding Fourier transform $\tilde{\Psi}_\text{exc}$.
 
 \begin{figure}[ht]
 	\centering
@@ -345,14 +342,44 @@ $N_1$ and $N_2$ are exciton densities within the first ($E_{\text{x}_1}$) and se
 	\label{fig:dtt_2_luer_2009}
 \end{figure}
 
+For electrons and holes that pair together to form excitons, these the distribution functions are given as
+%
+\begin{equation}
+	f_\text{e}(k) = f_\text{e}(k) = \frac{N}{2} | \tilde{\Psi}_\text{exc}(k)|^2,
+\end{equation}
+%
+where $N$ refers to the density of excitons per unit length. In this expression, excitons represent a linear combination of single-particle, fermionic states distributed according to $\tilde{\Psi}_\text{exc}(k)$ \cite{schmitt1985theory}. Therefore, the formation of an exciton must correspond to an occupation probability in the fermion phase space $|\tilde{\Psi}_\text{exc}(k)|^2$ \cite{schmitt1985theory}. This probability is equally shared between spin-up and spin-down states which explains the factor of 1/2 \cite{schmitt1985theory}.
 
+The exciton wavefunction $\Psi_\text{exc}$ can be approximated as
+\begin{equation}
+	\Psi_\text{exc}(x) = \left( \sqrt{a \sqrt{\pi}} \right)^{-1} \exp[-x^2 / (2 \xi^2_\text{e})],
+\end{equation}
+where $\xi_\text{e}$ represents the electron-hole correlation length, otherwise known as the exciton size \cite{capaz2006diameter}. Using this wavefunction, Equation \eqref{eq:osc_strength} becomes
+%
+\begin{equation}
+	\frac{\delta f}{f} = - N \gamma \xi_\text{e}, \hspace{4mm} \gamma \approx 2.05.
+\end{equation}
+%
+Here, $\gamma$ is a proportionality constant that varies with the wavefunction used to perform this calculation. Certainly, the relative change in the oscillator strength is related to the differential absorption $\Delta A / A$ as well as a saturation density $N_\text{s}$ by the expression
+\begin{equation}
+	\frac{\delta f}{f} = \frac{\Delta A}{A} = \frac{N}{N_\text{s}},
+\end{equation}
+where $N_\text{s}^{-1} = \gamma \xi_\text{e}$.
+\begin{equation}
+	\Delta A = -r_\text{a} \gamma \sigma_\text{C} \frac{\xi_\text{e}}{\xi_\text{C}} I_\text{abs}
+	\label{eq:abs_exc_len}
+\end{equation}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.8]{images/chapter_prior_works/exciton_size_fit_luer_2009}
-	\caption{Reproduced from Ref.\ \cite{luer2009size}.}
-	\label{fig:dtt_2_luer_2009}
+	\caption{Maximum differential absorption as a function of the absorbed pump fluence $I_\text{abs}$. The solid line represents a linear regression using function defined in Equation \eqref{eq:abs_exc_len} which was used to obtain an exciton size of $\xi_\text{e} = 2.0 \pm 0.7$ nm. Reproduced from Ref.\ \cite{luer2009size}.}
+	\label{fig:lin_fit_luer_2009}
 \end{figure}
+
+{\color{red}UNFINISHED } Figure \ref{fig:lin_fit_luer_2009} shows results of fitting. Get exciton size of $2.0 \pm 0.7$ nm which agrees with theory \cite{tretiak2007excitons}. From Equation \eqref{eq:exc_anih_diffuse_luer_2009}, obtain a diffusion length less than 10 nm which happens to be an order of magnitude less than the corresponding value obtained in fluorescence measurements \cite{cognet2007stepwise}. These results, combined with weak exciton-exciton annihilation, lead Luer et al.\ to conclude that differential absorption probes total population of excitons, many of which short-lived and do not directly participate in exciton-exciton annihilation due to shorter diffusion lengths. However, time-resolved fluoresence measurements probe long-lived excitons that have higher diffusion lengths and are therefore more likely to engage in exciton-exciton annihilation processes.
+
+
 
 \subsection{Murakami et al.\ (2009)}
 {\color{red} UNFINISHED} Efficient exciton-exciton annihilation \cite{murakami2009existence}.
