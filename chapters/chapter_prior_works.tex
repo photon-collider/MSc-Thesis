@@ -3,7 +3,7 @@
 
 \section{Overview}
 
-{\color{red} UNFINISHED} Want to make lasers. Need population inversion. Understood that excitons can decay in a number of processes including electron-hole recombination which results in photon emission, or through other non-radiative processes such as phonon scattering or entrapment in defects or impurities \cite{simpson1957electronic}. Not possible to achieve if nonlinear processes such as exciton-exciton annihilation or Auger scattering occur. Conflicting reports regarding whether exciton-exciton annihilation in CNTs actually occurs.
+{\color{red} UNFINISHED} Want to make lasers. Need population inversion. Understood that excitons can decay in a number of processes including electron-hole recombination which results in photon emission, or through other non-radiative processes such as phonon scattering or entrapment in defects or impurities \cite{simpson1957electronic}. Not possible to achieve if nonlinear processes such as exciton-exciton annihilation or Auger scattering occur. Conflicting reports regarding the contribution of exciton-exciton annihilation in carrier dynamics of CNTs. Transient absorption measurements do not appear to see significant effects of this phenomenon whereas, fluorescence measurements suggest that it plays a dominant role in carrier relaxation. 
 
 
 \section{Inter-band and Inter-subband Recombination Dynamics}
@@ -41,7 +41,7 @@ Ostojic et al.\  also note that for any chosen wavelength in their degenerate pu
 	\label{fig:wl_dep_gordana}
 \end{figure}
 
-Hence, resonant excitation enhances the appearance of inter-band recombination dynamics. However, non-resonant excitations are more associated with the fast intra-band dynamics. This suggests that the reported decay times only yield statistical averages of the carrier lifetime of the ensemble of all nanotubes that have optical resonances at energies less than or equal to the pump photon energy. Furthermore, they acknowledge that they did not observe a clear correlation between the power of the optical pump and the observed carrier decay times. This excludes the observation of any nonlinear, nonradiative recombination mechanisms such as Auger recombination or exciton-exciton annihilation.
+Hence, resonant excitation enhances the appearance of inter-band recombination dynamics. However, non-resonant excitations are more associated with the fast intra-band dynamics. This suggests that the reported decay times only yield statistical averages of the carrier lifetime of the ensemble of all nanotubes that have optical resonances at energies less than or equal to the pump photon energy. Furthermore, they acknowledge that they did not observe a clear correlation between the power of the optical pump and the observed carrier decay times. This excludes the observation of any nonlinear, nonradiative recombination mechanisms such as Auger recombination, also referred to as exciton-exciton annihilation this context.
 
 \begin{figure}[ht]
 	\centering
@@ -149,6 +149,7 @@ First explored by Northrop et al.\ as a means of explaining transport properties
 where $E_{x_1}$, $E_{x_2}$, reprsent first and second sub-bands of the conduction band respectively and $GS$ is the ground state.
 \begin{equation}
 	\frac{\partial n(\vec{r}, t)}{\partial t} = - \gamma n(\vec{r}, t)^2
+	\label{eq:rate_eq_exc_anih}
 \end{equation}
 
 Without exciton-exciton annihilation, dynamics of carrier relaxation should linearly depend on fluence of optical pump.
@@ -377,14 +378,16 @@ where $N_\text{s}^{-1} = \gamma \xi_\text{e}$.
 	\label{fig:lin_fit_luer_2009}
 \end{figure}
 
-{\color{red}UNFINISHED } Figure \ref{fig:lin_fit_luer_2009} shows results of fitting. Get exciton size of $2.0 \pm 0.7$ nm which agrees with theory \cite{tretiak2007excitons}. From Equation \eqref{eq:exc_anih_diffuse_luer_2009}, obtain a diffusion length less than 10 nm which happens to be an order of magnitude less than the corresponding value obtained in fluorescence measurements \cite{cognet2007stepwise}. These results, combined with weak exciton-exciton annihilation, lead Luer et al.\ to conclude that differential absorption probes total population of excitons, many of which short-lived and do not directly participate in exciton-exciton annihilation due to shorter diffusion lengths. However, time-resolved fluoresence measurements probe long-lived excitons that have higher diffusion lengths and are therefore more likely to engage in exciton-exciton annihilation processes.
+{\color{red}UNFINISHED } Figure \ref{fig:lin_fit_luer_2009} shows results of fitting. Get exciton size of $2.0 \pm 0.7$ nm which agrees with theory \cite{tretiak2007excitons}. From Equation \eqref{eq:exc_anih_diffuse_luer_2009}, obtain a diffusion length less than 10 nm which happens to be an order of magnitude less than the corresponding value obtained in fluorescence measurements \cite{cognet2007stepwise}. These results, combined with the observed, inefficient exciton-exciton annihilation, lead Luer et al.\ to conclude that differential absorption probes total population of excitons, many of which short-lived and do not directly participate in exciton-exciton annihilation due to shorter diffusion lengths. They also acknowledge that time-resolved fluoresence measurements appear to probe long-lived excitons that have higher diffusion lengths and are therefore more likely to engage in exciton-exciton annihilation processes.
 
+ Indeed, this hypothesis is plausible as a majority of the strong evidence in support of highly efficient exciton-exciton annihilation processes in SWCNTs has been primarily derived from photoluminescence measurements. As another example of this, Murakami and Kono (2009) show that light emission from nanotubes appears to saturate at higher optical pump fluences as shown in Figure \ref{fig:pl_saturation_murakami} \cite{murakami2009existence}. They also attributed this phenomenon to the effect of diffusion-limited, exciton-exciton annihilation which sets the upper limit of excitons that can be created. In spite of this, transient absorption measurements suggest that if indeed exciton-exciton annihilation occurs, it is not necessarily the most dominant carrier relaxation process. Other non-radiative processes will have to be accounted for to obtain a comprehensive understanding of the ultrafast carrier dynamics of SWCNTs.
 
-
-\subsection{Murakami et al.\ (2009)}
-{\color{red} UNFINISHED} Efficient exciton-exciton annihilation \cite{murakami2009existence}.
-
-
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1.7]{images/chapter_prior_works/murakami_pl_saturation}
+	\caption{Time-integrated photoluminescence intensity of (6,5) nanotubes shown as a function of optical pump fluence. The solid and dashed lines correspond to fits using, respectively, the diffusion-limited, exciton-exciton annihilation proposed by Murakami and Kono as well as a model based on the conventional rate-equation in Equation \eqref{eq:rate_eq_exc_anih}. Regardless of the excitation wavelength, photoluminescence appears to saturate at higher pump fluences. Murakami and Kono interpreted this evidence of exciton-exciton annihilation establishing an upper limit on the population of photo-excited excitons. Reproduced and modified from \cite{murakami2009existence}. }
+	\label{fig:pl_saturation_murakami}
+\end{figure}
 
 
 %\section{Possible Presence of Bi-excitons and Trions}
