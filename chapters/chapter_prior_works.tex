@@ -496,17 +496,56 @@ Given a spectral shift $\delta \omega$ induced by the optical Stark effect, Song
 \begin{equation}
 	\Delta \alpha(\omega) = \frac{\partial \alpha(\omega)}{\partial \omega} \cdot \delta\omega,
 \end{equation}
-which represents the first order term within the Taylor expansion. The good agreement between the red and blue curves in Figure \ref{fig:dtt_song_2006} confirms this. Furthermore, the inset figure within Figure \ref{fig:dtt_song_2006} also demonstrates that the spectral shift scales linearly with the optical pump intensity as expected. 
+which represents the first order term within the Taylor expansion. The good agreement between the red and blue curves in Figure \ref{fig:dtt_song_2006} confirms this. Furthermore, the inset figure within Figure \ref{fig:dtt_song_2006} also demonstrates that the spectral shift scales linearly with the optical pump intensity as expected.
 
-\subsection{Maeda et al.\ (2006)}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{images/chapter_prior_works/stark_shift_maeda}
+	\caption{The top curve shows the absorption spectrum $\alpha$ of the SWCNT film studied by Maeda et al. Here, the absorption peak is inhomogenously broadened due to the presence of various nanotube chiralities within the film. The bottom traces show the change in absorption $\Delta \alpha_0$ as a function of time delay $t_\text{d}$ along with a plot of -$\alpha$ (dashed line). The lower inset figure shows a close-up of the left-hand region of the change in absorbance. The black arrows mark probe positions shown in Figure \ref{fig:dtt_2_maeda_2006}. Reproduced from Ref.\ \cite{maeda2006gigantic}.}
+	\label{fig:abs_maeda_2006}
+\end{figure}
 
+{\color{red}UNFINISHED} Maeda et al.\ (2006) also observed a coherent optical phenomenon, which they attributed to the optical Stark effect, within a SWCNT film containing both semiconducting and metallic nanotubes. Figure \ref{fig:abs_maeda_2006} shows absorption spectrum $\alpha$. It also reveals the change in absorption $\Delta \alpha$ at given time delay $t_\text{d}$ after photo-exciting at 0.685 eV. At $t_\text{d} = 0.1$ ps, the absorption decreases significantly at 0.685 eV. However, the spectral width of the negative $\Delta\alpha$ is 40 meV whereas, the width of the absorption peak is about 200 meV.
+
+This behavior marks a clear sign of a phenomenon known as spectral hole burning. Maeda et al.\ note that the resonance at 0.685 eV is inhomogenously broadened due to presence of nanotubes with varying diameters. As a result, the optical pump resonantly excites only a subset of nanotubes whose optical responses become dominant in the $\Delta \alpha$ spectrum. The $\Delta \alpha$ spectrum at $t_\text{d} = 0.1$ ps also contains positive changes at 0.6 and 0.76 eV. In combination with the negative signal observed at 0.685 eV, this suggests that the optical resonance has temporarily split into two new states.
+
+Figure \ref{fig:dtt_2_maeda_2006} shows the dynamics probed at the labeled photon energies. Here, Maeda et al.\ compute fits to the data using the phenomenological model
+\begin{equation}
+	\Delta \alpha_0(t_\text{d}) = A_1 \exp\left( \frac{-t_\text{d}^2}{\tau^2}\right) + \sum_\text{i=2,3} A_\text{i} \int^{t_\text{d}}_{-\infty} \mathrm{d} t^\prime \exp\left[ \frac{-(t_\text{d} - t^\prime)}{\tau_\text{i}} - \frac{t^{\prime 2}}{\tau^2}\right].
+	\label{eq:fits_maeda_2006}
+\end{equation}
+The first term denotes the coherent, ultrafast component of the dynamics which is expressed as a gaussian function with width $\tau$ = 130 fs, the pulse duration of the optical pump. This term contains only a single fitting parameter $A_1$. The remaining two terms in the summation include two exponential decays associated with a fast decay component (FDC) and a slow decay component (SDC) respectively. These include the fitting parameters $A_\text{i}$ and $\tau_\text{i}$ (i = 2,3) for each component, respectively. For the data shown in Figure \ref{fig:dtt_2_maeda_2006}, they obtain the decay times 0.37 ps for the FDC ($\tau_2$) and 2 ps for the SDC($\tau_3$).
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.4]{images/chapter_prior_works/stark_shift_maeda}
+	\includegraphics[scale=1.2]{images/chapter_prior_works/dtt_2_maeda_2006}
+	\caption{Carrier dynamics probed at the indicated photon energy $\hbar \omega_\text{r}$ after photo-exciting at 0.685 eV. The solid, grey lines indicate fits to the data using Equation \eqref{eq:fits_maeda_2006}. The red, blue, and green curves correspond to ultrafast, fast decay, and slow decay components respectively. Reproduced from Ref.\ \cite{maeda2006gigantic}.}
+	\label{fig:dtt_2_maeda_2006}
+\end{figure}
+
+The observed carrier dynamics certainly change when photo-exciting at other photon energies. Figure \ref{fig:dtt_maeda_2006} presents these results. When photo-exciting above the optical resonance, the ultrafast component (UC) becomes easily masked by the combination of the fast and slow components. This result shows how the creation of real carriers can easily obfuscate any coherent shifts associated with the optical Stark effect. However, the UC becomes more noticeable when photo-exciting
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{images/chapter_prior_works/dtt_maeda_2006}
 	\caption{{\color{red} UNFINISHED} Reproduced from Ref.\ \cite{maeda2006gigantic}.}
+	\label{fig:dtt_maeda_2006}
 \end{figure}
 
 \subsection{Matsumoto et al.\ (2006)}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{images/chapter_prior_works/abs_dtt_matsumoto}
+	\caption{The top curve shows the absorbance spectrum of the CoMoCAT dispersion sample studied by Matsumoto et al.\ (2006). The resonance located at 1.25 eV corresponds to the $E_{11}$ transition of (6,5) nanotubes. It is inhomogenously broadened due to a small population of (7,5) and (8,3) nanotubes that have their own $E_{11}$ resonances nearby. The bottom traces show differential transmision spectra at the indicated time delays after photo-exciting the sample at 1.14 eV. Finally, the shaded figure represents the spectrum of the optical pump. Reproduced from Ref.\ \cite{matsumoto2006optical}.}
+	\label{fig:abs_dtt_matsumoto}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_prior_works/dtt_matsumoto}
+	\caption{The plot shows the differential transmission measured at 0 ps from Figure \ref{fig:abs_dtt_matsumoto}. The dashed curve corresponds to the first derivative of the absorbance spectrum $\partial \alpha / \partial \omega$. Using this data, Matsumoto et al.\ estimate that the $E_{11}$ resonance coherently shifts by $1.1 \pm 0.3$ meV. Reproduced from Ref.\ \cite{matsumoto2006optical}.}
+	\label{fig:dtt_matsumoto}
+\end{figure}
 
 Ref.\ \cite{matsumoto2006optical}.
 
