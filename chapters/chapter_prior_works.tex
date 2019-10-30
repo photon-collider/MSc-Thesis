@@ -438,13 +438,65 @@ Luer et al.\ use Equation \eqref{eq:abs_exc_len} to obtain an estimate of the ex
 %They also show that exciton-exciton annihilation occurs over a time scale such that it is hard to reach Mott densitty of excitons where excitons immediately dissociate to form plasma of free carriers. These a
 %Apparently, excitons dissociate into free electron-hole pairs before recombination occurs \cite{kumamoto2014spontaneous}.
 
-\newpage
-
 \section{The Optical Stark Effect}
-{\color{red} UNFINISHED}
+Among the different optoelectronic applications, SWCNTs may also be useful for ultrafast, all-optical switching devices \cite{chai2017ultrafast}. Figure \ref{fig:optical_switch_chai_2017} shows a schematic diagram of how they work. These devices operate by using the photons from an optical pump to modulate, via a nonlinear optical process in a suitable medium, the transmission of probe photons which act as carriers of information \cite{chai2017ultrafast}. In principle, the optical Stark effect represents a nonlinear optical phenomenon that can be harnessed for such applications.
 
-\subsection{Song et al.\ (2006)}
-Ref.\ \cite{song2006optical}.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.2]{images/chapter_prior_works/optical_switching_chai_2017}
+	\caption{Schematic diagram showing the change in state of all-optical switching devices. (a) Without the presence of an optical pump, the state of probe photons incident on the nonlinear optical medium can be used as an OFF state (``0'') for device applications. (b) Incident photons from a sufficently intense optical pump will induce nonlinear optical phenomena in the medium. This effectively changes the state of the probe photons, and can be used as an ON (``1'') state. Reproduced from \cite{chai2017ultrafast}.}
+	\label{fig:optical_switch_chai_2017}
+\end{figure}
+
+Optical Stark effect is coherent process, only occurs during the presence of a strong optical pump beam. Figure \ref{fig:optical_stark_effect_schematic_sie} shows a schematic diagram of this phenomenon. Here, the states $\bra{a}$ and $\bra{b}$ represent the ground state and an excited state of a two-level system and $E_0$ denotes the energy difference between these states. Light-matter coupling introduced by optical pump of photon energy $h \nu$ creates the virtual states $\bra{a + h \nu}$ and $\bra{b - h \nu}$ that repel the original equilibrium states. After this repulsion occurs, the energy splitting $\Delta E_\text{splitting}$ between $\bra{a}$  and $\bra{b - h \nu}$ as well as $\bra{b}$ and $\bra{a + h \nu}$ is given as
+\begin{equation}
+	\Delta E_\text{splitting} = \sqrt{\Delta^2 + (\hbar\Omega_\text{R})^2 },
+\end{equation}
+where the detuning energy $\Delta = h \nu - E_0$ \cite{mysyrowicz1986dressed}. The variable $\Omega_\text{R}$ denotes the Rabi frequency and $\hbar \Omega = \mu E$, where $\mu$ and $E$ correspond to the transition dipole moment and the electric field of the pump respectively
+\cite{mysyrowicz1986dressed}. For sufficiently large negative detunings ($|\Delta| \gg \hbar \Omega_\text{R}$), the total change $\Delta E$ of the resonance energy $E_0$ can be expressed as
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_prior_works/optical_stark_effect_sie_2014}
+	\caption{Schematic diagram of the optical Stark effect. In equilbrium, the system contains two states $\bra{a}$ and $\bra{b}$ that have an energy difference of $E_0$. When an intense optical pump of energy $h \nu$ is introduced to the system, two new virtual states $\bra{a + h \nu }$ and $\bra{b - hv}$, also commonly known as Floquet states, emerge. These virtual states interact with the original equilibrium states, causing a shift in energy of the $E_0$ resonance energy. Reproduced from \cite{sie2015valley}.}
+	\label{fig:optical_stark_effect_schematic_sie}
+\end{figure}
+
+%\begin{equation}
+%		\Delta E = \sqrt{(\hbar \Omega_R)^2 + \Delta^2} - \Delta,
+%\end{equation}
+
+\begin{equation}
+		\Delta E \propto \frac{\mu^2 I}{\Delta},
+\end{equation}
+where $I$ indicates the intensity of the optical pump \cite{combescot1992semiconductors}.
+
+A large detuning energy is often needed to properly resolve the optical Stark effect in experiments. For example, in quantum well structures it has been observed that photo-excitations close to or above the band gap energy can create real carriers. The presence of real carriers photo-bleaches optical resonances and masks the presence of any coherent spectral shift induced by the optical Stark effect \cite{peyghambarian1984blue}. This poses a significant impediment for ultrafast, optical switching applications using inorganic semiconductors as real carriers created in these systems relax to the ground state on a nanosecond timescale \cite{maeda2006gigantic}. SWCNTs surpass this limitation as they undergo carrier relaxation processes on a picosecond timescale \cite{ostojic2004interband, wang2004observation, manzoni2005intersubband, maeda2006gigantic}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{images/chapter_prior_works/absorption_spectrum_song_2006}
+	\caption{Absorption spectrum of the (6,5)-enriched dispersion used by Song et al.\ (2006). The spectrum shows the (6,5) $E_{11}$ resonance located at 990 nm (1.25 eV) as well as another peak which corresponds to a phonon sideband of (6,5) nanotubes. Reproduced from \cite{song2006optical}.}
+	\label{fig:abs_song_2006}
+\end{figure}
+
+Song et al.\ (2006) observed an optical Stark shift of the (6,5) $E_{11}$ resonance. Figure \ref{fig:abs_song_2006} shows an aborption spectrum of their (6,5)-enriched dispersion that they studied. This includes the (6,5) $E_{11}$ resonance at 990 nm (1.25) as well as another peak corresponding a phonon sideband found in (6,5) nanotubes. For pump detuned below $E_{11}$ energy transition, the $E_{11}$ peak experiences a blue-shift as shown in \ref{fig:dtt_song_2006}. The red curve corresponds to the difference absorption spectrum $\Delta \alpha$ defined as
+\begin{equation}
+	\Delta\alpha(\omega) = \alpha^\text{P}(\omega) - \alpha^0(\omega),
+\end{equation}
+where $\alpha^\text{P}(\omega)$ and $\alpha^\text{0}(\omega)$ denote the absorption spectrum in the presence and without the presence of the strong optical pump. The blue curve expresses  the first derivative $\partial\alpha / \partial\omega$ of the absorption spectrum shown in Figure \ref{fig:abs_song_2006}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{images/chapter_prior_works/dtt_song_2006}
+	\caption{Difference absorption spectrum $\Delta \alpha(\omega)$ measured after photo-exciting at \SI{1.8}{\um} (0.69 eV) at a time delay when the pump and the probe arrive at the same time (red trace). For small spectral shifts, the differential absorption is expected to be proportional to the first derivative of the absorption spectrum (Figure \ref{fig:abs_song_2006}) with respect to the photon frequency. The inset figure shows that spectral shifts scale linearly with the intensity of the optical pump. Reproduced from \cite{song2006optical}.}
+	\label{fig:dtt_song_2006}
+\end{figure}
+
+Given a spectral shift $\delta \omega$ induced by the optical Stark effect, Song et al.\ note that $\alpha^\text{P}(\omega) = \alpha^0 (\omega + \delta \omega)$. For relatively small frequency shifts, $\alpha^0 (\omega + \delta \omega)$ can be Taylor expanded to obtain the difference absorption spectrum
+\begin{equation}
+	\Delta \alpha(\omega) = \frac{\partial \alpha(\omega)}{\partial \omega} \cdot \delta\omega,
+\end{equation}
+which represents the first order term within the Taylor expansion. The good agreement between the red and blue curves in Figure \ref{fig:dtt_song_2006} confirms this. Furthermore, the inset figure within Figure \ref{fig:dtt_song_2006} also demonstrates that the spectral shift scales linearly with the optical pump intensity as expected. 
 
 \subsection{Maeda et al.\ (2006)}
 
