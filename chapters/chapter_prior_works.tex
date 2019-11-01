@@ -24,6 +24,15 @@ where $n(\vec{r}, t)$ characterizes local exciton density at position $\vec{r}$ 
 
 This phenomenon has also been explored in SWCNTs. However, there has been a substantial debate regarding the contribution of exciton-exciton annihilation in carrier dynamics of SWCNTs. Photoluminescence measurements suggest that exciton-exciton annihilation is a dominant carrier relaxation process the restricts the number of excitons that can be created. However, transient absorption experiments do not corroborate this observation. This apparent contradiction demonstrates a lack of consensus on the exact nature of the non-radiative phenomena occurring in SWCNTs.
 
+Among the other optoelectronic applications, SWCNTs may also be useful for ultrafast, all-optical switching devices \cite{chai2017ultrafast}. Figure \ref{fig:optical_switch_chai_2017} shows a schematic diagram of how they work. These devices operate by using the photons from an optical pump to modulate, via a nonlinear optical process in a suitable medium, the transmission of probe photons which act as carriers of information \cite{chai2017ultrafast}. The optical Stark effect represents a nonlinear optical phenomenon that can be harnessed for such applications. In this phenomenon, the optical pump induces a nonlinear effect in the medium that coherently blue-shifts an optical resonance detected by the probe photons.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.2]{images/chapter_prior_works/optical_switching_chai_2017}
+	\caption{Schematic diagram showing the change in state of all-optical switching devices. (a) Without the presence of an optical pump, the state of probe photons incident on the nonlinear optical medium can be used as an OFF state (``0'') for device applications. (b) Incident photons from a sufficently intense optical pump will induce nonlinear optical phenomena in the medium. This effectively changes the state of the probe photons, and can be used as an ON (``1'') state. Reproduced from \cite{chai2017ultrafast}.}
+	\label{fig:optical_switch_chai_2017}
+\end{figure}
+
 \section{Inter-band and Inter-subband Recombination Dynamics}
 
 Ostojic et al.\ (2004) presented an early work regarding the carrier recombination dynamics of carbon nanotubes \cite{ostojic2004interband}. They conducted wavelength-dependent, degenerate pump-probe measurements on dispersion of HiPCo SWCNTs %(See Sections \ref{section:cnt_synthesis} and \ref{section:dispersion_swcnt} for details).
@@ -439,16 +448,9 @@ Luer et al.\ use Equation \eqref{eq:abs_exc_len} to obtain an estimate of the ex
 %Apparently, excitons dissociate into free electron-hole pairs before recombination occurs \cite{kumamoto2014spontaneous}.
 
 \section{The Optical Stark Effect}
-Among the different optoelectronic applications, SWCNTs may also be useful for ultrafast, all-optical switching devices \cite{chai2017ultrafast}. Figure \ref{fig:optical_switch_chai_2017} shows a schematic diagram of how they work. These devices operate by using the photons from an optical pump to modulate, via a nonlinear optical process in a suitable medium, the transmission of probe photons which act as carriers of information \cite{chai2017ultrafast}. In principle, the optical Stark effect represents a nonlinear optical phenomenon that can be harnessed for such applications.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.2]{images/chapter_prior_works/optical_switching_chai_2017}
-	\caption{Schematic diagram showing the change in state of all-optical switching devices. (a) Without the presence of an optical pump, the state of probe photons incident on the nonlinear optical medium can be used as an OFF state (``0'') for device applications. (b) Incident photons from a sufficently intense optical pump will induce nonlinear optical phenomena in the medium. This effectively changes the state of the probe photons, and can be used as an ON (``1'') state. Reproduced from \cite{chai2017ultrafast}.}
-	\label{fig:optical_switch_chai_2017}
-\end{figure}
 
-Optical Stark effect is coherent process, only occurs during the presence of a strong optical pump beam. Figure \ref{fig:optical_stark_effect_schematic_sie} shows a schematic diagram of this phenomenon. Here, the states $\bra{a}$ and $\bra{b}$ represent the ground state and an excited state of a two-level system and $E_0$ denotes the energy difference between these states. Light-matter coupling introduced by optical pump of photon energy $h \nu$ creates the virtual states $\bra{a + h \nu}$ and $\bra{b - h \nu}$ that repel the original equilibrium states. After this repulsion occurs, the energy splitting $\Delta E_\text{splitting}$ between $\bra{a}$  and $\bra{b - h \nu}$ as well as $\bra{b}$ and $\bra{a + h \nu}$ is given as
+The optical Stark effect is a coherent process that only occurs during the presence of a strong optical pump beam. Figure \ref{fig:optical_stark_effect_schematic_sie} shows a schematic diagram of this phenomenon. Here, the states $\bra{a}$ and $\bra{b}$ represent the ground state and an excited state of a two-level system and $E_0$ denotes the energy difference between these states. Light-matter coupling introduced by optical pump of photon energy $h \nu$ creates the virtual states $\bra{a + h \nu}$ and $\bra{b - h \nu}$ that repel the original equilibrium states. After this repulsion occurs, the energy splitting $\Delta E_\text{splitting}$ between $\bra{a}$  and $\bra{b - h \nu}$ as well as $\bra{b}$ and $\bra{a + h \nu}$ is given as
 \begin{equation}
 	\Delta E_\text{splitting} = \sqrt{\Delta^2 + (\hbar\Omega_\text{R})^2 },
 \end{equation}
@@ -467,6 +469,7 @@ where the detuning energy $\Delta = h \nu - E_0$ \cite{mysyrowicz1986dressed}. T
 
 \begin{equation}
 		\Delta E \propto \frac{\mu^2 I}{\Delta},
+		\label{eq:ose_blueshift}
 \end{equation}
 where $I$ indicates the intensity of the optical pump \cite{combescot1992semiconductors}.
 
@@ -474,7 +477,7 @@ A large detuning energy is often needed to properly resolve the optical Stark ef
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{images/chapter_prior_works/absorption_spectrum_song_2006}
+	\includegraphics[scale=0.4]{images/chapter_prior_works/absorption_spectrum_song_2006}
 	\caption{Absorption spectrum of the (6,5)-enriched dispersion used by Song et al.\ (2006). The spectrum shows the (6,5) $E_{11}$ resonance located at 990 nm (1.25 eV) as well as another peak which corresponds to a phonon sideband of (6,5) nanotubes. Reproduced from \cite{song2006optical}.}
 	\label{fig:abs_song_2006}
 \end{figure}
@@ -487,7 +490,7 @@ where $\alpha^\text{P}(\omega)$ and $\alpha^\text{0}(\omega)$ denote the absorpt
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{images/chapter_prior_works/dtt_song_2006}
+	\includegraphics[scale=0.4]{images/chapter_prior_works/dtt_song_2006}
 	\caption{Difference absorption spectrum $\Delta \alpha(\omega)$ measured after photo-exciting at \SI{1.8}{\um} (0.69 eV) at a time delay when the pump and the probe arrive at the same time (red trace). For small spectral shifts, the differential absorption is expected to be proportional to the first derivative of the absorption spectrum (Figure \ref{fig:abs_song_2006}) with respect to the photon frequency. The inset figure shows that spectral shifts scale linearly with the intensity of the optical pump. Reproduced from \cite{song2006optical}.}
 	\label{fig:dtt_song_2006}
 \end{figure}
@@ -505,9 +508,10 @@ which represents the first order term within the Taylor expansion. The good agre
 	\label{fig:abs_maeda_2006}
 \end{figure}
 
-{\color{red}UNFINISHED} Maeda et al.\ (2006) also observed a coherent optical phenomenon, which they attributed to the optical Stark effect, within a SWCNT film containing both semiconducting and metallic nanotubes. Figure \ref{fig:abs_maeda_2006} shows absorption spectrum $\alpha$. It also reveals the change in absorption $\Delta \alpha$ at given time delay $t_\text{d}$ after photo-exciting at 0.685 eV. At $t_\text{d} = 0.1$ ps, the absorption decreases significantly at 0.685 eV. However, the spectral width of the negative $\Delta\alpha$ is 40 meV whereas, the width of the absorption peak is about 200 meV.
+Maeda et al.\ (2006) also observed a coherent optical phenomenon, which they attributed to the optical Stark effect, within a SWCNT film containing both semiconducting and metallic nanotubes. Figure \ref{fig:abs_maeda_2006} shows absorption spectrum $\alpha$. It also reveals the change in absorption $\Delta \alpha$ at given time delay $t_\text{d}$ after photo-exciting at 0.685 eV. At $t_\text{d} = 0.1$ ps, the absorption decreases significantly at 0.685 eV. However, the spectral width of the negative $\Delta\alpha$ is 40 meV whereas, the width of the absorption peak is about 200 meV.
 
 This behavior marks a clear sign of a phenomenon known as spectral hole burning. Maeda et al.\ note that the resonance at 0.685 eV is inhomogenously broadened due to presence of nanotubes with varying diameters. As a result, the optical pump resonantly excites only a subset of nanotubes whose optical responses become dominant in the $\Delta \alpha$ spectrum. The $\Delta \alpha$ spectrum at $t_\text{d} = 0.1$ ps also contains positive changes at 0.6 and 0.76 eV. In combination with the negative signal observed at 0.685 eV, this suggests that the optical resonance has temporarily split into two new states.
+
 
 Figure \ref{fig:dtt_2_maeda_2006} shows the dynamics probed at the labeled photon energies. Here, Maeda et al.\ compute fits to the data using the phenomenological model
 \begin{equation}
@@ -526,19 +530,21 @@ The observed carrier dynamics certainly change when photo-exciting at other phot
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.25]{images/chapter_prior_works/dtt_maeda_2006}
+	\includegraphics[scale=0.22]{images/chapter_prior_works/dtt_maeda_2006}
 	\caption{{\color{red} UNFINISHED} Reproduced from Ref.\ \cite{maeda2006gigantic}.}
 	\label{fig:dtt_maeda_2006}
 \end{figure}
 
-\subsection{Matsumoto et al.\ (2006)}
+Matsumoto et al.\ (2006) observed the optical Stark effect in a CoMoCAT SWCNT film sample. Figure \ref{fig:abs_dtt_matsumoto} shows a key result of their work. Here, the (6,5) $E_{11}$ resonance located at 1.25 eV is inhomogenously broadened due to the nearby $E_{11}$ resonances of (7,5) and (8,3) nanotubes in the sample. Furthermore, when photo-exciting the sample below the $E_{11}$ transition at a photon energy of 1.14 eV at a fluence of \SI{34}{\micro \joule / \cm\squared}, the differential transmission suggests that the $E_{11}$ state coherently blue-shifts at 0 ps.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{images/chapter_prior_works/abs_dtt_matsumoto}
-	\caption{The top curve shows the absorbance spectrum of the CoMoCAT dispersion sample studied by Matsumoto et al.\ (2006). The resonance located at 1.25 eV corresponds to the $E_{11}$ transition of (6,5) nanotubes. It is inhomogenously broadened due to a small population of (7,5) and (8,3) nanotubes that have their own $E_{11}$ resonances nearby. The bottom traces show differential transmision spectra at the indicated time delays after photo-exciting the sample at 1.14 eV. Finally, the shaded figure represents the spectrum of the optical pump. Reproduced from Ref.\ \cite{matsumoto2006optical}.}
+	\includegraphics[scale=1.5]{images/chapter_prior_works/abs_dtt_matsumoto}
+	\caption{The top curve shows the absorbance spectrum of the CoMoCAT dispersion sample studied by Matsumoto et al.\ (2006). The resonance located at 1.25 eV corresponds to the $E_{11}$ transition of (6,5) nanotubes. It is inhomogenously broadened due to a small population of (7,5) and (8,3) nanotubes that have their own $E_{11}$ resonances nearby. The bottom traces show differential transmision spectra at the indicated time delays after photo-exciting the sample at 1.14 eV at a fluence of \SI{34}{\micro \joule / \cm\squared}. Finally, the shaded figure represents the spectrum of the optical pump. Reproduced from Ref.\ \cite{matsumoto2006optical}.}
 	\label{fig:abs_dtt_matsumoto}
 \end{figure}
+
+This blue-shift immediately disappears at 0.3 ps. Hence, the signals observed at 0.3 and 10 ps correspond to the relaxation of real carriers created via multi-photon processes. Figure \ref{fig:dtt_matsumoto} shows that the data measured at 0 ps is linearly proportional to the first derivative of the absorption spectrum, which agrees with the observations made by Song et al. From this, they deduce that the optical pump produces a blue-shift of $1.1 \pm 0.3$ eV.
 
 \begin{figure}[ht]
 	\centering
@@ -547,22 +553,35 @@ The observed carrier dynamics certainly change when photo-exciting at other phot
 	\label{fig:dtt_matsumoto}
 \end{figure}
 
-Ref.\ \cite{matsumoto2006optical}.
+{\color{red} UNFINISHED} Tao et al.\ (2009) also demonstrated how the detuning of the optical pump affects the optical Stark effect. On a sample similar to that of Matsumoto et al.\, they carried out measurements where they photo-excited their sample at photon energies below and above the (6,5) $E_{11}$ resonance energy. Figure \ref{fig:detuning_tao_2009} shows how the energy shift $\Delta E_\text{S}$ and broadining $\Delta E_\text{B}$ of the $E_{11}$ transition scales with the detuning $E_\text{d}$ of the optical pump. Here, Tao et al.\ observe that $\Delta E_\text{S}$ scales linearly with $E_\text{d}^{-1}$ as predicted by Equation \eqref{eq:ose_blueshift}.
 
-\subsection{Tao et al.\ (2009)}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.35]{images/chapter_prior_works/fluence_tao_2009}
+	\caption{Reproduced from Ref.\ \cite{tao2009subpicosecond}.}
+	\label{fig:detuning_tao_2009}
+\end{figure}
 
-Ref. \cite{tao2009subpicosecond}.
+{\color{red} UNFINISHED}Figure \ref{fig:abs_dtt_tao_2009}. The strong change in absorption measured at 0 ps suggests that a coherent blue-shift of the $E_{11}$ resonance occurs when the pump photon energy is less than or equal to photon energy of the $E_{11}$ transition. This coherent component can be easily isolated as shown by the shaded regions of the right-hand plots. However, when photo-exciting above the $E_{11}$ resonance, no coherent shift occurs and the dynamics are dominated by the relaxation of real carriers.
 
-\section{Discussion}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.25]{images/chapter_prior_works/abs_dtt_tao_2009}
+	\caption{(a) The absorption spectrum of the CoMoCAT SWCNT film sample measured by Tao et al (2009). The peak at 1.25 eV corresponds to the (6,5) $E_{11}$ resonance. It is inhomogenously broadened by the $E_{11}$ resonances of (7,5) and (8,3) nanotubes. The black arrows indicate photon energies of the optical pump for the pump probe measurements in the bottom figures. (b) - (e) Optical responses measured after photo-exciting at (b) 0.72 eV, (c) 1.01 eV, (d) 1.25 eV, and (e) 1.33 eV.  Reproduced from Ref.\ \cite{tao2009subpicosecond}.}
+	\label{fig:abs_dtt_tao_2009}
+\end{figure}
 
 
-Conflicting reports of exciton-exciton annihilation. Consensus regarding efficiency of exciton exciton isn't so clear. There could be a number of reasons for disagreements in each work. These can include, type of sample studied, power density of the optical pump as well as pump wavelength. Samples in early studies used HiPCo or CoMoCAT dispersions which contained several different chiralities. As noted by Ostojic et al.\ (2004), optical excitations can cause both resonant and non-resonant excitations in the ensemble. Moreover, multi-photon processes occuring in metallic nanotubes, which have resonances at higher photon energies, could also play a role.
+%\section{Discussion}
 
-Exciton sizes can vary depending on dielectric environment \cite{mann201613}.
 
-One question: Do carrier relaxation processes differ when exciting resonantly or nonresonantly? If so, how?
+%Conflicting reports of exciton-exciton annihilation. Consensus regarding efficiency of exciton exciton isn't so clear. There could be a number of reasons for disagreements in each work. These can include, type of sample studied, power density of the optical pump as well as pump wavelength. Samples in early studies used HiPCo or CoMoCAT dispersions which contained several different chiralities. As noted by Ostojic et al.\ (2004), optical excitations can cause both resonant and non-resonant excitations in the ensemble. Moreover, multi-photon processes occuring in metallic nanotubes, which have resonances at higher photon energies, could also play a role.
 
-Does phonon side-band play a role here? It has been ignored in early studies as $E_{11}$ and $E_{22}$ resonance are dominant in optical absorption spectrum.
-Wang et al (2004) pumped at 810 nm which is right between $E_{11}$ and $E_{22}$ of many of the semiconducting in their sample.
+%Exciton sizes can vary depending on dielectric environment \cite{mann201613}.
 
-Dielectric environment can have an effect on
+%One question: Do carrier relaxation processes differ when exciting resonantly or nonresonantly? If so, how?
+
+%Does phonon side-band play a role here? It has been ignored in early studies as $E_{11}$ and $E_{22}$ resonance are dominant in optical absorption spectrum.
+%Wang et al (2004) pumped at 810 nm which is right between $E_{11}$ and $E_{22}$ of many of the semiconducting in their sample.
+
+%Dielectric environment can have an effect on
