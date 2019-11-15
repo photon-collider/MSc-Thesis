@@ -10,6 +10,7 @@ We can quantify the performance of optical switching by using the term reversibi
 %
 \begin{equation}
  	\text{Rev} = \dfrac{\Delta T_\text{peak} - \Delta T_\text{base}}{\Delta T_\text{peak}},
+  \label{eq:kira_reversibility}
 \end{equation}
 %
 which includes the baseline transmission $\Delta T_\text{base}$ that represents the average of the transmission before and after switching occurs whereas, the peak change in transmission $\Delta T_\text{peak}$ only measures the coherent changes in transmission due to the optical Stark effect. Furthermore, $\Delta T_\text{base}$ accounts for changes in trasmission due to the creation of real carriers. It also implicitly depends on other parameters such as the detuning and fluence of the optical pump as well as the time delay between incident pump pulses.
@@ -53,31 +54,76 @@ In this expression, the exponential term parametrized by the Hamiltonian $\hat{\
 and acts as an effective Hamiltonian for excitons in the system. The other more curious term $T_\text{QM}$ defines the duration of the quantum memory.
 
 Quantum memory, using light as a carrier of information and encoding this information into matter \cite{iakoupov2013efficient}. Quantum memory here refers to the system's memory of the irradiation caused by optical pump, stored within $P_\text{k}$, that can be retrieved by measuring the transmission of the optical probe. Experiments suggest that $T_\text{QM} = $ 66 fs. Ultrafast switching applications, prefer to have shorter duration to facilitate optical switching on a picosecond timescale or faster.
+
 \section{Experimental Results}
 
-\begin{figure}[H]
+Figure \ref{fig:ose_color_map} presents experimental data of the optical Stark effect observed in the SWCNT ensemble dispersed using DOC. The optical pump is negatively detuned below the $E_{11}$ resonance by $\sim 200$ meV and has a power density of 3.1 GW/cm$^2$. Figures \ref{fig:ose_dtt} and \ref{fig:ose_time_traces} complement this plot. Specifically, Figure \ref{fig:ose_dtt} shows the differential transmission probed at the $E_{11}$ transition energy whereas, Figure $\ref{fig:ose_time_traces}$ shows the attenuance spectrum before, during, and after the photo-excitation of the optical pump.
+
+Figure \ref{fig:ose_kira_nonresonant} shows more experimental data accompanied with numerical simulations. The data here was also collected using an optical pump detuned from the $E_{11}$ transition energy by $\sim$200 meV. Furthermore, the simulations compare how the coherent dynamics evolve both with and without the effects of quantum memory. The plot also shows how the Stark shift scales with the intensity of the optical pump $|E_\text{ctrl}|^2$.
+
+The dynamics observed after resonantly exciting the $E_{11}$ transition are shown in Figure \ref{fig:ose_kira_resonant} along with numerical simulations. In this scenario, a spectral splitting located at the $E_{11}$ resonance occurs at both negative and positive time delays. This splitting is also predicted by the numerical simulations when using an appropriate dephasing constant $\gamma$. A second calculation with a reduced dephasing constant $\gamma/2$ is also presented as a point of comparison.
+
+An investigation of the reversibility in the system using simulations is presented in Figure \ref{fig:ose_kira_simul}. These show how the reversibility, quantified by Equation \eqref{eq:kira_reversibility}, evolves with successive optical pumping induced by pulses of 200 fs duration that are spaced apart in time by 1 ps. The pump pulses are assumed to be detuned such that the detuning far exceeds the Rabi energy of the system. Here, reversibility is calculated in two scenarios. One scenario shows the change in the reversibility over time using the dephasing constant $\gamma$ that reproduces the experimental results. The second scenario instead uses a dephasing constant of $\gamma/2$ features optical pump excitions whose intensities and detuning are twice that of the previous scenario.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=2.4in]{images/chapter_coherent/ose_abs_map}
+  \caption{ Color map of an optical Stark effect measurement of the $E_{11}$ resonance. Here, the optical pump photon energy is detuned by $\sim$200 meV relative to the $E_{11}$ transition energy and has a power density of 3.1 GW/cm$^2$. At a time delay of 0 ps, $E_{11}$ resonance shifts by 3 meV. This shift quickly disappears at later time delays. }
+  \label{fig:ose_color_map}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=2.4in]{images/chapter_coherent/ose_dt}
+  \caption{Differential transmission probed at the $E_{11}$ resonance from the data shown in Figure \ref{fig:ose_color_map}. A large signal originating from the optical Stark effect occurs at the time delay of 0 ps. The remaining signal at later delays emerges due to the creation of excitons via multi-photon processes. }
+  \label{fig:ose_dtt}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[height=2.4in]{images/chapter_coherent/ose_time_traces}
+  \caption{$E_{11}$ attenuance spectrum as a function of time. The data shown here correspond to vertical slices of the plot shown in Figure \ref{fig:ose_color_map}. The $E_{11}$ peak shifts coherently at 0 ps due to the optical Stark effect. At slightly earlier and later time delays, this shift does not occur. }
+  \label{fig:ose_time_traces}
+\end{figure}
+
+\begin{figure}[ht]
 	\centering
 	\includegraphics[height=2.6in]{images/chapter_coherent/nonresonant}
-	\caption{(a) Measured vs.\ (b) numerically simulated transmission spectra of the SWCNT ensemble both with (solid lines) and without (shaded area) the influence of the optical pump beam. The dashed line shows how the transmission spectrum would evolve by using the phenomenological description of the dephasing dynamics represented in Equation \eqref{eq:kira_phenom_dephase} as opposed to the quantum-kinetic approach given by Equation \eqref{eq:kira_quantum_dephase}. Without considering quantum memory, the $E_{11}$ resonance becomes slightly photo-bleached and shifts in a non-coherent fashion. However, the quantum-kinetic description that includes quantum memory agrees with the experimental data. (c) Calculated (solid line) vs. experimentally measured Stark shift $\Delta E$. The Stark shift scales linearly with the intensity of the optical pump beam expressed as $|E_\text{ctrl}|^2$ (d) Time-resolved differential transmission probed at the $E_{11}$resonance. The shaded area represent the temporal profile of the optical pump pulse. The curves correspond to experimental data (solid red line), a theoretical calculation including quantum memory (solid black line) and another computation excluding the effects of quantum memory (dashed blue line). Reproduced from Ref.\ \cite{mack2019}}
+	\caption{(a) Measured vs.\ (b) numerically simulated transmission spectra of the SWCNT ensemble both with (solid lines) and without (shaded area) the influence of the optical pump beam. The dashed line shows how the transmission spectrum would evolve by using the phenomenological description of the dephasing dynamics represented in Equation \eqref{eq:kira_phenom_dephase} as opposed to the quantum-kinetic approach given by Equation \eqref{eq:kira_quantum_dephase}. Without considering quantum memory, the $E_{11}$ resonance becomes slightly photo-bleached and shifts in a non-coherent fashion. However, the quantum-kinetic description that includes quantum memory agrees with the experimental data. (c) Calculated (solid line) vs. experimentally measured Stark shift $\Delta E$. The Stark shift scales linearly with the intensity of the optical pump beam expressed as $|E_\text{ctrl}|^2$ (d) Time-resolved differential transmission probed at the $E_{11}$resonance. The shaded area represent the temporal profile of the optical pump pulse. The curves correspond to experimental data (solid red line), a theoretical calculation including quantum memory (solid black line) and another computation excluding the effects of quantum memory (dashed blue line). Reproduced from Ref.\ \cite{mack2019}.}
+
+  \label{fig:ose_kira_nonresonant}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=2.6in]{images/chapter_coherent/resonant}
-	\caption{{\color{red}UNFINISHED} Simulation of ultrafast switching reversibility. (a) Calculated differential transmission within the span of eight 200fs optical pulses irradiating the system. The shaded  Reproduced from Ref.\ \cite{mack2019}}
+	\caption{(a) Experimental and (b) numerically simulated transmission for five pump-probe time delays with the optical pump photon energy equaling that of the $E_{11}$ transition. The shaded areas correspond to the computed transmission with the dephasing constant reduced by a factor of one-half. (c) Differential transmission and (d) energy splitting at the $E_{11}$ resonancs vs.\ pump-probe delay time. The shaded figures represent the temporal profile of the optical pump pulse. A spectral splitting occurs even at times before the arrival of the optical pump pulse. Reproduced from Ref.\ \cite{mack2019} }
+
+  \label{fig:ose_kira_resonant}
 \end{figure}
 
-\clearpage
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[height=2.6in]{images/chapter_coherent/switching_reversibility}
-	\caption{{\color{red}UNFINISHED} (a)  Reproduced from Ref.\ \cite{mack2019}}
+	\caption{ Simulation of ultrafast switching reversibility. (a) Calculated differential transmission within the span of eight 200 fs optical pulses irradiating the system. The pump pulses are detuned below the $E_{11}$ resonance such that the detuning is much greater than the Rabi energy. The shaded area represents temporal profile of the incident optical pump pulses. The red curves show predicted change in differential transmission over time of using desphasing parameter $\gamma$ that reproduces experimental data. The blue curve shows how the differential transmission changes using $\gamma/2$ as the new dephasing constant and doubling the detuning and the pump intensity. (b) Predicted reversibility of the SWCNT system using the definition established in Equation \eqref{eq:kira_reversibility}. The red and blue curves correspond to conditions defined in the red and blue curves shown in Figure (a) respectively.  Reproduced from Ref.\ \cite{mack2019}.}
+  \label{fig:ose_kira_simul}
 \end{figure}
 
 
 
+\clearpage
 
 \section{Discussion}
 
+{\color{red} UNFINISHED} Clear signature of Stark effect observed in Figure \ref{fig:ose_color_map}. A change in the attenuance of $E_{11}$ peak only occurs at a time delay of 0 ps. In Figure \ref{fig:ose_dtt}, a large change in the differential transmission also only occurs at 0 ps. The positive signal observed at later time delays is interpreted as a result of photo-bleaching due to carrier created as a result of multi-photon processes. The shift in the $E_{11}$ resonance is clearly resolved in FIgure \ref{fig:ose_time_traces}. It is only at time 0 ps where the $E_{11}$ peak shifts by 3 meV. Otherwise, at times before and after the arrival of the pump pulse, the peak retains its original position.
+
+Figures \ref{fig:ose_kira_nonresonant}(a) and \ref{fig:ose_kira_nonresonant}(b) demonstrates the necessity of invoking the effects of quantum memory to explain these results. In using the phenomenological approached captured by Equation \eqref{eq:kira_phenom_dephase}, the numerical simulations predict dynamics that do not agree with the experimental data. Under these conditions, the $E_{11}$ resonance irreversibly shifts, and retains this energy shift even at time delays after the arrival of the optical pump pulse. In contrast, the calculations incorporating the effects of quantum memory successfully reproduce the coherent shift of the $E_{11}$ transition. In addition, Figure \ref{fig:ose_kira_nonresonant}(c) shows that the energy shift scales linearly with the intensity of the optical pump, a result which shows proper correspondence with the optical Stark effect. Figure \ref{fig:ose_kira_nonresonant}(d) shows how the differential transmission at the $E_{11}$ resonance changes with time delay. The experimental data as well as the numerical simulation including quantum memory both feature a significant coherent component that agrees with the temporal profile of the optical pump pulse. However, the calculations that exclude quantum memory show a marginally small coherent component that is instead dominated by incoherent effects due to the creation of real carriers.
+
+The $E_{11}$ peak exhibits a spectral splitting when the optical pump photon energy equals that of the $E_{11}$ transition as shown in Figure \ref{fig:ose_kira_resonant}. This splitting is also reproduced by numerical simulations that account for quantum memory. However, this splitting still occurs at both positive and negative time delays as shown by Figure \ref{fig:ose_kira_resonant}(d). This alone shows that the energy splitting cannot indicate a Rabi splitting that is expected to occur with zero detuning. These are instead interpreted as coherent oscillations that occur due to wave-mixing between the optical pump and probe \cite{joffre1988coherent}. It is said that these two light beams, each with their own wave vectors, interfere and subsequently introduce spectral ringing to the optical probe \cite{joffre1988coherent}.
+
+Figure \ref{fig:ose_kira_simul} shows reversibility changes. Reversibility decreases due to the accumulation of carriers via multi-photon processes after the arrival of each optical pump pulse. Using a hypothetical sample with dephasing constant lower by a factor of 2, reversibility improves by factor of 20 compared to current sample. Reversibility can be as high as 10\% after 500 optical pump pulses.
+
 \section{Conclusions}
+
+{\color{red} UNFINISHED} Optical Stark effect clearly resolved in (6,5)-enriched dispersion. Reversible process only occurs with nonresonant excitation. SWCNTs have fast relaxation time which makes them suitable for all-optical switching applications by harnessing optical Stark effect. Resonant case not suitable for this as spectral ringing occurs during the time window of optical pump. Reversibility of sample...
