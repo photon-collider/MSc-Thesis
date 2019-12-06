@@ -214,27 +214,54 @@ Figure \ref{fig:allowed_optical_transitions} presents an illustration of the dip
 \section{Excitons in SWCNTs}
 
 \subsection{Supression of Optical Transitions Involving the Free-Electron Continuum}
-The simple tight-binding picture presented earlier ignores the effects of electron-electron interactions and thereby does not fully account for the effects of electron-electron interactions \cite{weismanKonoBook}. Indeed, the inclusion of electron-electron interactions into this picture yields a new electronic structure in which free electrons play a minimal role.
 
-Strong electron-electron interactions influence the binding energies of quasi-particles known as excitons that form after the creation of an electron-hole pair \cite{Ashcroft}. Excitons represent hydrogen-like quasi-particles composed of a negatively-charged electron bound to a positively-charged hole. In an ideal 1-D material, theory predicts that excitons will have an infinite binding energy \cite{loudon1959one, elliott1959theory}. This alone foreshadows the dominance of excitons in the optical properties of carbon nanotubes \cite{ando2005theory}.
+One peculiar feature of 1D materials, as compared with 2D or 3D systems, is the relatively low interband absorption associated with the creation of free electron-hole pairs \cite{ogawa1991interband}. A key aspect involves excitons which represent hydrogen-like quasi-particles composed of a negatively-charged electron bound to a positively-charged hole via Coulomb interactions \cite{Ashcroft, kira2011semiconductor}. For an ideal 1D material, theory predicts that excitons will have an infinite binding energy \cite{loudon1959one, elliott1959theory}. This alone foreshadows the profound effect of excitons on the optical properties of 1D systems.
+
+In describing how excitons affect the optical absorption of 1D materials, Ogawa \textit{et al.} (1991) introduced the concept of the Sommerfeld factor, defined as the ratio between the optical absorption of the unbound exciton continuum ($K_\text{exciton}$) to the that of the free-electron continuum ($K_\text{e-h}$) above the band gap energy $E_g$. This can be expressed as
+\begin{equation}
+	S_\text{a} (\omega) = \frac{K_\text{exciton}(\omega)}{K_\text{e-h}(\omega)},
+\end{equation}
+where $\hbar \omega > E_\text{g}$. As an aside, this concept was originally developed by Arnold Sommerfeld to explain the enhancement of electron-positron annihilation cross-section due to the Coulomb interaction between the two charged particles \cite{sommerfeld1931beugung}. In the context of condensed matter systems, the Sommerfeld factor shows how the Coulomb interactions between electrons and holes can either enhance or reduce the optical absorption of the free electron continuum states \cite{ogawa1991interband}.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.3]{images/chapter_optical_props/ando_suppression}
-	\caption{Optical absorption spectrum of a semiconducting nanotube with (solid line) and without (dashed line) the effect of Coulomb interactions. Arrows mark the band edge positions of free electron continua. Reproduced and modified from Ref.\ \cite{ando2005theory}.}
-	\label{fig:ando_suppression}
+	\includegraphics[scale=0.8]{images/chapter_optical_props/Sommerfeld_Plot/coulomb_enhancement}
+	\caption{Plot of optical absorption spectrum demonstrating the effect of Coulomb interactions on the oscillator strength of interband transitions in a 3D system. With no Coulomb interactions the absorption varies as $\sqrt{\hbar\omega - E_\text{g}}$ from the standard 3D free-electron gas model \cite{Ashcroft}. After including Coulomb interactions, an exciton peak appears near the band edge and the interband absorption becomes enhanced.}
+	\label{fig:coulomb_enhancement_3d}
 \end{figure}
 
-The strong Coulomb interactions of nanotubes effectively suppresses the optical absorption of any free electron continuum whilst enhancing that of excitonic states. Exciton energy levels and wavefunctions are largely influenced by the effect of long-range Coulomb interactions \cite{ando2006effects}. Moreover, the effective strength of Coulomb interactions $S_\text{e-e}$ can be expressed as
+For 2D or 3D systems, $S_\text{a}$ always remains above unity, suggesting that Coulomb interactions enhance interband absorption in these scenarios \cite{ogawa1991interband}. In the case of 3D systems, the Sommerfeld factor is given as
+\begin{equation}
+	S_\text{a}^\text{3D}(\omega) = \frac{\pi \alpha \exp(\pi \alpha)}{\sinh(\pi \alpha)}
+\end{equation}
+for dipole-allowed transitions \cite{elliott1957intensity}. Here, $\alpha \propto 1/\sqrt{\hbar\omega - E_\text{g}}$. This result is demonstrated in Figure \ref{fig:coulomb_enhancement_3d}. Coulomb interactions not only result in an exciton peak near the band edge but also enhance optical absorption above the band gap.
+
+
+However, for 1D systems, $S_\text{a}^\text{1D}$ always remains below unity for energies above the the band gap \cite{ogawa1991interband}. Figure \ref{fig:coulomb_enhancement_1d} shows the effect of the 1D Sommerfeld factor on the optical absorption of a 1D material. Unlike the 3D case, the exact expression for $S_\text{a}^\text{1D}$ is more complicated as it involves a gamma function along with two basis solutions of a confluent hypergeometric eqquation \cite{ogawa1991optical}. In general however, $S_\text{a}^\text{1D} = 0$ at the band edge \cite{ogawa1991optical} and monotonically increases \cite{ogawa1991optical}. This plot therefore uses a tanh function for simplicity to approximate these features of $S_\text{a}^\text{1D}(\omega)$. The plot shows the presence of van Hove singularities when ignoring the effect of Coulomb interactions. After accounting for these interactions, the Sommerfeld factor indicates a suppression of interband optical absorption. Most of the oscillator strength of the optical absorption instead resides with lowest-lying exciton peak.
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.8]{images/chapter_optical_props/Sommerfeld_Plot/coulomb_enhancement_1d}
+	\caption{Plot of optical absorption spectrum demonstrating the effect of Coulomb interactions on the oscillator strength of interband transitions in a 1D system. In this case, the Sommerfeld factor is approximated as a tanh function for simplicity. With no Coulomb interactions the absorption varies as $1/\sqrt{\hbar\omega - E_\text{g}}$ from the 1D free-electron gas model \cite{Ashcroft}. After including Coulomb interactions, an exciton peak appears below the band edge and the interband absorption for the free electron continuum becomes supressed. }
+	\label{fig:coulomb_enhancement_1d}
+\end{figure}
+
+
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[scale=0.3]{images/chapter_optical_props/ando_suppression}
+%	\caption{Optical absorption spectrum of a semiconducting nanotube with (solid line) and without (dashed line) the effect of Coulomb interactions. Arrows mark the band edge positions of free electron continua. Reproduced and modified from Ref.\ \cite{ando2005theory}.}
+%	\label{fig:ando_suppression}
+%\end{figure}
+
+Exciton energy levels and wavefunctions are largely influenced by the effect of long-range Coulomb interactions \cite{ando2006effects}. Moreover, the effective strength of Coulomb interactions $S_\text{e-e}$ can be expressed as
 %
 \begin{equation}
 	S_\text{e-e} \equiv \dfrac{e^2 \kappa / L}{2 \pi \gamma / L},
 \end{equation}
 %
 where $e^2 /\kappa L$ and $2 \pi \gamma / L$ account for the characteristic energy scales associated with Coulomb interactions and the kinetic energy of electrons respectively \cite{ando2005theory}. Here, $e$ defines the charge of an electron, $\gamma$ represents a band parameter, $L$ indicates the nanotube circumference $|\vec{C}_\text{h}|$, and $\kappa$ denotes the static dielectric constant used to account for screening effects.
-
-
-Figure \ref{fig:ando_suppression} shows the calculated optical absorption spectrum of a semiconducting nanotube with and without the presence of Coulomb interactions. The plot shows the presence of van Hove singularities when ignoring the effect of Coulomb interactions. After accounting for these interactions, the oscillator strength of the low energy bound states of excitons becomes enhanced and absorption in the free-electron continuum drastically diminishes.
 
 Figure \ref{fig:coulomb_shift} shows how the energy levels of the fundamental and second band gaps alongside the exciton bound states changes with the strength of Coulomb interaction. In fact, the band edges of free-electron continua also blue-shift as a result of Coulomb interactions when compared with the case where there are no electron-electron interactions \cite{ando1997excitons}. This relative shift of the band edge also increases as $S_{e-e}$ increases \cite{ando2005theory}. These effects however are more significant for the fundamental band gap than for the second band gap \cite{ando2005theory}. Correspondingly, the binding energy of excitons also increase as the effect of electron-electron interactions become more significant although, the energy level positions for excitons do not change as much as they do for free electrons \cite{ando2005theory}.
 
@@ -245,7 +272,7 @@ Figure \ref{fig:coulomb_shift} shows how the energy levels of the fundamental an
 	\label{fig:coulomb_shift}
 \end{figure}
 
-
+\clearpage
 
 \subsection{Exciton Binding Energies}
 
@@ -260,7 +287,7 @@ In essence, the exciton binding energy characterizes the strength of the Coulomb
 
 The binding energies of excitons in CNTs tend to be on the order of hundreds of meV \cite{wang2005optical}. For instance, the excitons of (6,5) nanotubes have a binding energy of roughly 400 meV \cite{wang2005optical}. At room temperature, $k_\text{B} T \approx$ 26 meV, meaning that the energy scale associated with thermal fluctuations falls short of the exciton binding energies in CNTs. Thus, excitons of CNTs are quite stable at room temperature. Figure \ref{fig:cnt_abs_fumiya} illustrates this effect as the room-temperature absorbance spectrum of a (6,5) sample exhibits well-defined, excitonic resonances.
 
-Two-photon absorption measurements convincingly demonstrated that the optical transitions found in carbon nanotubes directly create excitons \cite{maultzsch2005exciton, wang2005optical}. Excitons possess a set of Rydberg states, analogous to the hydrogen atom, that can include even parity states such as 1$s$, 2$s$, and 3$s$ as well as odd parity states such as 2$p$, 3$p$, and so on \cite{wang2005optical}. On one hand, optical selection rules establish that one-photon excitations access excitons whose wavefunctions have even parity ($s$-symmtery) \cite{wang2005optical}. On the other hand, two-photon excitation creates excitons whose wavefunctions exhibit odd parity ($p$-symmetry) \cite{wang2005optical}.
+Two-photon absorption measurements provided experimental evidence of large exciton binding energies in CNTs, generally on the order of hundreds of meV \cite{maultzsch2005exciton, wang2005optical}. Excitons possess a set of Rydberg states, analogous to the hydrogen atom, that can include even parity states such as 1$s$, 2$s$, and 3$s$ as well as odd parity states such as 2$p$, 3$p$, and so on \cite{wang2005optical}. On one hand, optical selection rules establish that one-photon excitations access excitons whose wavefunctions have even parity ($s$-symmtery) \cite{wang2005optical}. On the other hand, two-photon excitation creates excitons whose wavefunctions exhibit odd parity ($p$-symmetry) \cite{wang2005optical}.
 
 \begin{figure}[ht]
 	\centering
@@ -305,6 +332,8 @@ Unlike carbon nanotubes, conventional semiconductors such as GaAs only exhibit e
 
 %Figure \ref{fig:cnt_curvature} demonstrates this effect on the band structure of a (6,0) nanotube. The tight-binding model presented in the plots includes the effects of $\sigma^*$ and $\pi^*$ hybridization that manifest the presence of two new states whose difference in energy is determined by the nanotube diameter. At lower diameters, the lower energy band gradually gets closer to the valence band. In a full ab-initio calculation, this band would instead intersect with the conduction band to make the (6,0) nanotube have no band gap \cite{blase1994hybridization}. In contrast, a (9,0) nanotube that has a larger diameter would instead be predicted to have a narrow bandgap of 170 meV \cite{blase1994hybridization}.
 
+\clearpage
+
 \subsection{The Effect of External Dielectric Screening}
 
 Coulomb interactions between carriers can become partially screened by the dielectric response of the medium in which CNTs are embeded \cite{ogawa1991optical}. These include electron-electron and electron-hole interactions that produce band gap renormalization ($E_\text{BGR}$) and determine the exciton binding energy ($E_\text{Bind}$) respectively, as shown in Figure \ref{fig:schematic_screening_walsh}. Given the extent at which Coulomb interactions have an impact on the optical properties of CNTs, it is clear that the screening of such interactions should affect the energies of optical transitions.
@@ -343,7 +372,7 @@ where $E_\text{SP}$ indicates the band gap energy that occurs when Coulomb inter
 	E_\text{OPT}(\epsilon_2) = E_\text{SP} + E_\text{BGR}^{\epsilon_2 = 1}/\epsilon_2 + E_\text{Bind}^{\epsilon_2 = 1}/\epsilon_2^{1.2}.
 \end{equation}
 %
-Figure \ref{fig:energy_shift_walsh} presents a plot of this expression. From previous mesurements of the $E_{22}$ transition, they determined the relevant paramters which include $E_\text{BGR}^{\epsilon_2 = 1} = 730$ meV and $E_\text{Bind}^{\epsilon_2 = 1} = 580 meV$ ({\color{red} ADD REFERENCE FROM PAPER}). As the magnitude of $\epsilon_2$ increases, the optical resonance exhibits a very slight redshift.
+Figure \ref{fig:energy_shift_walsh} presents a plot of this expression. From previous mesurements of the $E_{22}$ transition, they determined the relevant paramters which include $E_\text{BGR}^{\epsilon_2 = 1} = 730$ meV and $E_\text{Bind}^{\epsilon_2 = 1} =$  580 meV \cite{walsh2007screening}. As the magnitude of $\epsilon_2$ increases, the optical resonance exhibits a very slight redshift.
 
 \begin{figure}[ht]
 	\centering
@@ -352,7 +381,7 @@ Figure \ref{fig:energy_shift_walsh} presents a plot of this expression. From pre
 	\label{fig:energy_shift_walsh}
 \end{figure}
 
-These expectations have been verified through experiments conducted by Ohno \textit{et al.} (2007) \cite{ohno2007excitonic}. They measured $E_{11}$ and $E_{22}$ peak positions of an assortment of CNTs grown over trenches on a quartz substrate. By immersing the nanotubes in a variety of solvents with known dielectric constants, they measured the redshift of optical resonances as the dielectric constant of CNT environment increased. Figure \ref{fig:energy_shift_ohno} shows a summary of these results. Overall, the $E_{11}$ transitions redshifted by 33-49 meV whereas, the $E_{22}$ transition redshifted by 26-30 meV. These peak shifts began to saturate once the dielectric constant of the solvent became greater than 5. 	 
+These expectations have been verified through experiments conducted by Ohno \textit{et al.} (2007) \cite{ohno2007excitonic}. They measured $E_{11}$ and $E_{22}$ peak positions of an assortment of CNTs grown over trenches on a quartz substrate. By immersing the nanotubes in a variety of solvents with known dielectric constants, they measured the redshift of optical resonances as the dielectric constant of CNT environment increased. Figure \ref{fig:energy_shift_ohno} shows a summary of these results. Overall, the $E_{11}$ transitions redshifted by 33-49 meV whereas, the $E_{22}$ transition redshifted by 26-30 meV. These peak shifts began to saturate once the dielectric constant of the solvent became greater than 5.
 
 \begin{figure}[ht]
 	\centering
