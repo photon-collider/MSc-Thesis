@@ -77,7 +77,7 @@ where $\alpha(\vec{k}) = (1 + e^{-i \vec{k}\cdot \vec{a}_1} + e^{-i \vec{k}\cdot
 	\label{fig:graphene_band}
 \end{figure}
 
-Figure \ref{fig:graphene_band} presents a plot of Equation \eqref{eq:graphene_band} as compared with a band structure calculation using ab-initio methods. The two curves do not predict the same dispersion around the $\Gamma$ point. However, Reich et al.\ note that better agreement is achieved after including interactions between second-nearest and third-nearest neighbor interactions in the original tight-binding model \cite{reich2002tight}. Despite the disagreement between both approaches, they both predict a linear dispersion in the region near the $K$ point in momentum space \cite{charlier2007electronic}. This region of the band structure is commonly referred to as the Dirac cone due to its conical structure shown in Figure \ref{fig:dirac_cone} \cite{charlier2007electronic}. In this region, the energy dispersion approximately becomes
+Figure \ref{fig:graphene_band} presents a plot of Equation \eqref{eq:graphene_band} as compared with a band structure calculation using ab-initio methods. The two curves do not predict the same dispersion around the $\Gamma$ point. However, Reich \textit{et al.}\ note that better agreement is achieved after including interactions between second-nearest and third-nearest neighbor interactions in the original tight-binding model \cite{reich2002tight}. Despite the disagreement between both approaches, they both predict a linear dispersion in the region near the $K$ point in momentum space \cite{charlier2007electronic}. This region of the band structure is commonly referred to as the Dirac cone due to its conical structure shown in Figure \ref{fig:dirac_cone} \cite{charlier2007electronic}. In this region, the energy dispersion approximately becomes
 \begin{equation}
 	\displaystyle E^{\pm}(\vec{k}) \approx \pm \hbar v_\text{F}|\vec{k}|
 \end{equation}
@@ -169,7 +169,7 @@ Selection rules dictate the set of dipole-allowed optical transitions that can o
 	\label{fig:allowed_optical_transitions}
 \end{figure}
 
- One method of elucidating these selection rules involves the use of symmetry groups tied to the nanotube crystal structure to determine the linear and angular momentum of each distinct electron state \cite{bovzovic2000optical}. As shown in Figure \ref{fig:cnt_symmetries} , two relevant symmetries of carbon nanotubes include the symmetry about the nanotube axis denoted as $\sigma_\text{v}$, as well as the symmetry with respect to the the radial direction represented as $\sigma_\text{h}$ \cite{bovzovic2000optical}. Moreover, the symmetry groups $\sigma_\text{v}$ and $\sigma_\text{h}$ can each be associated with two distinct quantum numbers respectively. These include $k$, the momentum along the nanotube axis related to the translation symmetry of the nanotube as well as $n$, the z-component of the angular momentum associated with nanotube's rotational symmetry.
+ One method of elucidating these selection rules involves the use of symmetry groups tied to the nanotube crystal structure to determine the linear and angular momentum of each distinct electron state \cite{bovzovic2000optical}. As shown in Figure \ref{fig:cnt_symmetries} , two relevant symmetries of carbon nanotubes include the symmetry about the nanotube axis denoted as $\sigma_\text{v}$, as well as the symmetry with respect to the the radial direction represented as $\sigma_\text{h}$ \cite{bovzovic2000optical}. Moreover, the symmetry groups $\sigma_\text{v}$ and $\sigma_\text{h}$ can each be associated with two distinct quantum numbers respectively. These include $k$, the momentum along the nanotube axis related to the translation symmetry of the nanotube as well as $n$, the $z$-component of the angular momentum associated with nanotube's rotational symmetry.
 
  \begin{figure}[ht]
  	\centering
@@ -233,8 +233,7 @@ For 2D or 3D systems, $S_\text{a}$ always remains above unity, suggesting that C
 for dipole-allowed transitions \cite{elliott1957intensity}. Here, $\alpha \propto 1/\sqrt{\hbar\omega - E_\text{g}}$. This result is demonstrated in Figure \ref{fig:coulomb_enhancement_3d}. Coulomb interactions not only result in an exciton peak near the band edge but also enhance optical absorption above the band gap.
 
 
-However, for 1D systems, $S_\text{a}^\text{1D}$ always remains below unity for energies above the the band gap \cite{ogawa1991interband}. Figure \ref{fig:coulomb_enhancement_1d} shows the effect of the 1D Sommerfeld factor on the optical absorption of a 1D material. Unlike the 3D case, the exact expression for $S_\text{a}^\text{1D}$ is more complicated as it involves a gamma function along with two basis solutions of a confluent hypergeometric eqquation \cite{ogawa1991optical}. In general however, $S_\text{a}^\text{1D} = 0$ at the band edge \cite{ogawa1991optical} and monotonically increases \cite{ogawa1991optical}. This plot therefore uses a tanh function for simplicity to approximate these features of $S_\text{a}^\text{1D}(\omega)$. The plot shows the presence of van Hove singularities when ignoring the effect of Coulomb interactions. After accounting for these interactions, the Sommerfeld factor indicates a suppression of interband optical absorption. Most of the oscillator strength of the optical absorption instead resides with lowest-lying exciton peak.
-
+However, for 1D systems, $S_\text{a}^\text{1D}$ always remains below unity for energies above the the band gap \cite{ogawa1991interband}. Figure \ref{fig:coulomb_enhancement_1d} shows the effect of the 1D Sommerfeld factor on the optical absorption of a 1D material. Unlike the 3D case, the exact expression for $S_\text{a}^\text{1D}$ is more complicated as it involves a gamma function along with two basis solutions of a confluent hypergeometric eqquation \cite{ogawa1991optical}. In general however, $S_\text{a}^\text{1D} = 0$ at the band edge \cite{ogawa1991optical} and monotonically increases \cite{ogawa1991optical}. This plot therefore uses a tanh function for simplicity to approximate these features of $S_\text{a}^\text{1D}(\omega)$. The plot shows the presence of van Hove singularities when ignoring the effect of Coulomb interactions. After accounting for these interactions, the Sommerfeld factor indicates a suppression of interband optical absorption. Most of the oscillator strength of the optical absorption instead resides with lowest-lying exciton peak. It is important to note that the plot does not account for band gap renormalization that occurs in the presence of electron-electron interactions.
 
 \begin{figure}[ht]
 	\centering
@@ -257,9 +256,9 @@ Exciton energy levels and wavefunctions are largely influenced by the effect of 
 	S_\text{e-e} \equiv \dfrac{e^2 \kappa / L}{2 \pi \gamma / L},
 \end{equation}
 %
-where $e^2 /\kappa L$ and $2 \pi \gamma / L$ account for the characteristic energy scales associated with Coulomb interactions and the kinetic energy of electrons respectively \cite{ando2005theory}. Here, $e$ defines the charge of an electron, $\gamma$ represents a band parameter, $L$ indicates the nanotube circumference $|\vec{C}_\text{h}|$, and $\kappa$ denotes the static dielectric constant used to account for screening effects.
+where $e^2 /\kappa L$ and $2 \pi \gamma / L$ account for the characteristic energy scales associated with Coulomb interactions and the kinetic energy of electrons respectively \cite{ando2005theory}. Here, $e$ defines the charge of an electron, $\gamma$ represents a band parameter equivalent to the hopping term $\gamma_0$ used in tight-binding models, $L$ indicates the nanotube circumference $|\vec{C}_\text{h}|$, and $\kappa$ denotes the static dielectric constant used to account for screening effects.
 
-Figure \ref{fig:coulomb_shift} shows how the energy levels of the fundamental and second band gaps alongside the exciton bound states changes with the strength of Coulomb interaction. In fact, the band edges of free-electron continua also blue-shift as a result of long-range electron-electron interactions when compared with the case where there are no electron-electron interactions \cite{ando1997excitons}. This relative shift of the band edge also increases as $S_{e-e}$ increases \cite{ando2005theory}. These effects however are more significant for the fundamental band gap than for the second band gap \cite{ando2005theory}. Correspondingly, the binding energy of excitons also increase as the effect of electron-electron interactions become more significant although, the energy level positions for excitons do not change as much as they do for free electrons \cite{ando2005theory}.
+Figure \ref{fig:coulomb_shift} shows how the energy levels of the fundamental and second band gaps alongside the exciton bound states changes with the strength of Coulomb interaction. In fact, the band edges of free-electron continua also blue-shift as a result of band gap renormalization which occurs due to long-range electron-electron interactions \cite{ando1997excitons}. This relative shift of the band edge also increases as $S_{e-e}$ increases \cite{ando2005theory}. These effects however are more significant for the fundamental band gap than for the second band gap \cite{ando2005theory}. Correspondingly, the binding energy of excitons also increase as the effect of electron-electron interactions become more significant although, the energy level positions for excitons do not change as much as they do for free electrons \cite{ando2005theory}.
 
 \begin{figure}[ht]
 	\centering
@@ -274,14 +273,23 @@ Figure \ref{fig:coulomb_shift} shows how the energy levels of the fundamental an
 
 In essence, the exciton binding energy characterizes the strength of the Coulomb interaction between an electron and its corresponding hole \cite{valkunas2006exciton}. On one hand, if the exciton binding energy is smaller than the thermal energy $k_\text{B} T$, defined using the Boltzmann constant $k_\text{B}$ and a given temperature $T$, then this Coulomb interaction becomes negligible \cite{valkunas2006exciton}. This causes electrons and holes to behave independently of each other. On the other hand, if the binding energy is much higher than the thermal energy, then electrons and holes tend to form stable, charge-neutral excitons \cite{valkunas2006exciton}.
 
+This can be readily observed in GaAs which typically exhibits excitons with binding energies less than 20 meV \cite{liang1970excitons}. Figure \ref{fig:gaas_vs_cnt_absorbance} shows how the spectrum of how a GaAs quantum-well changes with temperature. At room temperature, exciton resonances are quite broad and have a relatively lower oscillator strengths. As the temperature decreases, absorption features associated with excitons become more prominent and the linewidths of these resonances become narrower.
+
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.6]{images/chapter_intro/abs_fumiya}
-	\caption{Absorbance spectrum of a (6,5) carbon nanotube sample at room temperature. The peaks at 983 and 570 nm correspond to the $E_{11}$ and $E_{22}$ of (6,5) carbon nanotubes. The $E_{12}$ transition of (6,5) nanotubes can also be observed at 650 nm. Reproduced from Ref.\ \cite{katsutani2019direct}. }
-	\label{fig:cnt_abs_fumiya}
+	\includegraphics[scale=0.55]{images/chapter_optical_props/gaas_absorbance_filipowicz}
+	\caption{GaAs/AlGaAs quantum well absorbance spectra at different temperatures. At higher temperatures, the presence of excitonic resonances is diminished. As the temperature decreases, two exciton peaks associated with light-hole and heavy-hole bands become more prominent. Reproduced from Ref.\ \cite{filipowicz1990temperature}.}
+	\label{fig:gaas_vs_cnt_absorbance}
 \end{figure}
 
-The binding energies of excitons in CNTs tend to be on the order of hundreds of meV \cite{wang2005optical}. For instance, the excitons of (6,5) nanotubes have a binding energy of roughly 400 meV \cite{wang2005optical}. At room temperature, $k_\text{B} T \approx$ 26 meV, meaning that the energy scale associated with thermal fluctuations falls short of the exciton binding energies in CNTs. Thus, excitons of CNTs are quite stable at room temperature. Figure \ref{fig:cnt_abs_fumiya} illustrates this effect as the room-temperature absorbance spectrum of a (6,5) sample exhibits well-defined, excitonic resonances.
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[scale=0.6]{images/chapter_intro/abs_fumiya}
+%	\caption{Absorbance spectrum of a (6,5) carbon nanotube sample at room temperature. The peaks at 983 and 570 nm correspond to the $E_{11}$ and $E_{22}$ of (6,5) carbon nanotubes. The $E_{12}$ transition of (6,5) nanotubes can also be observed at 650 nm. Reproduced from Ref.\ \cite{katsutani2019direct}. }
+%	\label{fig:cnt_abs_fumiya}
+%\end{figure}
+
+In comparison, the binding energies of excitons in CNTs tend to be on the order of hundreds of meV \cite{wang2005optical}. For instance, the excitons of (6,5) nanotubes have a binding energy of roughly 400 meV \cite{wang2005optical}. At room temperature, $k_\text{B} T \approx$ 26 meV, meaning that the energy scale associated with thermal fluctuations falls short of the exciton binding energies in CNTs. Thus, excitons of CNTs are very stable at room temperature. %Figure \ref{fig:cnt_abs_fumiya} illustrates this effect as the room-temperature absorbance spectrum of a (6,5) sample exhibits well-defined, excitonic resonances.
 
 Two-photon absorption measurements provided experimental evidence of large exciton binding energies in CNTs, generally on the order of hundreds of meV \cite{maultzsch2005exciton, wang2005optical}. Excitons possess a set of Rydberg states, analogous to the hydrogen atom, that can include even parity states such as 1$s$, 2$s$, and 3$s$ as well as odd parity states such as 2$p$, 3$p$, and so on \cite{wang2005optical}. On one hand, optical selection rules establish that one-photon excitations access excitons whose wavefunctions have even parity ($s$-symmtery) \cite{wang2005optical}. On the other hand, two-photon excitation creates excitons whose wavefunctions exhibit odd parity ($p$-symmetry) \cite{wang2005optical}.
 
@@ -306,14 +314,6 @@ In practice, this means that one-photon absorption can access the 1$s$ exciton r
 
 If there were no exciton states, the optical emission would be most efficient if the two-photon excitation energy (2$\hbar \omega$) were exactly equal to the band gap energy due to the density of states associated with the van Hove singularity. The photon energy of the emission would also be equal to 2$\hbar \omega$. Figure \ref{fig:cnt_two_photon_emission} shows that optical emission instead occurs when the two-photon excitation energy is higher than photon energy of emission, which provides a direct estimate of the 1$s$ - 2$p$ energy separation..
 
-Unlike carbon nanotubes, conventional semiconductors such as GaAs only exhibit excitons with binding energies typically less than 20 meV \cite{liang1970excitons}.  As a result, these materials have to be cooled down to low temperatures in order to easily observe exciton resonances as shown in Figure \ref{fig:gaas_vs_cnt_absorbance}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.55]{images/chapter_optical_props/gaas_absorbance_filipowicz}
-	\caption{GaAs/AlGaAs quantum well absorbance spectra at different temperatures. At higher temperatures, the presence of excitonic resonances is diminished. As the temperature decreases, two exciton peaks associated with light-hole and heavy-hole bands become more prominent. Reproduced from Ref.\ \cite{filipowicz1990temperature}.}
-	\label{fig:gaas_vs_cnt_absorbance}
-\end{figure}
 
 %\subsection{The Effect of SWCNT Diameter}
 
