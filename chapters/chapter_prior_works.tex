@@ -169,12 +169,7 @@ Wang \textit{et al}.\ (2004) observed nonlinear recombination dynamics in time-r
 
 Furthermore, Figure \ref{fig:fast_slow_wang_2004} shows the time-integrated fluoresence contributions associated with the fast and slow decays. The fluorescence from the slow decay begins saturating at fluences greater than \SI{0.3}{\joule / \meter\squared}. In contrast, the time-integrated fluoresence linked with the fast decay only begins to saturate at a fluence of \SI{1.5}{\joule / \meter\squared}. These data suggest that exciton-exciton annihilation associated with the fast decay process establishes an upper limit of bright excitons that can exist at longer time delays.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.25]{images/chapter_prior_works/fluorescence_wang_2004}
-	\caption{Time-resolved fluorescence captured from a micellar suspension of chirality-mixed HiPco SWCNTs dispersed in water using polyacrylic acid as a surfactant at indicated fluences. The optical pump pulse was centered 1.53 eV (810 nm). Gray curves are fits to the experimental data using a model based on exciton-exciton annihilation. At higher fluences, the dynamics exhibit a bi-exponential decay containing a fast and a slow process. The fast exponential decay has been attributed to the presence of a nonradiative decay mechanism associated with exciton-exciton annihilation, whereas the slow component emerges due to radiative interband recombination. The inset figure shows the same experimental data on a log-linear plot to emphasize the saturation of the fluoresence at higher pump fluences occuring due to nonradiative decay phenomena. Reproduced from Ref.\ \cite{wang2004observation}.}
-	\label{fig:fluorescence_wang_2004}
-\end{figure}
+
 
 Wang \textit{et al}.\ interpreted these results by devising a model of carrier dynamics that accounts for exciton-exciton annihilation processes. They postulate that the time-dependent probability density of a nanotube having $N$ electron-hole pairs $\rho^\text{N}(t)$ depends on the rate of radiate emission $\gamma^\text{N}_\text{r}$, the rate of exciton-exciton annihilation $\gamma^\text{N}_\text{A}$, as well as the rate of carrier trapping at defects $\gamma_\text{t}$. The master equation
 \begin{equation}
@@ -182,28 +177,36 @@ Wang \textit{et al}.\ interpreted these results by devising a model of carrier d
 \end{equation}
 captures the relationship between these quantities.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{images/chapter_prior_works/fast_slow_wang_2004}
-	\caption{Time-integrated fluorscence associated with fast and slow decay contributions as a function of pump fluence. The solid curves represent fits to the data. The fluorescence associated with the slow decay saturates at a fluence above \SI{0.3}{\joule / \meter \squared}, indicating an upper limit of bright excitons. However, the time-integrated fluorescence of the fast decay only begins to saturate at 1.5  \SI{1.5}{\joule / \meter \squared}. Reproduced from Ref.\ \cite{wang2004observation}.}
-	\label{fig:fast_slow_wang_2004}
-\end{figure}
-
 
 In the case of excitons,
 \begin{equation}
 	\gamma^\text{N}_\text{r} = \text{const}, \text{   } \gamma^\text{N}_\text{A} = C_\text{A}(N-1),
 \end{equation}
-where $C_\text{A}$ is the exciton-exciton annihilation rate coefficient. This assumes that excitons radiatively recombine at a constant rate and that exciton-exciton annihilation for $N$ excitons is given as $C_\text{A}N(N-1)$. Moreover, the initial population of excitons is given as $N_\text{initial} = \phi \sigma$ where $\phi$ and $\sigma$ denote, respectively, the fluence of the optical pump and the absorption cross-section of carbon nanotubes.
+where $C_\text{A}$ is the exciton-exciton annihilation rate coefficient. This assumes that excitons radiatively recombine at a constant rate and that exciton-exciton annihilation rate for $N$ excitons is given as $C_\text{A}N(N-1)$. Radiative recombination scales linearly with $N$, whereas exciton-exciton annihilation scales as $N^2$ as expected. Moreover, the initial population of excitons is given as $N_\text{initial} = \phi \sigma$, where $\phi$ and $\sigma$ denote, respectively, the fluence of the optical pump and the absorption cross-section of carbon nanotubes.
 
 
 Indeed, the quantitative results from this model agree with the experimental data presented in Figures \ref{fig:fluorescence_wang_2004} and \ref{fig:fast_slow_wang_2004}. Numerical fits to the data yield an estimate of $C_\text{A}$, which was found to be $\SI{0.8}{\per\pico\second}$. Correspondingly, this also provides an estimate of the typical lifetime of excitons that participate in exciton-exciton annihilation given as $1/\gamma^\text{N}_\text{A}$ which was determined to be on the order of picoseconds with lifetimes being as short as \SI{1.2}{\pico \second}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.25]{images/chapter_prior_works/fluorescence_wang_2004}
+	\caption{Time-resolved fluorescence captured from a micellar suspension of chirality-mixed HiPco SWCNTs dispersed in water using polyacrylic acid as a surfactant at indicated fluences. The optical pump pulse was centered 1.53 eV (810 nm). Gray curves are fits to the experimental data using a model based on exciton-exciton annihilation. At higher fluences, the dynamics exhibit a bi-exponential decay containing a fast and a slow process. The fast exponential decay has been attributed to the presence of a nonradiative decay mechanism associated with exciton-exciton annihilation, whereas the slow component emerges due to radiative interband recombination. The inset figure shows the same experimental data on a log-linear plot to emphasize the saturation of the fluoresence at higher pump fluences occuring due to nonradiative decay phenomena. Reproduced from Ref.\ \cite{wang2004observation}.}
+	\label{fig:fluorescence_wang_2004}
+\end{figure}
 
 
-Ma \textit{et al}.\ (2004) also obtained some experimental results that qualtitatively agree with those observed by Wang \textit{et al}.\ (2004) \cite{wang2004observation}. In this study, they performed both time-resolved fluorescence and time-resolved transient absorption measurements on a HiPco SWCNTs suspended in an aqueous solution using SDS. Figure \ref{fig:fluorescence_ma_2004} shows the fluorescence of (9,5) nanotubes that occurred after the sample was resonantly photoexcited at the $E_{22}$ energy. As the intensity of the optical pump increased, the presence of an early fast decay processes became more prominent close to time zero.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_prior_works/fast_slow_wang_2004}
+	\caption{Time-integrated fluorscence associated with fast and slow decay contributions as a function of pump fluence. The solid curves represent fits to the data. The fluorescence associated with the slow decay saturates at a fluence above \SI{0.3}{\joule / \meter \squared}, indicating an upper limit of bright excitons. However, the time-integrated fluorescence of the fast decay only begins to saturate at \SI{1.5}{\joule / \meter \squared}. Reproduced from Ref.\ \cite{wang2004observation}.}
+	\label{fig:fast_slow_wang_2004}
+\end{figure}
 
-Here, Ma \textit{et al}.\ used the rate equation
+
+
+Ma \textit{et al}.\ (2004) \cite{ma2004ultrafast} also obtained some experimental results that qualtitatively agree with those observed by Wang \textit{et al}.\ (2004) \cite{wang2004observation}. In this study, they performed both time-resolved fluorescence and time-resolved transient absorption measurements on a HiPco SWCNTs suspended in an aqueous solution using SDS. Figure \ref{fig:fluorescence_ma_2004} shows the fluorescence of (9,5) nanotubes that occurred after the sample was resonantly photoexcited at the $E_{22}$ energy. As the intensity of the optical pump increased, the presence of an early fast decay processes became more prominent close to time zero.
+
+Here, Ma \textit{et al}.\ \cite{ma2004ultrafast} used the rate equation
 \begin{equation}
 	\dfrac{\mathrm{d}N(t)}{\mathrm{d}t} = - k N(t) - \gamma N(t)^2,
 \end{equation}
@@ -211,12 +214,7 @@ to characterize the observed carrier dynamics. Here, $N$ denotes the average num
 \begin{equation}
 	N(t) = \dfrac{N(0)}{1 + N(0)\gamma \cdot t},
 \end{equation}
-where $N(0)$, a fitting parameter, yields the initial population of excitons. Furthermore, the assumption that the time-dependent, fluorescence intensity $I(t)$ is proportional to $ N(t)$ gives the expression
-\begin{equation}
-  	\left( \dfrac{I(t)}{I_0} \right)^{-1} \approx \left( \dfrac{N(t)}{N_0} \right)^{-1} = \gamma N(0) \cdot t + 1.
-\end{equation}
-%The results obtained from transient absorption measurements appear to exhibit some key differences from those obtained in the fluorescence measurements.
-This suggests that the reciprocal of $I(t)$ has a linear dependence on time $t$ which certainly shows good agreement with the data, as shown in Figure \ref{fig:fluorescence_ma_2004}(c) except at longer time delays for higher pump fluences.
+where $N(0)$, a fitting parameter, yields the initial population of excitons.
 
 \begin{figure}[H]
 	\centering
@@ -225,11 +223,18 @@ This suggests that the reciprocal of $I(t)$ has a linear dependence on time $t$ 
 	\label{fig:fluorescence_ma_2004}
 \end{figure}
 
+Furthermore, the assumption that the time-dependent, fluorescence intensity $I(t)$ is proportional to $ N(t)$ gives the expression
+\begin{equation}
+  	\left( \dfrac{I(t)}{I_0} \right)^{-1} \approx \left( \dfrac{N(t)}{N_0} \right)^{-1} = \gamma N(0) \cdot t + 1.
+\end{equation}
+%The results obtained from transient absorption measurements appear to exhibit some key differences from those obtained in the fluorescence measurements.
+This suggests that the reciprocal of $I(t)$ has a linear dependence on time $t$ which certainly shows good agreement with the data, as shown in Figure \ref{fig:fluorescence_ma_2004}(c) except at longer time delays for higher pump fluences.
+
+
+
 Figure \ref{fig:fluorescence_abs_ma_2004} shows more fluorescence and transient absorption data obtained by selectively photoexciting and probing resonances of (6,5) and (7,5) nanotubes, respectively, in the same chirality-mixed micelle-suspended sample used for the measurements shown earlier. More specifically, Figure \ref{fig:fluorescence_abs_ma_2004}(a) shows the fluorescence data obtained for (6,5) nanotubes after these nanotubes were resonantly excited at the $E_{22}$ photon energy. The results qualitatively match those of Figure \ref{fig:fluorescence_ma_2004}(a). However, the transient absorption data taken from (6,5) and (7,5) nanotubes after resonantly exciting their $E_{22}$ resonances and probing the dynamics at their respective $E_{11}$ energies appears to show some different carrier dynamics.
 
-For the case of (6,5) nanotubes, Ma \textit{et al}.\ observed that the transient absorption curves show a weaker dependence on the pump intensity at fluences less than $2 \times 10^{15}$ photons/cm$^2$. This of course contrasts with the fluorescence data, which shows a substantial pump intensity dependence at all reported fluences. In addition, they also observe some key differences between the transient aborption data taken for (6,5) and (7,5) nanotubes. When the sample was probed the $E_{11}$ resonance of (6,5) nanotubes, the transient absorption exhibited an early decay that became faster at higher fluences. However, for (7,5) nanotubes this early decay instead became \textit{slower} at higher excitation intensities.
-
-These key differences lead Ma \textit{et al}.\ to conclude that a different set of carrier relaxation processes may be contributing to the transient absorption dynamics. In the case of (7,5) nanotubes, they interpreted that excitons may become trapped or even convert to triplet states. For (6,5) nanotubes, they suggested that the fluence threshold of $2 \times 10^{15}$ photons/cm$^2$ needed to observe clear nonlinear dynamics indicates that other than bright excitons, the probe may also be detecting the presence of unbound electron-hole pairs.
+For the case of (6,5) nanotubes, Ma \textit{et al}.\ observed that the transient absorption curves show a weaker dependence on the pump intensity at fluences less than $2 \times 10^{15}$ photons/cm$^2$ \cite{ma2004ultrafast}. This of course contrasts with the fluorescence data, which shows a substantial pump intensity dependence at all reported fluences. In addition, they also observe some key differences between the transient aborption data taken for (6,5) and (7,5) nanotubes. When the sample was probed the $E_{11}$ resonance of (6,5) nanotubes, the transient absorption exhibited an early decay that became faster at higher fluences. However, for (7,5) nanotubes, this early decay instead became \textit{slower} at higher excitation intensities.
 
 \begin{figure}[H]
 	\centering
@@ -238,16 +243,14 @@ These key differences lead Ma \textit{et al}.\ to conclude that a different set 
 	\label{fig:fluorescence_abs_ma_2004}
 \end{figure}
 
-In a follow-up study, Ma \textit{et al}.\ (2005) measured transient absorption dynamics of (8,5) carbon nanotubes contained within an ensemble of HiPco SWCNTs disersed in an aqueous solution using SDS as a surfactant \cite{ma2005femtosecond}. In this case, they attempted to account for the carrier dynamics occuring at both the $E_{11}$ and $E_{22}$ energy levels. Figure \ref{fig:exciton_schematic_ma} presents a schematic diagram of this approach. In this notation, each exciton band denoted as $E_i(\mathbf{k})$, where $\mathbf{k}$ represents the exciton center-of-mass momentum, contains $n_\text{i}$ excitons. Excitons at the lowest exciton band conduct exciton-exciton annihilation at rate $\gamma n_1^2/2$ which subsequently populates higher energy subbands. Finally, $k_\text{ij}$ represents linear relaxation rates from the $i$-th subband to the $j$-th subband, and $k_\text{1g}$ measures the relaxation rate from $E_i(\mathbf{k})$ to the ground state.
+These key differences lead Ma \textit{et al}.\ to conclude that a different set of carrier relaxation processes may be contributing to the transient absorption dynamics. In the case of (7,5) nanotubes, they interpreted that excitons may become trapped or even convert to triplet states. For (6,5) nanotubes, they suggested that the fluence threshold of $2 \times 10^{15}$ photons/cm$^2$ needed to observe clear nonlinear dynamics indicates that other than bright excitons, the probe may also be detecting the presence of unbound electron-hole pairs.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.3]{images/chapter_prior_works/exciton_schematic_ma_2005}
-	\caption{Schematic model of exciton-exciton annihilation in SWCNTs by Ma \textit{et al}.\ \cite{ma2005femtosecond}. Here, $E_\text{i}(\mathbf{k})$ and $E_\text{g}$ represent the $i$-th exciton band and the ground state, respectively. In addition, $\mathbf{k}$ denotes the exciton center-of-mass momentum. The parameter $k_\text{ij}$ indicates the linear relaxation rate from the $i$-th band to the $j$-th band. Finally, the rate of exciton-exciton annihilation is given as $\gamma n_1^2/2$ where  $n_1$ excitons located within the $E_1(\mathbf{k})$ conduct exciton-exciton annihilation to produce a new exciton in a higher energy state. Reproduced from Ref.\ \cite{ma2005femtosecond}.}
-	\label{fig:exciton_schematic_ma}
-\end{figure}
 
-After assuming that the relaxation rates $k_\text{n2}$ and $k_\text{21}$ are very fast, Ma \textit{et al}. deduced that
+
+In a follow-up study, Ma \textit{et al}.\ (2005) measured transient absorption dynamics of (8,5) carbon nanotubes contained within an ensemble of HiPco SWCNTs dispersed in an aqueous solution using SDS as a surfactant \cite{ma2005femtosecond}. In this case, they attempted to account for the carrier dynamics occuring at both the $E_{11}$ and $E_{22}$ energy levels. Figure \ref{fig:exciton_schematic_ma} presents a schematic diagram of this approach. In this notation, each exciton band denoted as $E_i(\mathbf{k})$, where $\mathbf{k}$ represents the exciton center-of-mass momentum, contains $n_\text{i}$ excitons. Excitons at the lowest exciton band conduct exciton-exciton annihilation at rate $\gamma n_1^2/2$ which subsequently populates higher energy subbands. Finally, $k_\text{ij}$ represents linear relaxation rates from the $i$-th band to the $j$-th band, and $k_\text{1g}$ measures the relaxation rate from $E_i(\mathbf{k})$ to the ground state.
+
+
+After assuming that the relaxation rates $k_\text{n2}$ and $k_\text{21}$ are very fast, which suggests that states other than those at $\mathbf{k} = 0$ are not occupied in this model, Ma \textit{et al}. deduced that
 \begin{equation}
 	n_2(t) \cong \frac{1}{2 k_{21}} \gamma n^2_1(t),
 	\label{eq:ma_n2}
@@ -264,7 +267,22 @@ where $G$($t$) represents the generation rate of excitons. This yields a formal 
 \end{equation}
 %
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_prior_works/exciton_schematic_ma_2005}
+	\caption{Schematic model of exciton-exciton annihilation in SWCNTs by Ma \textit{et al}.\ \cite{ma2005femtosecond}. Here, $E_\text{i}(\mathbf{k})$ and $E_\text{g}$ represent the $i$-th exciton band and the ground state, respectively. In addition, $\mathbf{k}$ denotes the exciton center-of-mass momentum. The parameter $k_\text{ij}$ indicates the linear relaxation rate from the $i$-th band to the $j$-th band. Finally, the rate of exciton-exciton annihilation is given as $\gamma n_1^2/2$, where a population of  $n_1$ excitons located within the $E_1(\mathbf{k})$ conduct exciton-exciton annihilation to produce a new exciton in a higher energy state. Reproduced from Ref.\ \cite{ma2005femtosecond}.}
+	\label{fig:exciton_schematic_ma}
+\end{figure}
+
+
 Equation \eqref{eq:ma_n2} indicates that $n_2(t) \propto n_1^2(t)$. Indeed, the experimental data shown in Figure \ref{fig:abs_ma_2005}(a) appears to corroborate this. This plot shows the transient absorption response of (8,5) nanotubes probed at $E_{11}$ (953 nm) and $E_{22}$ (660 nm) states after the sample was resonantly excited at the $E_{11}$ photon energy. The square of the normalized transient absorption response measured at $E_{11}$ matches the dynamics of the normalized response recorded at $E_{22}$.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.35]{images/chapter_prior_works/abs_ma_2005}
+ \caption{(a) Differential absorption probed at 660 nm ($E_{22}$, triangles) and the square of the response ($[ \Delta A / A ]^2$) measured at 953 nm ($E_{11}$, solid line) after the sample was resonantly photoexcitined at $E_{11}$. (b) Differential absorption  measured at $E_{11}$ after the sample was resonantly excited at $E_{11}$ at a low (squares) and a relatively high (solid line) pump fluence. The fluences in the ``low'' and ``high'' scenarios differ by a factor of 17. (c) Differential absorption probed at $E_{22}$ after the sample was resonantly photoexcited at $E_{11}$ (cirles) and $E_{22}$ (solid line). The dynamics shown in (a) $-$ (c) are normalized at the signal maxima. All optical resonances here correspond to those of (8,5) nanotubes. Reproduced from Ref.\ \cite{ma2005femtosecond}.}
+ \label{fig:abs_ma_2005}
+\end{figure}
 
 Strangely, they did not observe nonlinear carrier relaxation dynamics occuring at $E_{11}$ after resonantly exciting at $E_{11}$. Figure \ref{fig:abs_ma_2005}(b) demonstrates this. Both transient absorption curves taken at the highest and lowest fluences, which differ by a factor of 17, show similar decay rates. Also, they do acknowledge that Equation \eqref{eq:exciton_anih_ma_2005} provides good fits to the data, but only at very early times where $k_\text{1g} t \ll 1$ and for relatively high excitation fluences. Under these conditions, Equation \eqref{eq:exciton_anih_ma_2005} becomes
 \begin{equation}
@@ -272,53 +290,46 @@ Strangely, they did not observe nonlinear carrier relaxation dynamics occuring a
 \end{equation}
 However, a second exponential decay must be added to describe dynamics occuring at longer time delays. They attribute this to carrier dynamics detected from other nanotube species in the sample.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.35]{images/chapter_prior_works/abs_ma_2005}
-	\caption{(a) Differential absorption probed at 660 nm ($E_{22}$, triangles) as all the square of the response ($[ \Delta A / A ]^2$) measured at 953 nm ($E_{11}$, solid line) after resonantly photoexciting at $E_{11}$. (b) Differential absorption  measured at $E_{11}$ after resonantly exciting $E_{11}$ at a low (squares) and a relatively high (solid line) pump fluence. The fluences in the ``low'' and ``high'' scenarios differ by a factor of 17. (c) Differential absorption probed at $E_{22}$ after resonantly photoexciting $E_{11}$ (cirles) and $E_{22}$ (solid line). The dynamics shown in (a) - (c) are normalized at the signal maxima. All optical resonances here correspond to those of (8,5) nanotubes. Reproduced from Ref.\ \cite{ma2005femtosecond}.}
-	\label{fig:abs_ma_2005}
-\end{figure}
+ Figure \ref{fig:abs_ma_2005}(c) shows the dynamics probed at the $E_{22}$ transition after the sample was photoexcited at both $E_{11}$ and $E_{22}$. When the sample was resonantly excited at $E_{11}$, absorption bleaching occurred at $E_{22}$ presumably because of exciton-exciton annihilation that causes a finite population of excitons at the $E_{22}$ energy level. A similar effect occurred when the sample was resonantly excited at $E_{22}$ after accounting for the fast $E_{22}$ to $E_{11}$ relaxation process demonstrated by Manzoni \textit{et al}. \cite{manzoni2005intersubband}. However, a notable difference in the carrier dynamics appeared at time delays greater than 300 fs. In particular, carrier relaxation occurred more slowly when the sample was excited at $E_{22}$ than at $E_{11}$. Ma \textit{et al}.\ claimed that this may be either due to the effect of exciting other nanotube species that are not specifically (8,5) nanotubes. They also suggested that $E_{22}$ excitons may also be initially relaxing into other intermediate energy levels such as the free-electron continuum states that are expected to exist between the $E_{11}$ and $E_{22}$ transitions.
 
- Figure \ref{fig:abs_ma_2005}(c) shows the dynamics probed at the $E_{22}$ transition after photoexciting both $E_{11}$ and $E_{22}$. When resonantly exciting at $E_{11}$ absorption bleaching occurs at $E_{22}$ presumably because of exciton-exciton annihilation which causes a finite population of excitons at the $E_{22}$ energy level. A similar effect occurs when resonantly exciting $E_{22}$ after accounting for the fast $E_{22}$ to $E_{11}$ relaxation process demonstrated by Manzoni \textit{et al}. However a notable difference in the carrier dynamics does appear at time delays greater than 300 fs. Carrier relaxation occurs more slowly when exciting at $E_{22}$ than $E_{11}$. Ma \textit{et al}.\ claim that this may be either due to the effect of exciting other nanotube species that are not specifically (8,5) nanotubes. They also suggest that $E_{22}$ excitons may also be initially relaxing into other intermediate energy levels such as the free-electron continuum states that are expected to exist between the $E_{11}$ and $E_{22}$ transitions.
 
-\subsection{Diffusion-Limited, Exciton-Exciton Annihilation}
-The previous works presenting evidence of exciton-exciton annihilation relied on models that implicitly assumed that excitons diffuse within three-dimensional system. This of course conflicts with the understanding that carbon nanotubes effectively confine electrons to move in only one dimension. In fact, the rate of diffusion processes certainly depends on the dimensionality $d$ of the system. The decay constant associated with exciton-exciton annihilation is time-independent only in cases where $d \geq 2$ \cite{valkunas2006exciton}. For one-dimensional systems, the annihilation rate assumes the form $\gamma = \gamma_0 / t^{-1/2}$ and yields the rate equation
+
+\subsection{Diffusion-Limited Exciton-Exciton Annihilation}
+The previous studies presenting evidence of exciton-exciton annihilation relied on models that implicitly assumed that excitons diffuse within a 3-D system \cite{wang2004observation,ma2004ultrafast, ma2005femtosecond}. This naturally conflicts with the understanding that carbon nanotubes effectively confine electrons to move in only one dimension. In fact, the rate of diffusion processes certainly depends on the dimensionality, $d$, of the system. The decay constant associated with exciton-exciton annihilation is time-independent only in cases where $d \geq 2$ \cite{valkunas2006exciton}. For 1-D systems, the annihilation rate assumes the form $\gamma = \gamma_0 / t^{-1/2}$ that yields the rate equation
 \begin{equation}
 		\frac{\mathrm{d} n_\text{ex}^2(t)}{\mathrm{d}t} = -\frac{1}{2 \sqrt{t}}  \gamma_0 \cdot n_\text{ex}^2(t),
 		\label{eq:exc_1d_annih}
 \end{equation}
-whereas the rate equation given by Equation \eqref{eq:rate_eq_exc_anih} assumes that diffusion occurs in a three-dimensional system \cite{suna1970kinematics}. This difference emerges from the fact that a particle executing a random walk in three dimensions will return to its origin position with a probabilty of 0.35, whereas in dimensions less than or equal to 2 this probability is approximately unity \cite{suna1970kinematics}. As a result, the decay constant reduces with time for the one-dimensional case.
+whereas the rate equation given by Equation \eqref{eq:rate_eq_exc_anih} assumes that diffusion occurs in a 3-D system \cite{suna1970kinematics}. This difference emerges from the fact that a particle executing a 3-D random walk will return to its origin position with a probabilty of 0.35, whereas in dimensions less than or equal to 2 this probability is approximately unity \cite{suna1970kinematics}. As a result, the decay constant reduces with time for the 1-D case.
 
-This discussion also requires the consideration of a key detail: the ratio between the Bohr radius of excitons and the size of the system, that is, the length scales of SWCNTs. In fact, exciton-exciton annihilation can exist in two regimes \cite{valkunas2006exciton}. On one hand, if exciton sizes are comparable to that of the system then the exciton-exciton annihilation rate should only depend on the rate at which two neighboring excitons interact with each other \cite{valkunas2006exciton}. For this case, Equation \eqref{eq:exc_1d_annih} would be not be applicable as it assumes that exciton-exciton annihilation is limited by exciton diffusion. Exciton-exciton annihilation occurs immediately after excitons are created \cite{valkunas2006exciton}. This can be described as coherent, exciton-exciton annihilation \cite{valkunas2006exciton}.
+This discussion also requires the consideration of a key detail: the ratio between the Bohr radius of excitons and the size of the system, that is, the length scales of SWCNTs. In fact, exciton-exciton annihilation can exist in two regimes \cite{valkunas2006exciton}. On one hand, if exciton sizes are comparable to that of the system then the exciton-exciton annihilation rate should only depend on the rate at which two neighboring excitons interact with each other \cite{valkunas2006exciton}. For this case, Equation \eqref{eq:exc_1d_annih} would not be applicable as it assumes that exciton-exciton annihilation is limited by exciton diffusion. Instead, exciton-exciton annihilation occurs immediately after excitons are created \cite{valkunas2006exciton}. This can be described as coherent exciton-exciton annihilation \cite{valkunas2006exciton}.
 
-On the other hand, if excitons are much smaller than the system they inhabit, then excitons must migrate until they reach another exciton before exciton-exciton annihilation occurs \cite{valkunas2006exciton}. In this scenario, the rate of exciton-exciton annihilation depends on both the diffusion rate of excitons as well as the annihilation rate of excitons in close proximity with each other \cite{valkunas2006exciton}. Hence, this regime is often referred to as diffusion-limited, exciton-exciton annihilation.
-
+On the other hand, if excitons are much smaller than the system they inhabit, then excitons must migrate until they reach another exciton before exciton-exciton annihilation occurs \cite{valkunas2006exciton}. In this scenario, the rate of exciton-exciton annihilation depends on both the diffusion rate of excitons as well as the annihilation rate of excitons in close proximity with each other \cite{valkunas2006exciton}. Hence, this regime is often referred to as diffusion-limited exciton-exciton annihilation.
 
 The solution to the revised rate equation presented in Equation \eqref{eq:exc_1d_annih} is given as
 \begin{equation}
 	\frac{n_\text{ex}(0)}{n_\text{ex}(t)} = 1 + n_\text{ex}(0) \gamma_0 \sqrt{t},
 \end{equation}
-where $n_\text{ex}(t)$ denotes the time-dependent density of excitons and $\gamma_0$ represents a decay constant associated with exciton-exciton annihilation \cite{valkunas2006exciton}. Valkunas \textit{et al}.\ (2006) remarked that it does not correspond very well to the experimental data measured by Ma \textit{et al} and Wang \textit{et al}. In those works, the models fit to the data very well by assuming that the exciton-exciton annihilation rate does not depend on time. For this reason, Valkunas \textit{et al}.\ argued that diffusion-limited, exciton-exciton annihilation is not the correct interpretation of those results. They claimed that it must be the case that exciton sizes are on the order of typical nanotube lengths so that the effects of diffusion ought to be negligible.
+where $n_\text{ex}(t)$ denotes the time-dependent density of excitons and $\gamma_0$ represents a decay constant associated with exciton-exciton annihilation \cite{valkunas2006exciton}. Valkunas \textit{et al}.\ (2006) \cite{valkunas2006exciton} remarked that this solution does not correspond very well to the experimental data measured by Wang \textit{et al}.\ \cite{wang2004observation} and Ma \textit{et al}.\ \cite{ma2004ultrafast, ma2005femtosecond}. In those studies, the models fit to the data very well by assuming that the exciton-exciton annihilation rate does not depend on time. For this reason, Valkunas \textit{et al}.\ \cite{valkunas2006exciton} argued that diffusion-limited exciton-exciton annihilation is not the correct interpretation of those results. They claimed that it must be the case that exciton sizes are on the order of typical nanotube lengths so that the effects of diffusion ought to be negligible.
+
+Instead, they studied carrier dynamics using a stochastic model depicted in Figure \ref{fig:exciton_manif_valkunas}. Their model is motivated by the understanding that excitons occupying a set of multiexciton states, denoted as [ $i$ ], can access another group of excited states, represented as [ $\displaystyle\bar{i}$ ], after undergoing exciton-exciton annihilation. Here, the parameter $\Gamma_{i \rightarrow \bar{i}-1}$ determines the rate of exciton-exciton annihilation which causes a transition from the $i$-th manifold to manifold labeled as $\bar{i} - 1$. The term $K_{i \rightarrow \bar{i}}$ characterizes carrier relaxation rates due to phonon scattering. Finally, $k_i$ indicates a linear relaxation rate within the $i$-th manifold and the terms $G(t)$ and $\bar{G}(t)$ are rates of exciton generation due to the optical pump.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{images/chapter_prior_works/exciton_manifold_valkunas_2006}
-	\caption{Exciton-exciton annihilation model proposed by Valkunas \textit{et al}.\ (2006). Here, the states in which excitons undergo exciton-exciton annihilation include a manifold of multi-exciton states (left, grouped as [ $i$ ]) and another manifold associated with higher energy excited states that can be accessed via exciton-exciton annihilation (right, grouped as [ $\bar{i}$ ]). The terms $G_{i}(t)$ and $\bar{G_{i}}(t)$ determine the rates of exciton generation from the $i$-th and $\bar{i}$-th manifolds respectively. Furthermore, $\Gamma_{i \rightarrow \bar{i}-1}$ and $K_{i \rightarrow \bar{i}}$ refer to relaxation rates occuring between these manifolds. Finally, the parameter $k_\text{i}$ indicates the linear relaxation rate from the $i$-th to the $i-1$-th energy level. Reproduced from Ref.\ \cite{valkunas2006exciton}. }
+	\caption{Exciton-exciton annihilation model proposed by Valkunas \textit{et al}.\ (2006) \cite{valkunas2006exciton}. Here, the states in which excitons undergo exciton-exciton annihilation include a manifold of multiexciton states (left, grouped as [ $i$ ]) and another manifold associated with higher energy excited states that can be accessed via exciton-exciton annihilation (right, grouped as [ $\bar{i}$ ]). The terms $G_{i}(t)$ and $\bar{G_{i}}(t)$ determine the rates of exciton generation from the $i$-th and $\bar{i}$-th manifolds respectively. Furthermore, $\Gamma_{i \rightarrow \bar{i}-1}$ and $K_{i \rightarrow \bar{i}}$ refer to relaxation rates occuring between these manifolds. Finally, the parameter $k_\text{i}$ indicates the linear relaxation rate from the $i$-th to the $i-1$-th energy level. Reproduced from Ref.\ \cite{valkunas2006exciton}. }
 	\label{fig:exciton_manif_valkunas}
 \end{figure}
 
-Instead, they studied carrier dynamics using a stochastic model depicted in Figure \ref{fig:exciton_manif_valkunas}. Their model is motivated by the understanding that excitons occupying a set of multi-exciton states, denoted as [ $i$ ], can access another group of excited states, represented as [ $\displaystyle\bar{i}$ ], after undergoing exciton-exciton annihilation. Here, the parameter $\Gamma_{i \rightarrow \bar{i}-1}$ determines the rate of exciton-exciton annihilation which causes a transition from the $i$-th manifold to manifold labeled as $\bar{i} - 1$. The term $K_{i \rightarrow \bar{i}}$ characterizes carrier relaxation rates due to phonon scattering. Finally, $k_i$ indicates a linear relaxation rate within the $i$-th manifold and the terms $G(t)$ and $\bar{G}(t)$ are rates of exciton generation due to the optical pump.
+Despite the extent at which exciton states are abstracted in this scheme, Valkunas \textit{et al}.\ remarked that only the $E_{11}$ and $E_{22}$ energy levels need to be considered to adequately explain experimental data. The excitons populations within the $E_{11}$ and $E_{22}$ can be matched with the total populations of the [ $i$ ] and [ $\bar{i}$ ] manifolds respectively \cite{valkunas2006exciton}. The key difference in their model from that of Ma \textit{et al}.\ (2005) \cite{ma2005femtosecond} is that they account for the fast intersubband relaxation demonstrated by Manzoni \textit{et al}.\ (2005) \cite{manzoni2005intersubband} by using the parameter $K_{i \rightarrow \bar{i}}$.
+From this approach, they demonstrate that their model qualitatively agrees with the results presented by Ma \textit{et. al}.\ (2005) \cite{ma2005femtosecond} as shown in Figure \ref{fig:e11_e22_pop_valkunas}. Here, the model predicts population of $E_{22}$ excitons varies with the square of the population of $E_{11}$ excitons which agrees with the observations of Ma \textit{et al}.\ (2005) \cite{ma2005femtosecond}.
 
-
-\begin{figure}[ht]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.4]{images/chapter_prior_works/e11_e22_population_valkunas_2006}
-	\caption{Time evolution of exciton populations within the $E_{11}$ and $E_{22}$ energy level denoted as $n_1$ and $n_2$ respectively as predicted by the stochastic model presented by Valkunas et. al. The authors state that this model reproduces the $n_2(t) \propto (n_1(t))^2$ behavior observed by Ma et. al.\ (2005). Reproduced from \cite{valkunas2006exciton}. }
+	\caption{Time evolution of exciton populations within the $E_{11}$ and $E_{22}$ energy level denoted as $n_1$ and $n_2$ respectively as predicted by the stochastic model presented by Valkunas et. al. The authors state that this model reproduces the $n_2(t) \propto (n_1(t))^2$ behavior observed by Ma \textit{et. al}.\ (2005) \cite{ma2005femtosecond}. Reproduced from Ref.\ \cite{valkunas2006exciton}. }
 	\label{fig:e11_e22_pop_valkunas}
 \end{figure}
-
-Despite the extent at which exciton states are abstracted in this scheme, Valkunas \textit{et al}.\ remark that only the $E_{11}$ and $E_{22}$ energy levels need to be considered to adequately explain experimental data. The excitons populations within the $E_{11}$ and $E_{22}$ can be matched with the total populations of the [ $i$ ] and [ $\bar{i}$ ] manifolds respectively. The key difference in their model from that of Ma \textit{et al}.\ (2005) is that they account for fast inter-subband relaxation shown by Manzoni \textit{et al}.\ (2005) by using the parameter $K_{i \rightarrow \bar{i}}$.
-From this approach, they demonstrate that their model qualitatively agrees with the results presented by Ma et. al.\ (2005) as shown in Figure \ref{fig:e11_e22_pop_valkunas}. Here, the model predicts population of $E_{22}$ excitons varies with the square of the population of $E_{11}$ excitons which agrees with the observations of Ma \textit{et al}.\ (2005).
 
 In contrast with these previous findings, Luer \textit{et al}.\ (2009) provided experimental evidence showing that exciton-exciton annihilation in SWCNTs is indeed diffusion-limited and can be modeled using the appropriate 1-D decay constant presented in Equation \eqref{eq:exc_1d_annih} \cite{luer2009size}. Figure \ref{fig:dtt_luer_2009} presents transient absorption data as well as a schematic of their model which can be expressed as the set of rate equations
 %
