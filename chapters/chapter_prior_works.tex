@@ -409,7 +409,7 @@ Luer \textit{et al}.\ used Equation \eqref{eq:abs_exc_len} to obtain an estimate
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=1.7]{images/chapter_prior_works/murakami_pl_saturation}
+	\includegraphics[scale=1.9]{images/chapter_prior_works/murakami_pl_saturation}
 	\caption{Time-integrated photoluminescence intensity of (6,5) nanotubes shown as a function of optical pump fluence. The solid and dashed lines correspond to fits using, respectively, the diffusion-limited exciton-exciton annihilation proposed by Murakami and Kono as well as a model based on the conventional rate-equation in Equation \eqref{eq:rate_eq_exc_anih}. Regardless of the excitation wavelength, photoluminescence appears to saturate at higher pump fluences. Murakami and Kono interpreted this as evidence of exciton-exciton annihilation, establishing an upper limit on the population of photoexcited excitons. Reproduced and modified from Ref.\  \cite{murakami2009existence}. }
 	\label{fig:pl_saturation_murakami}
 \end{figure}
@@ -443,6 +443,21 @@ Luer \textit{et al}.\ used Equation \eqref{eq:abs_exc_len} to obtain an estimate
 %They also show that exciton-exciton annihilation occurs over a time scale such that it is hard to reach Mott densitty of excitons where excitons immediately dissociate to form plasma of free carriers. These a
 %Apparently, excitons dissociate into free electron-hole pairs before recombination occurs \cite{kumamoto2014spontaneous}.
 
+One confounding variable in this discussion is how the dielectric environment of the SWCNTs affects carrier relaxation. As discussed in Section \ref{section:dielectric_screening}, the dielectric envrionment in which SWNCTs are immersed can affect optical resonances. An environment with a higher dielectric constant $\varepsilon_\text{env}$ will screen electron-electron interactions, which will cause the resonances to redshift further as this dielectric constant increases. This should also have some effect on the Mott density of SWCNTs. As the dielectric constant of the environment increases, the Mott density should correspondingly decrease as a smaller population of excitons would be needed to completely negate the Coulomb interaction between electrons and holes. To the best of our knowledge, this has not yet been fully explored in SWCNTs within the current literature. However, one relevant study was conducted by Ohno \textit{et al}.\ (2007) \cite{ohno2007excitonic}.
+
+Ohno \textit{et al}.\ \cite{ohno2007excitonic} performed time-resolved photoluminescence measurements on (9,7) SWCNTs that were directly grown over trenches. The setup that they used was designed to measure a time-domain correlation signal. Here, the output of a Ti:sapphire laser (100 fs, 80 MHz, 1.55 eV) was split into two arms. The two arms were modulated by an optical chopper at frequencies $f_1$ and $f_2$, respectively. Furthermore, a delay stage was used to alter the optical path length of one arm. Both beams were focused onto the sample and the photoluminescence signal measured at frequency $f_1 - f_2$ was obtained using a lock-in amplifier together with a monochromator.
+
+They studied the dynamics of photoluminescence under two conditions \cite{ohno2007excitonic}. In one instance, the SWCNTs were immersed in ambient air ($\varepsilon_\text{env} = 1$). For another experiment, the SWCNTs were instead immersed in hexane ($\varepsilon_\text{env} = 1.9$), a solvent. Photoluminescence decayed much more slowly for the sample immersed in air than for the sample immersed in hexane, as shown in Figure \ref{fig:dtt_ohno}. For the sample immersed in air, the dynamics corresponded to a bi-exponential fit. In this case, the fast and slow decay constants were reported as 26 and 293 ps, respectively. However, for the sample immersed in hexane, only a \textit{single} exponential, corresponding to a decay of 5.1 ps, could be fit to the data.
+
+
+In explaining this, Ohno \textit{et al}.\ speculated that nonradiative recombination centers may be created on the surfaces between the SWCNTs and the solvent \cite{ohno2007excitonic}. However, the very fast decay for the sample in hexane may also be a sign of highly efficient exciton-exciton annihilation, although it is not quite clear why the dielectric environment would enhance exciton-exciton annihilation processes. Unfortunately, Ohno \textit{et al}.\ did not provide any data showing how these dynamics change with increasing pump intensity so this idea cannot be corrobrated by their study \cite{ohno2007excitonic}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{images/chapter_prior_works/dtt_ohno}
+	\caption{Time-domain correlation signal of (9,7) SWCNTs immersed in air and in hexane, as reported by Ohno \textit{et al}.\ \cite{ohno2007excitonic}. The solid curves correspond to fits to the data using bi-exponential functions. For the sample immersed in air, the fast and slow decay components were given as 26 and 293 ps, respectively. For the sample immersed in hexane, only a fast component of 5.1 ps was obtained. Reproduced from Ref.\ \cite{ohno2007excitonic}. }
+	\label{fig:dtt_ohno}
+\end{figure}
 
 
 \section{The Optical Stark Effect}
@@ -506,6 +521,12 @@ Maeda \textit{et al}.\ (2006) also observed a coherent optical phenomenon, which
 
 This behavior marks a clear sign of a phenomenon known as spectral hole burning. Maeda \textit{et al}.\  noted that the resonance at 0.685 eV is inhomogenously broadened due to the presence of nanotubes with varying diameters \cite{maeda2006gigantic}. As a result, the optical pump resonantly excited only a subset of nanotubes whose optical responses become dominant in the $\Delta \alpha$ spectrum. The $\Delta \alpha$ spectrum at $t_\text{d} = 0.1$ ps also contains positive changes at 0.6 and 0.76 eV. In combination with the negative signal observed at 0.685 eV, this suggests that the optical resonance has temporarily split into two new states.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{images/chapter_prior_works/stark_shift_maeda}
+	\caption{The top curve shows the absorption spectrum $\alpha$ of the SWCNT film studied by Maeda \textit{et al.} (2006) \cite{maeda2006gigantic}. Here, the absorption peak is inhomogenously broadened due to the presence of various nanotube chiralities within the film. The bottom traces show the change in absorption $\Delta \alpha_0$ as a function of time delay $t_\text{d}$ along with a plot of $-\alpha$ (dashed line). The lower inset figure shows a close-up of the left-hand region of the change in absorbance. The black arrows mark probe positions shown in Figure \ref{fig:dtt_2_maeda_2006}. Reproduced from Ref.\ \cite{maeda2006gigantic}.}
+	\label{fig:abs_maeda_2006}
+\end{figure}
 
 Figure \ref{fig:dtt_2_maeda_2006} shows the dynamics probed at the labeled photon energies. Here, Maeda \textit{et al}.\ \cite{maeda2006gigantic} compute fits to the data using the phenomenological model
 \begin{equation}
@@ -514,12 +535,7 @@ Figure \ref{fig:dtt_2_maeda_2006} shows the dynamics probed at the labeled photo
 \end{equation}
 The first term denotes the coherent, ultrafast component (UC) of the dynamics, which is expressed as a Gaussian function with width $\tau$ = 130 fs, the pulse duration of the optical pump. This term contains only a single fitting parameter $A_1$. The remaining two terms in the summation include two exponential decays associated with a fast decay component (FDC) and a slow decay component (SDC), respectively. These include the fitting parameters $A_\text{i}$ and $\tau_\text{i}$ (i = 2,3) for each component, respectively. For the data shown in Figure \ref{fig:dtt_2_maeda_2006}, they obtain the decay times 0.37 ps for the FDC ($\tau_2$) and 2 ps for the SDC ($\tau_3$).
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{images/chapter_prior_works/stark_shift_maeda}
-	\caption{The top curve shows the absorption spectrum $\alpha$ of the SWCNT film studied by Maeda \textit{et al.} (2006) \cite{maeda2006gigantic}. Here, the absorption peak is inhomogenously broadened due to the presence of various nanotube chiralities within the film. The bottom traces show the change in absorption $\Delta \alpha_0$ as a function of time delay $t_\text{d}$ along with a plot of $-\alpha$ (dashed line). The lower inset figure shows a close-up of the left-hand region of the change in absorbance. The black arrows mark probe positions shown in Figure \ref{fig:dtt_2_maeda_2006}. Reproduced from Ref.\ \cite{maeda2006gigantic}.}
-	\label{fig:abs_maeda_2006}
-\end{figure}
+
 
 
 \begin{figure}[H]
@@ -529,9 +545,7 @@ The first term denotes the coherent, ultrafast component (UC) of the dynamics, w
 	\label{fig:dtt_2_maeda_2006}
 \end{figure}
 
-The observed dynamics certainly changed when the sample was photoexcited at other photon energies. Figure \ref{fig:dtt_maeda_2006} presents these results. When photoexciting the sample above the $E_{11}$ resonance, the ultrafast component (UC) measured at each probe photon energy suggested that a redshift of the $E_{11}$ occured. Photoexcitations below the $E_{11}$ transition instead caused a \textit{blueshift} of the $E_{11}$ peak.
 
-These results certainly agree with those predicted by Equation \eqref{eq:ose_blueshift} as pumping the sample above and below the resonance corresponds to positive and negative detunings, respectively. However, when the photon energy of the optical pump equaled that of the $E_{11}$ transition, the spectral shape of the ultrafast component suggested that optical pump coherently splits the $E_{11}$ resonance into two states. This phenomenon is also consistent with the optical Stark effect occuring within a two-level system.
 
 \begin{figure}[H]
 	\centering
@@ -541,16 +555,21 @@ These results certainly agree with those predicted by Equation \eqref{eq:ose_blu
 \end{figure}
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=1.25]{images/chapter_prior_works/abs_dtt_matsumoto}
-	\caption{The top curve shows the absorbance spectrum of the CoMoCAT dispersion sample studied by Matsumoto \textit{et al}.\ (2006) \cite{matsumoto2006optical}. The resonance located at 1.25 eV corresponds to the $E_{11}$ transition of (6,5) nanotubes. It is inhomogenously broadened due to a small population of (7,5) and (8,3) nanotubes that have their own $E_{11}$ resonances nearby. The bottom traces show differential transmision spectra at the indicated time delays after the sample was photoexcited at 1.14 eV at a fluence of \SI{34}{\micro \joule / \cm\squared}. Finally, the shaded figure represents the spectrum of the optical pump. Reproduced from Ref.\ \cite{matsumoto2006optical}.}
-	\label{fig:abs_dtt_matsumoto}
-\end{figure}
+The observed dynamics certainly changed when the sample was photoexcited at other photon energies. Figure \ref{fig:dtt_maeda_2006} presents these results. When photoexciting the sample above the $E_{11}$ resonance, the ultrafast component (UC) measured at each probe photon energy suggested that a redshift of the $E_{11}$ occured. Photoexcitations below the $E_{11}$ transition instead caused a \textit{blueshift} of the $E_{11}$ peak.
+
+These results certainly agree with those predicted by Equation \eqref{eq:ose_blueshift} as pumping the sample above and below the resonance corresponds to positive and negative detunings, respectively. However, when the photon energy of the optical pump equaled that of the $E_{11}$ transition, the spectral shape of the ultrafast component suggested that optical pump coherently splits the $E_{11}$ resonance into two states. This phenomenon is also consistent with the optical Stark effect occuring within a two-level system.
 
 Matsumoto \textit{et al}.\ (2006) \cite{matsumoto2006optical} observed the optical Stark effect in a CoMoCAT SWCNT film sample. Here, each nanotube was individually suspended using carboxymethylcellose (CMC), a transparent polymer \cite{matsumoto2006optical}. Figure \ref{fig:abs_dtt_matsumoto} shows a key result of their work. Here, the (6,5) $E_{11}$ resonance located at 1.25 eV is inhomogenously broadened due to the nearby $E_{11}$ resonances of (7,5) and (8,3) nanotubes in the sample. Furthermore, when the sample was photoexcited below the $E_{11}$ transition at a photon energy of 1.14 eV with a fluence of \SI{34}{\micro \joule / \cm\squared}, the differential transmission suggested that the $E_{11}$ state coherently blueshifted at 0 ps.
 
 This blueshift immediately disappeared at 0.3 ps. Hence, the signals observed at 0.3 and 10 ps corresponded to the relaxation of real carriers created via multiphoton processes. Figure \ref{fig:dtt_matsumoto} shows that the data measured at 0 ps is linearly proportional to the first derivative of the absorption spectrum, which agrees with the observations made by Song \textit{et al} \cite{song2006optical}. From this, they deduced that the optical pump produced a blueshift of $1.1 \pm 0.3$ meV.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.25]{images/chapter_prior_works/abs_dtt_matsumoto}
+	\caption{The top curve shows the absorbance spectrum of the CoMoCAT suspension studied by Matsumoto \textit{et al}.\ (2006) \cite{matsumoto2006optical}. The resonance located at 1.25 eV corresponds to the $E_{11}$ transition of (6,5) nanotubes. It is inhomogenously broadened due to a small population of (7,5) and (8,3) nanotubes that have their own $E_{11}$ resonances nearby. The bottom traces show differential transmision spectra at the indicated time delays after the sample was photoexcited at 1.14 eV at a fluence of \SI{34}{\micro \joule / \cm\squared}. Finally, the shaded figure represents the spectrum of the optical pump. Reproduced from Ref.\ \cite{matsumoto2006optical}.}
+	\label{fig:abs_dtt_matsumoto}
+\end{figure}
+
 
 \begin{figure}[ht]
 	\centering
