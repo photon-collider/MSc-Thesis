@@ -1,11 +1,10 @@
 % !TEX root = ../thesis_main.tex
 \chapter{Experimental Procedures}
 
-\section{Preparation of the Studied (6,5)-enriched Single-Wall Carbon Nanotube (SWCNT) Suspension Samples }
 
-\subsection{Introduction}
+\section{Introduction}
 
-\subsection{Synthesis of SWCNTs}
+\section{Synthesis of SWCNTs}
 \label{section:cnt_synthesis}
 Catalytic chemical vapor deposition (CCVD) is a standard method for synthesizing carbon nanotubes (CNTs) \cite{prasek2011methods, agboola2007conceptual}. This technique depends on the decomposition of carbon sources, such as methane and acetylene, via heat or plasma irradiation to form carbon nanotubes on a substrate \cite{agboola2007conceptual}. Such reactions are typically driven by transition-metal catalysts such as nickel, iron, and cobalt \cite{prasek2011methods}.
 
@@ -19,6 +18,9 @@ to form carbon nanotubes \cite{resasco2002scalable}. This process is typically c
 
 Another well-known technique, commonly referred to as the HiPco method, involves the use of high-pressure carbon monoxide \cite{bronikowski2001gas, nikolaev1999gas}. This process takes place inside a furnace at temperatures as high as 900 $-$ \SI{1100}{\celsius} and at high pressures between 30 and 50 atm. Synthesis occurs by flowing carbon monoxide gas along with iron pentacarbonyl (Fe(CO)$_5$) into the furnace \cite{nikolaev1999gas}. The Fe(CO$_5$) molecules decompose to form gas-phase iron clusters upon which the chemical reaction defined in Equation \eqref{eq:cnt_synth} occurs. It is well understood that the CoMoCAT and HiPco methods both produce an ensemble of nanotubes with varying chiralities \cite{agboola2007conceptual}. As such, these ensembles are often used as precursor materials for filtration techniques capable of creating dispersions that are enriched by a single chirality \cite{janas2018towards, zheng2019sorting}.
 
+In this powdered form shown in Figure \ref{fig:cnt_powder}, SWCNTs have a tendency to form ropes and bundles due to strong van der Waals interactions as high as \SI{500}{\electronvolt / \micro \meter} between nanotubes \cite{thess1996crystalline, girifalco2000carbon}. Such interactions between nanotubes can have the effect of broadening optical resonances, making it harder to distinguish between chirality-dependent features \cite{liu1998fullerene, o2001reversible, o2002band}, as shown in Figure \ref{fig:cnt_dispersion_vs_rope}. For instance, if metallic and semiconducting nanotubes are in electronic contact, this would give carriers generated in semiconducting nanotubes an intraband relaxation pathway through the gapless, continuum states of metallic nanotubes \cite{ostojic2004interband}.
+
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.3]{images/chapter_methods/sem_cnt_powder_bandy}
@@ -26,16 +28,18 @@ Another well-known technique, commonly referred to as the HiPco method, involves
 	\label{fig:cnt_powder}
 \end{figure}
 
-\subsection{Dispersion of SWCNTs}
-\label{section:dispersion_swcnt}
-We created an aqeuous suspension of (6,5)-enriched sample by starting with CoMoCAT SWCNTs obtained from Sigma-Aldrich (Manufacturer Number: Signis$^{\tiny{\textregistered}}$ SG65i). This initial product consisted of a powder of SWCNTs with an average diameter of 0.78 nm and a median length of \SI{1}{\micro \meter}. Approximately 95\% of the SWCNTs are semiconducting with 41\% of them being (6,5) SWCNTs. In this powdered form shown in Figure \ref{fig:cnt_powder}, SWCNTs have a tendency to form ropes and bundles due to strong van der Waals interactions as high as \SI{500}{\electronvolt / \micro \meter} between nanotubes \cite{thess1996crystalline, girifalco2000carbon}. Such interactions between nanotubes can have the effect of broadening optical resonances, making it harder to distinguish between chirality-dependent features \cite{liu1998fullerene, o2001reversible, o2002band}, as shown in Figure \ref{fig:cnt_dispersion_vs_rope}. For instance, if metallic and semiconducting nanotubes are in electronic contact, this would give carriers generated in semiconducting nanotubes an intraband relaxation pathway through the gapless, continuum states of metallic nanotubes \cite{ostojic2004interband}.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.]{images/chapter_methods/cnt_rope_vs_micelle}
 	\caption{Optical absorption spectra of HiPco carbon nanotubes. The top spectrum shows the optical absorption for an ensemble of individually suspended HiPco nanotubes. The middle spectrum shows the effect of numerically broadening the peaks of the top spectrum. The bottom spectrum shows the optical absorption of a HiPco nanotube bundle. Due to intertube interactions, the optical resonances of the HiPco bundle become severely broadened, making it hard to distinguish between chirality-dependent features. For a individually suspended SWCNTs, these resonances are more easily observed. Reproduced and modified from Ref.\ \cite{hagen2003quantitative}.}
 	\label{fig:cnt_dispersion_vs_rope}
 \end{figure}
+
+\section{Preparation of the Studied (6,5)-enriched SWCNT Aqueous Suspension}
+
+\subsection{Dispersion of SWCNTs by Sonication}
+\label{section:dispersion_swcnt}
+We created an aqeuous suspension of (6,5)-enriched sample by starting with CoMoCAT SWCNTs obtained from Sigma-Aldrich (Manufacturer Number: Signis$^{\tiny{\textregistered}}$ SG65i). This initial product consisted of a powder of SWCNTs with an average diameter of 0.78 nm and a median length of \SI{1}{\micro \meter}. Approximately 95\% of the SWCNTs are semiconducting with 41\% of them being (6,5) SWCNTs.
 
 
 First, we dispersed CoMoCAT SWCNTs in an aqueous solution containing surfactants by using sonication followed by ultracentrifugation \cite{liu1998fullerene, o2001reversible, o2002band}. Sonication uses mechanical vibrations to break up the van der Waals interactions that hold nanotube bundles together . Furthermore, the presence of surfactant molecules has the effect of mitigating inter-tube interactions to stabilize the suspension by preventing the formation of nanotube bundles \cite{liu1998fullerene, o2001reversible, o2002band}.
@@ -47,15 +51,13 @@ First, we dispersed CoMoCAT SWCNTs in an aqueous solution containing surfactants
 \label{fig:sds_molecule}
 \end{figure}
 
-
 Sodium dodecyl sulfate (SDS) represents an exemplary surfactant commonly used to prepare dispersions of carbon nanotubes. In the aqeuous dispersion, SDS molecules become adsorbed on the outer surface of the nanotubes, as shown in Figure \ref{fig:sds_molecule}. Here, the hydrophobic part of SDS becomes adsorbed onto the nanotube surface while the hydrophilic part points towards the aqueous phase and aids with the dissolution of the nanotube \cite{richard2003supramolecular}. This forms a distribution of negative charge on nanotube surfaces due to the negatively-charged hydrophilic region that, via Coulomb interactions, prevents nanotubes from sustaining physical contact \cite{richard2003supramolecular}.
 
 
 Unfortunately, not all nanotube bundles can be broken up by sonication \cite{o2002band}. Therefore, ultracentrifugation is used to separate dispersed nanotubes from the remaining  \cite{o2002band}. This yields a mixture composed of nanotubes floating in the aqeuous solution above a sediment of nanotube bundles. We then extract the aqeuous solution containing the dispersed nanotubes, also known as the supernatant, and perform gel chromatography on this product to obtain a (6,5)-enriched sample.
 
-\section{SWCNT Chirality Separation}
+\subsection{SWCNT Chirality Separation by Gel Chromatography}
 
-\subsection{Gel Chromatography}
 Gel chromatography works by separating nanotubes according to their relative diameters \cite{liu2011large}. Figure \ref{fig:gel_chromatography_kataura} shows a schematic diagram of how this method works. By exploiting the fact that certain chiralities will interact more strongly with the gel than others, chirality-enriched suspensions can be readily prepared.
 
 The gel chromatography procedure we used was devised by Ichinose \textit{et al}. \cite{ichinose2017extraction}. First, the CoMoCAT SWCNTs are dispersed in an aqeuous solution containing the surfactants sodium dodecyl sulfate (SDS) and sodium cholate (SC) with concentrations of 0.5\% each. This dispersion is then placed in a column containing hydrogel beads at the bottom. Depending on the pH of the aqueous solution, some SWCNTs become more readily adsorbed onto the hydrogels, making it easy to filter out those that are not adsorbed \cite{liu2011large}. Here, the pH of the solution is controlled via carbon dioxide bubbling \cite{ichinose2017extraction}. As shown in Figure \ref{fig:elute_ph}, nanotubes such as (8,6) and (11,1) can be removed (eluted) when the pH is set to 8.1 \cite{ichinose2017extraction}. By progressively reducing the pH in increments of 0.1, other unwanted chiralities such as (7,6) can now be eluted until only (6,5) nanotubes remain \cite{ichinose2017extraction}.
@@ -78,8 +80,52 @@ In the final steps, the (6,5)-enriched dispersion is dispersed using sodium deox
 	\label{fig:elute_ph}
 \end{figure}
 
+\section{Preparation of the Studied Polymer-Wrapped (6,5)-enriched Suspension}
 
+\subsection{Dispersion of SWCNTs by Shear Force Mixing}
+
+The overall procedure for the preparation of the polymer-wrapped (6,5)-enriched suspension used in this study was first reported by Graf \textit{et al}.\ \cite{graf2016large}.
+
+\subsection{Chirality Separation by Polymer Selection}
+
+Chirality separation of SWCNT ensembles can be also be performed by dispersing SWCNTs in a solution containing aromatic organic polymers \cite{nish2007highly, chen2007toward, tange2011selective}. Here, the polymers selectively solubize certain chiralities of SWCNTs depending on the molecular structures of the polymer and the  SWCNTs \cite{nish2007highly}. This was first demonstrated by Nish \textit{et al}.\ (2007) \cite{nish2007highly}, who studied the optical properties of ensembles that were prepared by dispersing, via sonication and ultracentrifugation, HiPco and CoMoCAT SWCNTs using different polymers in the solvent toluene. They observed that the polymer poly(9,9-dioctylfluorenyl2,7-diyl), commonly referred to as PFO, exhibits a particularly strong selectivity.
+
+Figure \ref{fig:comparison_nish} shows a comparison of the optical absorption spectrum of CoMoCAT SWCNTs ensembles that were dispersed using either an aqeuous solution containing sodium dodeclybenzene sulphonate (SDBS) or a toluene solution containing PFO. The aqueous suspension contains several optical resonances as no chirality separation technique was performed on the sample to enrich any particular nanotube species. In contrast, the polymer-wrapped sample contains fewer and narrower due to the tendency of the PFO polymer to help dissolve only a subset of chiralities within then ensemble. However, Nish \textit{et al}.\ also mentioned that this selectivity only occurred when using toluene as the solvent rather than other organic solvents such as choloroform \cite{nish2007highly}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=1.4]{images/chapter_methods/purification_nish_2}
+	\caption{Optical absorption spectra for CoMoCAT SWCNTs dispersed in an aqueous SDBS surfactant solution and in a toluene solution containing the polymer PFO. The suspension created using PFO contains fewer and narrower optical resonances due to the tendency of the PFO polymer to suspend only a subset of chiralities in the solution. Reproduced from Ref.\ \cite{nish2007highly}. }
+	\label{fig:comparison_nish}
+\end{figure}
+
+
+Moreover, Nish \textit{et al}.\ also demonstrated that the chirality selecitivity varies with the type of polymer used in the dispersion process \cite{nish2007highly}. Figure \ref{fig:map_nish} shows photoluminescence excitation maps for two different HiPco SWCNT ensembles that were suspended using the polymers PFO and PFH (poly[9,9-dihexylfluorenyl-2,7-diyl]). Here, they showed that the ensemble prepared using exhibits a high selectivity for (8,6) SWCNTs given by the relatively higher photoluminescence emission of this chirality. By comparison, the PFH polymer created a suspension enriched by (8,7), (9,7), and (8,6) nanotubes. Both polymers also effectively removed other nanotubes such as (9,1) and (6,5) SWCNTs from the suspension.
 %Include figure of absorption spectrum
+
+
+
+It has been observed that the polymer poly[(9,9-dioctylfluorenyl-2,7-diyl)-alt-co-(6,6 0 -\{2,2 0 -bipyridine\})], commonly abbreviated as PFO-BPy, can be used to create (6,5)-enriched suspensions \cite{hertel2010diffusion, ozawa2011one, gomulya2013conjugated}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=2.3]{images/chapter_methods/pl_nish_3}
+	\caption{Photoluminescence excitation maps of two polymer-SWCNT samples in toluene solutions prepared by Nish \textit{et al}.\ \cite{nish2007highly}. These include SWCNT suspensions prepared using the polymers (a) PFO and (b) PFH. Furthermore, the colorbar scale corresponds to the intensity of the emission. The plots show the differences in the chiralicty selectivity of the two polymers.
+	%Figure \ref{fig:molec_structure_nish} shows the molecular structure of these polymers. Reproduced and modified from Ref.\ \cite{nish2007highly}.
+	}
+	\label{fig:map_nish}
+\end{figure}
+
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[scale=3]{images/chapter_methods/molecular_structure_nish}
+%	\caption{Molecular structures of (a) PFO and (b) PHF. }
+%	\label{fig:molec_structure_nish}
+%\end{figure}
+
+
+
 \subsection{Optical Spectrum of (6,5)-enriched Samples}
 
 Measuring the attenuance of prepared samples provides a means of determining the different chiralities present in the sample as well as their relative populations. Here, attenuance $A$ is defined as
