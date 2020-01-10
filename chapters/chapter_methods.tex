@@ -194,12 +194,7 @@ Figure \ref{fig:sample_absorbance} presents the attenuance spectrum for the stud
 The experimental apparatus, illustrated in Figure \ref{fig:setup_schematic}, incorporates the use of an intense optical pump pulse followed by a broadband probe pulse to characterize the ultrafast carrier dynamics of carbon nanotubes. The pump and probe beams are focused onto the surface of the sample in a noncollinear geometry. Here, the probe beam transmits through the sample at normal incidence. However, the pump beam propagates through the sample at an offset angle of \SI{40}{\degree}. Finally, the transmission spectrum of the probe is resolved using a spectrometer to resolve the nonequilibrium optical properties of the sample.
 
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.7]{example-image-a}
-	\caption{ {\color{red} UNFINISHED} Schematic diagram of the experimental apparatus. The setup is powered by a Ti:sapphire femtosecond laser (Clark-MXR CPA-2010) that generates $\sim$200 fs, 775 nm (1.6 eV) pulses at a repetition rate of 1 kHz and an average power of 1 W. The total laser output is delivered to an optical parametric amplifier (TOPAS-800). The OPA generates a signal (1.1 $-$ \SI{1.5}{\micro\meter}) and idler beams (1.5 $-$ \SI{2.7}{\micro\meter}) using a type-II parametric generation process.  A BBO crystal is mounted at the output of the OPA to generate the second-harmonic of the signal in a type-II process. A wavelength separator containing a set of dichroic mirrors separates the second-harmonic of the signal, used as the optical pump, from the fundamental of the signal used to generate the white light supercontinuum probe.}
-	\label{fig:setup_schematic}
-\end{figure}
+
 
 
 \subsection{Chirped Pulse Amplifier}
@@ -207,12 +202,21 @@ The CPA-2010 laser source manufactured by Clark-MXR functions as the heart of th
 
 Chirped pulse amplification makes it possible to amplify ultrashort pulses without incurring the risk of damaging optical components due to self-focusing effects \cite{strickland1985compression}. This is done by first stretching a relatively weak, short pulse, also known as the seed pulse, by inducing dispersion with a pair of gratings. Next, the stretched pulse enters a gain medium that amplifies the intensity of the stretched pulse. Without the initial stretching step, the intensity of the amplified seed pulse may exceed the damage threshold of the optical components in the laser such as the gain medium. Afterward, the pulse is compressed by another pair of gratings before exiting the laser cavity.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim={6cm 4cm 6cm 2cm}, clip, scale=0.7]{images/chapter_methods/setup_schematic}
+	\caption{ Schematic diagram of the experimental apparatus. The setup is powered by a Ti:sapphire femtosecond laser (Clark-MXR CPA-2010) that generates $\sim$200 fs, 775 nm (1.6 eV) pulses at a repetition rate of 1 kHz and an average power of 1 W. The total laser output is delivered to an optical parametric amplifier (TOPAS-800). The OPA generates a signal (1.1 $-$ \SI{1.5}{\micro\meter}) and an idler beam (1.5 $-$ \SI{2.7}{\micro\meter}) using a type-II parametric generation process.  A BBO crystal is mounted at the output of the OPA to generate the second-harmonic of the signal in a type-II process. A wavelength separator containing a set of dichroic mirrors separates the second-harmonic of the signal, used as the optical pump, from the fundamental of the signal used to generate the white light supercontinuum probe. }
+	\label{fig:setup_schematic}
+\end{figure}
+
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.31]{images/chapter_methods/cpa_process_service}
 	\caption{Schematic diagram of the chirped pulse amplification process. A short pulse is initially stretched by a pair of gratings, amplified by the system, and then recompressed to yield an amplified short pulse. Reproduced from Ref.\ \cite{service154}.}
 	\label{fig:cpa_process}
 \end{figure}
+
+
 
 The CPA-2010 utilizes a laser oscillator to generate seed pulses. This oscillator features a single-mode erbium-doped fiber (SErF), which serves as the gain medium that is pumped by a solid-state fiber-coupled laser operating at 980 nm. In addition, the oscillator generates pulses with a central wavelength of 775 nm at a repetition rate of 30 MHz. Finally, the seed pulse is stretched in time by a transmission grating before entering the regenerative amplifier for the amplification step.
 
@@ -337,7 +341,7 @@ After exiting the amplifier system, the AS is diffracted by a transmissive grati
 		\label{fig:opa_autocorr}
 \end{figure}
 
-\section{Fluence, Peak Power, and Power Density {\color{red} UNFINISHED}}
+\section{Fluence, Peak Power, and Power Density}
 In pump-probe spectroscopy, the terminologies fluence (J/cm$^2$), peak power (W), and power density (W/cm$^2$) are commonly used to describe the strength of the optical pump. The fluence $F$ defined as
 \begin{equation}
 	F \equiv \dfrac{P_\text{avg}}{f} \dfrac{1}{\pi r^2} = \dfrac{E}{\pi r^2}
